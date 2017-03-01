@@ -169,6 +169,7 @@ class CardController extends LoginedController
             foreach($export_data as $_ex){
                 $export_data_real[] = [
                     '="'.$_ex['card_number'].'"',
+					'="'.$_ex['card_secret'].'"',
                     $_ex['created'],
                     $_ex['coverage_code'],
                     '未激活',
@@ -344,6 +345,10 @@ class CardController extends LoginedController
             $transaction->commit();
             $flag = true;
         }catch (Exception $e){
+        	$this->log($e->getFile());
+			$this->log($e->getLine());
+        	$this->log($e->getCode());
+			$this->log($e->getMessage());
             $transaction->rollback();
         }
 		if($flag && $post_data['is_export']){
@@ -558,7 +563,7 @@ class CardController extends LoginedController
                 $seller_info = Seller::getSellerInfo($item->seller_id);
                 $respon[] = [
                     '="'.$item->card_number.'"',
-                    //$item->card_secret,
+					'="'.$item->card_secret.'"',
                     $item->created,
                     $item->coverage_code,
                     $item->getStatusText(),
@@ -609,8 +614,8 @@ class CardController extends LoginedController
         theCsv::export([
             'data' => $respon,
             'name' => "card_list_".date('Y_m_d_H', time()).".csv",    // 自定义导出文件名称
-            //'header' => ['卡券序列号','卡券密匙','生成时间','险种','卡券状态','所属商家'],
-			'header' => ['卡券序列号','生成时间','险种','卡券状态','所属商家'],
+            'header' => ['卡券序列号','卡券密匙','生成时间','险种','卡券状态','所属商家'],
+			//'header' => ['卡券序列号','生成时间','险种','卡券状态','所属商家'],
         ]);
     }
 

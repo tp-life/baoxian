@@ -143,4 +143,13 @@ class BaseController extends  Controller
         return implode(PHP_EOL, $arr);
     }
 
+	public function log($data = [], $name = 'log.log')
+	{
+		usleep(5);
+		$str = is_array($data) ? var_export($data,true) : $data;
+		$name = date('Ymd') . $name.'.log';
+		file_put_contents(Yii::getAlias('@runtime').'/logs/' . $name, $str . PHP_EOL, FILE_APPEND);
+		usleep(3);
+	}
+
 }

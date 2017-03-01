@@ -143,8 +143,10 @@ class BaseController extends Controller
 		$token = trim($token);
 		$model = WxMember::findOne(['token' => $token]);
 		if (!$model) {
-			Yii::$app->request->cookies->removeAll();
-			$this->exitJson('token不正确!');
+			Yii::$app->response->cookies->remove(new Cookie(['name'=>'isLogin']));
+			Yii::$app->response->cookies->remove(new Cookie(['name'=>'wxToken']));
+			Yii::$app->response->cookies->remove(new Cookie(['name'=>'member_token']));
+			$this->exitJson('token不正确,建议尝试清除微信存储缓存!');
 		}
         $this->token = $token;
 		if ($model->member_id) {
