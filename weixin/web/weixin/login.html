@@ -1,0 +1,209 @@
+  <!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>用户绑定</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <!-- <link rel="stylesheet" href="css/example.css"/>-->
+    <style type="text/css">
+        .disabled{color:#fff!important;background:#DDDDDD!important;}
+        .weui-label{width:80px!important;}
+        .weui-icon-cancel{position:absolute;color:#999999;right:10px;top:10px;display: none;}
+        .relative{position:relative;}
+  
+        .weui-cell { margin: 10px 20px;border: 1px solid #d9d9d9;    padding: 0px 0px 0px 15px;}
+        .weui-cells:before,.weui-cell:before,.weui-cells:after{border-top: 0px solid #d9d9d9;border-bottom: 0px solid #d9d9d9;}
+        .weui-btn:after{border:0;}
+        .weui-vcode-btn{background:#FEAE17;color: #fff;}
+        .weui-input{height: 40px;line-height: 40px;}
+        button,input[type='button']{border:0px;outline: 0px;}
+            </style>
+     
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__hd">
+        <img src="images/img_login.png" width="100%"/>
+    </div>
+    <div class="page__bd">          
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" maxlength=11 placeholder="请输入手机号" id="mobile">
+                    <i class="weui-icon-cancel" id="mobileCancel"></i>
+                </div>
+            </div>
+           <div class="weui-cell ">
+                <!-- <div class="weui-cell__hd"><label class="weui-label">验证码</label></div> -->
+                <div class="weui-cell__bd relative">
+                    <input class="weui-input" type="text" maxlength=6 placeholder="请输入验证码" id="vcode"/>
+                    <input type="hidden" id="vcodeHidden" value="" />
+                    <i class="weui-icon-cancel" id="vcodeCancel"></i>
+                </div>
+                 <div class="weui-cell__ft relative">
+                    <button  type="button"  class="weui-vcode-btn disabled" disabled id="getCodeBtn" >获取验证码</button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <input  type="button" class="weui-btn weui-btn_warn disabled" disabled  value="登录" id="okBtn"/>
+        </div>
+    </div>
+  
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        var isLogin = $.fn.cookie('isLogin',{"path":"/"});
+        console.log("isLogin:"+isLogin);
+        if(parseInt(isLogin) == 1){
+             tooltip("您已登录",3000);
+             setTimeout(function(){window.location.href="ordersList.html"; },4000);
+        }
+        $("#okBtn").on("click",function(){
+         
+            var mobile = $("#mobile").val();
+            var vcode = $("#vcode").val();
+            if(mobile==""){
+                tooltip("请输入手机号码",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            var flag = checkMobile(mobile);
+            if(!flag){
+                tooltip("手机号码输入错误",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            if(vcode==""){
+                tooltip("请输入验证码",3000);
+                $("#vcode").focus();
+                return false;
+            }
+            //服务器验证信息
+             loadingToast();
+            $.ajax({
+                    type:'post',
+                    url:domain+"/default/login",
+                    dataType:'json',
+                    data:{"phone":mobile,"captcha":vcode,"token":token},
+                    success:function(data){
+                            closeLoading();
+                            if(data.code == 200){
+                                $.fn.cookie('wxToken',data.data.token,{"path":"/"});
+                                window.location.href="ordersList.html"; 
+                            }else{
+                                tooltip(data.message,3000);
+                            }
+                    }
+                 });
+        });
+        var clock = '';
+        var nums = 60;
+        var btn;
+        function doLoop(){
+             nums--;
+             if(nums > 0){
+                $("#getCodeBtn").addClass("disabled").text(nums+"秒后重新获取");
+             }else{
+              clearInterval(clock); //清除js定时器
+              $("#getCodeBtn").removeClass("disabled").removeAttr("disabled").text("点击重新获取");
+              nums = 60; //重置时间
+             }
+        }
+        $("#mobile").on("keyup",function(){
+            var mobile = $(this).val();
+            if(mobile!=""){
+                $("#mobileCancel").show();
+            }else{
+                 $("#mobileCancel").hide();
+            }
+            var flag = checkMobile(mobile);
+            var vcodeLen = $("#vcode").val().length;
+            if(flag){
+               $("#getCodeBtn").removeClass("disabled").removeAttr("disabled");
+               if(vcodeLen ==6){
+                    $("#okBtn").removeClass("disabled").removeAttr("disabled");
+                }else{
+                    $("#okBtn").addClass("disabled").attr("disabled","true");
+                }
+            }else{
+                $("#getCodeBtn").addClass("disabled").attr("disabled","true");
+                $("#okBtn").addClass("disabled").attr("disabled","true");
+            }
+        });
+        $("#vcode").on("keyup",function(){
+            var vcode = $(this).val();
+            var mobileLen = $("#mobile").val().length;
+            var len = vcode.length;
+            if(vcode!=""){
+                $("#vcodeCancel").show();
+            }else{
+                 $("#vcodeCancel").hide();
+            }
+            
+            if(len ==6 && mobileLen == 11){
+                $("#okBtn").removeClass("disabled").removeAttr("disabled");
+            }else{
+                $("#okBtn").addClass("disabled").attr("disabled","true");
+            }
+            if(len > 6){
+                var v = vcode.substring(0,6);
+                $(this).val(v);
+                $("#okBtn").removeClass("disabled").removeAttr("disabled");
+            }
+        })
+        $("#mobileCancel").on("click",function(){
+            $("#mobile").val("");
+            $("#mobile").focus();
+            $("#mobileCancel").hide();
+            $("#getCodeBtn").addClass("disabled").attr("disabled","true");;
+        })
+        $("#vcodeCancel").on("click",function(){
+            $("#vcode").val("");
+            $("#vcode").focus();
+            $("#vcodeCancel").hide();
+            $("#okBtn").addClass("disabled").attr("disabled","true");
+        })
+        $("#getCodeBtn").on("click",function(){
+            var mobile = $("#mobile").val();
+            if(mobile == ""){
+                //$("#mobile").addClass("error");
+                tooltip("请输入手机号码",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            var flag = checkMobile(mobile);
+             loadingToast();
+            if(flag){
+                 $.ajax({
+                    type:'post',
+                    url:domain+"/default/verifycode",
+                    data:{"phone":mobile,"code_type":"","token":token},
+                    success:function(data){
+                        closeLoading();
+                        if(data.code!=200){
+                           tooltip(data.message,3000);
+                           
+                        }else{
+                            $("#getCodeBtn").addClass("disabled").attr("disabled","true").text(nums+"秒后重新获取");
+                            clock = setInterval(doLoop, 1000);
+                        }
+                       
+                    }
+                 });
+            }else{
+                tooltip("手机号码错误",3000);
+                $("#mobile").focus();
+            }
+        })
+
+        
+    });
+ 
+</script>
+</body>

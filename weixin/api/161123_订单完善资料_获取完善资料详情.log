@@ -1,0 +1,35 @@
+
+
+
+完善资料提交接口
+-------------------------------------------
+请求方法： order/index          POST
+请求参数：
+order_id: "订单号"
+brand:"品牌" 
+model:'机型'
+name:'机主姓名',
+imei:'暧昧号',
+id_card:'身份证'
+is_confirm:'是否确定保险服务'//必须点中
+返回：标准返回
+
+bstop		是否继续跳转到上传图片页面  0 不跳转到上传图片页面直接提示完善资料成功信息， 1 跳转到上传图片页面
+
+#####################################
+请求方法： account/getinfo          get
+请求参数：
+order_id: "订单号"
+
+返回：标准返回
+
+brand   		品牌
+brand_id  		品牌ID
+model  			手机型号
+model_id 		型号ID
+imei_code		imei 号
+idcrad			身份证号
+buyer			机主姓名
+imei_back_image		图片背面图
+imei_face_image		图片正面图
+bstop		是否继续跳转到上传图片页面  0 不跳转到上传图片页面直接提示完善资料成功信息， 1 跳转到上传图片页面

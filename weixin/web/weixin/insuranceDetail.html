@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+        img{width:100%; }
+        .weui-cell {padding:10px 10px 5px 10px;position: relative;}
+        .insurance-info{display: flex;margin:10px;display: -webkit-flex;justify-content: space-between;}
+        .insurance-info-content{float: left;font-size:#333;font-size:16px;}
+        .insurance-info-share{float: right;border-left:1px dashed #ccc;padding-left:10px;text-align: right;position: relative;}
+        .money{color:#ff7c19;font-size:28px;font-weight: bold;}
+        .insurance-info-share  > img{width:26px;padding-right:5px;}
+        .insurance-info-share  > div{color:#666;font-size:14px;padding-right:6px;}
+        .insurance-detail{background: #f3f5fa;display: flex;display: -webkit-flex;padding:10px 10px;}
+        .insurance-detail div{color: #999999;flex:1;-webkit-flex:1;}
+        .insurance-detail div > div{display:inline-block;line-height: 24px;}
+        .insurance-detail div > div > img{margin-bottom:-5px;}
+        .insurance-detail div:last-child{text-align: right;}
+        .title{padding:10px;}
+        .btn-box{position: fixed;bottom:0px;z-index: 1;width: 100%;background: #ee574f;}
+        .btn-box a{width: 100%;text-align: center;padding:10px 0px;color: #fff;display: block;font-size:18px;}
+    </style>
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__hd">
+   
+        <div class="weui-cells" style="margin-top:0px;">
+            <a class="weui-cell weui-cell_access" href="javascript:;" style="padding:0px;">
+                <div class="weui-cell__hd"><img id="topImg" src="" alt=""/></div>
+                <div class="insurance-info">
+                    <div class="insurance-info-content">
+                        <div id="coverageName"></div>
+                        <div class="money">&yen; <span id="officialPrice"></span></div>
+                    </div>
+                    <a class="insurance-info-share " >
+                        
+                            <img src="images/share.png" /> 
+                            <div>分享</div>
+                  <div style="position: absolute; top: 2px; right: 0px; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);" class="weibo-share">
+                        <wb:share-button picture_search="false" pic="http://m.lehuanxin.com//static/image/web/logo.png" default_text="我在乐换新发现了一份不错的意外保障，价格好便宜，赶快开看看！" ralateuid="5276678376" type="button" addition="simple" appkey="3289245970" style="opacity: 0;" url="/item-1856.html" id="weibo"><iframe width="65" height="25" frameborder="0" src="http://service.weibo.com/staticjs/weibosharev2.html?url=%2Fitem-1856.html&amp;type=button&amp;ralateUid=5276678376&amp;language=zh_cn&amp;appkey=3289245970&amp;title=我在乐换新发现了一份不错的意外保障，价格好便宜，赶快开看看！&amp;pic=http://m.lehuanxin.com//static/image/web/logo.png&amp;searchPic=false&amp;style=simple" scrolling="no" marginheight="0"></iframe></wb:share-button>
+                    </div>
+
+                        
+                        
+                    </a>
+                </div>
+                <div class="insurance-detail ">
+                    <div>
+                        <div><img src="images/info_gou.png" /></div>
+                        <div>保障时间：<span id="period"></span>个月</div>
+                    </div>
+                    <div>
+                        <div><img src="images/info_gou.png" /></div>
+                        <div>最高赔付：<span id="maxPayment"></span>元</div>
+                   
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="weui-cells" style="margin-bottom:40px;">
+            <div class="title">图文详情</div>
+            <img src="images/info_img1.png" />
+            <img src="images/info_img2.png" />
+            <img src="images/info_img3.png" />
+            <img src="images/info_img4.png" />
+        </div>
+    <div class="btn-box">
+        <a class="btn" id="buyBtn" >立即购买</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+
+
+<script type="text/javascript">
+    $(function(){
+        loadingToast();
+        var url = window.location.href;
+        var id = getQueryString("id", url);
+        
+        $.ajax({
+                    type:'get',
+                    url:domain+"/goods/info",
+                    data:{"id":id,"token":token},
+                    success:function(data){
+                            closeLoading();
+                            if(data.code == 200){
+                                $("#topImg").attr("src",data.data.image);
+                                $("#coverageName").html(data.data.coverage_name);
+                                $("#officialPrice").html(data.data.official_price);
+                                $("#period").html(data.data.period);
+                                $("#maxPayment").html(data.data.max_payment);
+                                //coverage_id  = data.data.id;
+                               // $("#buyBtn").attr("href","payment.html?id="+data.data.id);
+                            }else{
+                                tooltip(data.message,3000);
+                            }
+                    }
+                 });
+        $("#buyBtn").click(function(){
+           window.location.href="phoneBasicInfo.html?coverage_id="+id;
+            
+        });
+    });
+</script>
+</body>

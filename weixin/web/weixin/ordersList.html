@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+ 
+        .money{color:#FD7C17;font-weight: bold;padding-left: 5px;}
+        .weui-navbar li{display: inline-block;font-size:12px;padding:15px 5px;}
+        .weui-navbar{width:500px;}
+        .weui-cell__bd p{font-size: 14px;line-height: 20px;height: 40px;}
+        .page_list{margin-bottom: 5px;}
+        .weui-cells{position: relative;}
+        .weui-cell__ft{position:absolute;top:0;z-index: 99;right:10px;top:75px;}
+        .weui-cells{padding:10px 10px;margin-top:0px;}
+        .date{color:#8F8F8F;}
+        .order-detail > div{font-size:12px;color:#787878;line-height: 20px;}
+        .grey-list div,.grey-list p,.grey-list .weui-cells__title_status{color:#666666;}
+        .no_order_div{margin:50% auto;text-align: center;}
+        .no_text{color:#9C9C9C;font-size:16px;font-weight: bold;margin-bottom:30px;}
+        .btn-box-logout{position: fixed;bottom:0px;z-index: 1;width: 100%;background: #ee574f;}
+        .btn-box-logout a{width: 100%;text-align: center;padding:10px 0px;color: #fff;display: block;font-size:18px;}
+    </style>
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__hd">
+    </div>
+</div>
+    <div class="btn-box-logout">
+        <a class="btn" id="logout" >注销绑定</a>
+    </div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    var isLogin = $.fn.cookie('isLogin',{"path":"/"});
+    if(parseInt(isLogin) != 1){
+        window.location.href="login.html";
+    }
+    $(function(){
+         loadingToast();
+        $.ajax({
+            type:'GET',
+            url:domain+"/account/index",
+            data:{"token":token},
+            success:function(data){
+                closeLoading();
+               if(data.code == 200){
+                    setOrderList(data.data);
+               }else{
+                    tooltip(data.message,3000);
+               }
+            },error:function(){
+                tooltip("加载失败",3000);
+            }
+         });
+            
+        function setOrderList(data){
+            var len = data.length;//如果没有数据，数据格式[]
+            if(len!=0){
+                $.each(data,function(i,v){
+                    var state = v.state;
+                    if(state !=null){
+                      
+                       var status = getStateString(v.state);
+                    }else{
+                        var status = getOrderStatusString(v.order_state);
+                    }
+                    
+
+                    // if(v.status == 5 || v.status==6){
+                    //     var pageList = $('<div class="page_list grey-list" ></div>');
+                    // }else{
+                         var pageList = $('<div class="page_list" ></div>');
+                    // }
+                    var orderDate = $('<div class="weui-cells__title__hd"><div class="weui-cells__title_text">下单时间：'+v.add_time+'</div><div class="weui-cells__title_status">'+status+'</div>');
+                    var weCells = $(' <div class="weui-cells"></div>');
+                    var weuiCell = $('<a class="weui-cell weui-cell_access" href="orderDetail.html?id='+v.order_id+'"></a>');
+                    var weuiCellHd1 = $('<div class="weui-cell__hd"><img src="'+v.image+'" alt="" style="width:80px;margin-right:5px;display:block"></div>');
+                    var weuiCellHd2 = $(' <div class="weui-cell__bd"><p>'+v.coverage_name+'</p><p><span class="date">'+v.period+'个月/</span><span class="money">&yen; '+v.coverage_price+'</span></p></div>');
+                    weuiCell.append(weuiCellHd1).append(weuiCellHd2);
+                    weCells.append(weuiCell);
+                    if(v.order_state == '20' ){
+                        var btn = $('<div class="weui-cell__ft"><a href="orderInfo.html?id='+v.order_id+'" class="weui-btn weui-btn_mini weui-btn_warn">完善资料</a></div>');
+                        weCells.append(btn);
+                    }else if(v.order_state == '23' ){
+                        if (v.bstop == 1) {
+                             var btn = $('<div class="weui-cell__ft"><a href="orderUploadBasicInfo.html?order_id='+v.order_id+'" class="weui-btn weui-btn_mini weui-btn_warn">修改资料</a></div>');
+                         }else{
+                             var btn = $('<div class="weui-cell__ft"><a href="orderInfo.html?id='+v.order_id+'" class="weui-btn weui-btn_mini weui-btn_warn">修改资料</a></div>');
+                         }
+                       
+                        weCells.append(btn);
+                    
+                    }else if(v.order_state == '10' ){
+                        var btn = $('<div class="weui-cell__ft"><a href="payment.html?order_id='+v.order_id+'" class="weui-btn weui-btn_mini weui-btn_warn">付款</a>&nbsp;<a href="javascript:confirmDialog('+v.order_id+');" class="weui-btn weui-btn_mini weui-btn_warn">取消</a></div>');
+                        weCells.append(btn);
+                    }
+                    else if((v.order_state == '30' && v.state==null) || v.state =="0" || v.state =="7"){
+                        
+                        var btn = $('<div class="weui-cell__ft"><a href="maintain.html?id='+v.order_id+'" class="weui-btn weui-btn_mini weui-btn_warn">申请维修</a></div>');
+                        weCells.append(btn);
+                    }
+                    var orderDetais = $('<div class="order-detail"></div>');
+                    var orderNo = $('<div>订单编号：'+v.order_sn+'</div>');
+                    orderDetais.append(orderNo);
+                    if(parseInt(v.order_state) == 22 || parseInt(v.order_state) == 30 || parseInt(v.order_state) > 30){
+                        var orderTime = $('<div>生效时间：'+v.start_time+'   截止时间：'+v.end_time+'</div>');
+                        if(v.start_time!=0){
+                            orderDetais.append(orderTime);
+                        }
+                    }
+                        weCells.append(orderDetais);
+                    pageList.append(orderDate).append(weCells);
+                    $(".page__hd").append(pageList);
+                })
+            }else{
+                var noOrder = $('<div class="no_order_div"><div class="no_order_img"><img src="images/no_order.png" /></div><div class="no_text">暂无订单</div><div><a href="insurancesList.html" class="weui-btn weui-btn_mini weui-btn_warn">去购买</a></div></div>');
+                $(".page__hd").append(noOrder);
+            }
+        }
+
+
+        $('#logout').click(function(){
+            loadingToast();
+            $.ajax({
+                type:'post',
+                url:domain+"/default/loginout",
+                data:{"token":token},
+                success:function(data){
+                    if(data.code == 200){
+                        tooltip(data.message,3000);
+                        closeLoading();
+                        window.location.href="login.html";
+                    }else{
+                        closeLoading();
+                        tooltip(data.message,3000);
+                    }
+                }
+            });
+        });
+
+        
+    });
+</script>
+</body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>保险购买</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+        .weui-cell__hd img{width:100%; }
+        .weui-cells{background:#F4F4F4;}
+        .weui-cell {padding:0px 5px 0px 5px;position: relative;}
+        .weui-cells:before{border-top:0px;}
+        .weui-cells:after{border-bottom:0px;}
+        img{border:0px;}
+    </style>
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__hd">
+    </div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         loadingToast();
+      $.ajax({
+                    type:'post',
+                    url:domain+"/goods/index",
+                    data:{"token":token},
+                    success:function(data){
+                        closeLoading();
+                        if(data.code!=200){
+                           tooltip(data.message,3000); 
+                        }else{
+                           setGoodsList(data.data); 
+                        }
+                       
+                    }
+                 });
+      function setGoodsList(data){
+        var arr = [];
+        $.each(data,function(index,val){
+            var str = '<div class="weui-cells"><a class="weui-cell weui-cell_access" href="insuranceDetail.html?token='+token+'&id='+val.id+'"><div class="weui-cell__hd"><img src="'+val.image+'" alt=""/></div></a></div>';
+            arr.push(str);
+        })
+        $(".page__hd").html(arr.join(""));
+      }
+    });
+</script>
+</body>

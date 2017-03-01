@@ -1,0 +1,164 @@
+
+
+
+我的保单列表
+-------------------------------------------
+请求方法： account/index          GET
+
+请求参数：length（默认为20） 每页显示条数   start 起始条数默认为0 eg:length为20 第一页start为0 第二页为 20 第三页为 40
+
+返回：标准返回    具体参数含义  详谈  待更新
+
+eg:
+
+{
+	"code": 200,
+	"message": "Success",
+	"data": [
+		{
+			"start_time": "2016-08-03",
+			"end_time": "2017-02-01",
+			"add_time": "2016-04-21 18:29",
+			"order_sn": "34235235346546",
+			"order_id": "1",
+			"member_id": "2",
+			"member_name": "dsaf",
+			"order_amount": "18.00",
+			"order_state": "30",
+			"coverage_code": "JT0608801",
+			"coverage_name": "锦泰保险-碎屏无忧-险种名称",
+			"coverage_price": "18.00",
+			"period": "6",
+			"max_payment": "800.00",
+			"image": "/static/upload/coverage/57b42e4c711e2.png",
+			"state": "2",
+			"bstop":1
+		}
+	]
+}
+
+参数说明：
+
+start_time  生效时间
+end_time	结束时间
+order_sn	订单编号
+order_id	订单ID
+member_id	用户ID
+member_name	用户名称
+order_amount	订单金额(元)
+order_state		订单状态  订单状态：0(已取消)10(默认):未付款;20:已付款;30:保障中40:已完成;60:申请退款;70:退款成功; 80:退保,21:待审核（已提交资料），22:审核成功，23:审核失败'	
+coverage_code	保险险种码
+coverage_name	保险名称
+coverage_price	保险金额（元）
+period		保险周期（月）
+max_payment	保险最高赔付（元）
+image		保险图片
+state		保险理赔状态  状态  0 失败--审核失败  1 提交理赔--待审核  2审核--待指派   3 指派人员--服务中   4 服务中（维修中）--待提交理赔资料   5维保完成 
+add_time	下单时间
+bstop		是否继续跳转到上传图片页面  0 跳转到完善基本信息页面， 1 跳转到上传图片页面
+
+#####################################################################
+
+
+
+请求方法： account/detail          GET
+
+请求参数：order_id 订单ID  
+
+order_id:'订单号'
+
+返回：标准返回 
+eg:
+{
+	"code": 200,
+	"message": "Success",
+	"data": 
+		{
+			"start_time": "2016-08-03",
+			"end_time": "2017-02-01",
+			"order_sn": "34235235346546",
+			"order_id": "1",
+			"add_time": "2016-04-21 18:29",
+			"member_id": "2",
+			"member_name": "dsaf",
+			"order_amount": "18.00",
+			"order_state": "30",
+			"coverage_code": "JT0608801",
+			"coverage_name": "锦泰保险-碎屏无忧-险种名称",
+			"coverage_price": "18.00",
+			"period": "6",
+			"max_payment": "800.00",
+			"image": "/static/upload/coverage/57b42e4c711e2.png",
+			"state": "2",
+			"type": "1",
+			"xiu_time": "1970-01-01 07:59",
+			"buyer": "2",
+			"imei_code": "11111111111111111121",
+			"idcrad": "",
+			"buyer_phone": "18080091122",
+			"brand": "三星",
+			"model": "A7108",
+			"bstop":0
+		}
+}
+
+参数说明：
+
+start_time  生效时间
+end_time	结束时间
+order_sn	订单编号
+order_id	订单ID
+member_id	用户ID
+member_name	用户名称
+order_amount	订单金额(元)
+order_state		订单状态  订单状态：0(已取消)10(默认):未付款;20:已付款;30:保障中40:已完成;60:申请退款;70:退款成功; 80:退保,21:待审核（已提交资料），22:审核成功，23:审核失败'	
+coverage_code	保险险种码
+coverage_name	保险名称
+coverage_price	保险金额（元）
+period		保险周期（月）
+max_payment	保险最高赔付（元）
+image		保险图片
+state		保险理赔状态  状态  0 失败--审核失败  1 提交理赔--待审核  2审核--待指派   3 指派人员--服务中   4 服务中（维修中）--待提交理赔资料   5维保完成 
+type		维修方式   维修方式 1上门 2到店 3邮寄
+xiu_time	报修时间  
+add_time	下单时间
+buyer		机主用户名
+buyer_phone	机主手机号码
+imei_code	IMEI号
+idcrad		身份证号
+brand		手机品牌
+model		手机型号
+remark		审核备注
+bstop		是否继续跳转到上传图片页面  0 跳转到完善基本信息页面， 1 跳转到上传图片页面
+
+
+
+#####################################################################
+
+
+
+请求方法： account/cancel          POST
+
+请求参数：order_id 订单ID  
+
+order_id:'订单号'
+
+返回：标准返回 
+
+备注：操作成功 取消按钮不再显示
+eg:
+{
+	"code": 200,
+	"message": "成功信息",
+	"data": 
+		{
+		}
+}
+
+{
+	"code": 400,
+	"message": "操作失败信息",
+	"data": 
+		{
+		}
+}

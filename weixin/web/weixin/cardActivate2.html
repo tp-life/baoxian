@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>卡券激活</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+   .weui-cells{margin-top:5px;}
+   .weui-cell__hd div{font-size: 14px;}
+   .weui-agree__checkbox{width: 16px;height: 16px;top:4px;}
+    </style>
+</head> 
+<body ontouchstart>
+    <div class="page">
+        <div class="page__hd">
+        <div class="weui-cells__title">
+            <div>提示：</div>
+            <div>请确保机主姓名和身份证号码真实有效，否则无法申请维修！</div>
+        </div>
+         <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">激活码</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text"  maxlength="12" id="activeCode" placeholder="请输入激活码"/>
+                    </div>
+            </div>
+        </div>
+         <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">机主姓名</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text"  maxlength="20" id="username" placeholder="请输入机主姓名"/>
+                </div>
+            </div>
+         </div>
+         <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">IMEI</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" onpaste="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')"  minlength="15" maxlength="20" id="IEMI" placeholder="在拨号界面输入*#06#可查询"/>
+                </div>
+            </div>
+         </div>
+         <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">身份证号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" maxlength="18" id="cardNo" placeholder="身份证号码"/>
+                </div>
+            </div>
+         </div>
+             <label for="weuiAgree" class="weui-agree">
+                <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox">
+                <span class="weui-agree__text">
+                    我确认以上内容填写正确，且投保的手机显示屏尚未遭受损坏，也未经维修与更换。我已阅读并同意<a href="javascript:protocolDialog();">《碎屏维修服务协议》</a>
+                </span>
+            </label>
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_warn" href="javascript:" id="okBtn">下一步</a>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+      
+       $("#okBtn").click(function(){
+            var activeCode = $("#activeCode").val();
+            var username = $("#username").val();
+            var IEMI = $("#IEMI").val();
+            var cardNo = $("#cardNo").val();
+            var reg = /[^u4E00-u9FA5]/g;
+         
+            if(activeCode == ""){
+                tooltip("请输入激活码",3000);
+                return false;
+            }
+            if(username == ""){
+                tooltip("请输入机主姓名",3000);
+                return false;
+            }
+            if(IEMI == ""){
+                tooltip("请输入IEMI",3000);
+                return false;
+            }
+            if(cardNo == ""){
+                tooltip("请输入身份证号码",3000);
+                return false;
+            }
+            if(!reg.test(username)){
+                tooltip("机主姓名只能输入中文",3000);
+                return false;
+            }
+            
+            var IEMIReg = /[\a-\z\A-\Z0-9]/g;
+            var IEMILen = IEMI.length;
+            if(!IEMIReg.test(activeCode) || activeCode.length < 12){
+                tooltip("激活码只能输入12位数字或字符",3000);
+                return false;
+            }
+           
+            if(!IEMIReg.test(IEMI)){
+                tooltip("IEMI只能输入数字和字符",3000);
+                return false;
+            }
+            if(IEMILen < 15){
+                tooltip("IEMI长度为15-20位",3000);
+                return false;
+            }
+            var flag = isCardNo(cardNo);
+            if(!flag){
+                tooltip("身份证号码错误",3000);
+                return false;
+            }
+            var weuiAgree = $("#weuiAgree").attr("checked");
+            if(!$("#weuiAgree").is(":checked")){
+                tooltip("阅读并同意相关条款",3000);
+                return false;
+            }
+            loadingToast();
+             $.ajax({
+                    type:'post',
+                    url:domain+"/buy/active",
+                    data:{"active_code":activeCode,"name":username,"imei":IEMI,"id_card":cardNo,"token":token},
+                    success:function(data){
+                        closeLoading();
+                            if(data.code==200){
+                                window.location.href="cardActivate3.html?id="+data.data.order_id;
+                            }else{
+                                tooltip(data.message,3000);
+                            }
+                    }
+                 });
+
+       })
+    });
+</script>
+</body>

@@ -1,0 +1,102 @@
+前端图片压缩上传处理 后端接收处理并返回接口
+----------------------------------------------
+请求方法 default/binaryfile          POST
+参数：webuploader 百度自动处理
+返回：标准返回
+eg:
+{
+    "code": 200,
+    "message": "上传图片处理成功",
+    "data": {
+        "path": "/uploads/weixin_20161209/74fccd2177f0f7f7cd758cad16d2f0553763cbbb.jpg"
+    }
+}
+
+
+
+
+
+##############测试用例################
+
+<!--引入CSS-->
+<meta charset='utf-8'>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./webuploader.css">
+
+<!--引入JS-->
+<script type="text/javascript" src="./webuploader.js"></script>
+<div id="uploader-demo"> <!--用来存放item-->
+    <div id="fileList" class="uploader-list"></div>
+    <div id="filePicker">选择图片</div>
+</div>
+    <input type="hidden" name="upfile">
+
+<script>
+    var uploader = WebUploader.create({
+        pick: {
+            id:'#filePicker',
+            multiple:false
+        },
+        method:'POST',
+        fileVal:'upfile',
+        server: 'http://api.baoxian.com/default/binaryfile',
+        auto: true,
+        sendAsBinary:true,
+        swf: './Uploader.swf',
+        fileSingleSizeLimit: 10 * 1024 * 1024,    // 10 M
+        compress: {
+            width: 960,
+            height: 1280,
+            quality: 100,
+            allowMagnify: false,
+            crop: false,
+            preserveHeaders: true,
+            compressSize:1*1024*1024 //小于1 M 不压缩
+        },
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+
+    uploader.on('uploadStart',function(file){
+            //开始上传文件触发
+    });
+
+    uploader.on( 'uploadProgress', function(file, percentage) {
+           console.log("上传进度条："+percentage*100+"%");
+
+    });
+
+    uploader.on( 'uploadError', function(file, reason ) {
+        console.log("失败原因："+reason);
+
+    });
+
+    uploader.on( 'fileQueued', function( file ) {
+        var list =$('#fileList');
+        uploader.makeThumb( file, function( error, src ) {
+            if(error){
+                console.log('有错误哦');
+            }else{
+                list.append('<img  src="' + src + '" />');
+            }
+        })
+
+    });
+
+    uploader.on("uploadComplete",function(file){
+        //上传完成触发
+    });
+
+    uploader.on( 'uploadSuccess', function( file,response) {
+        console.log("服务端返回：");
+        console.log(response);
+
+    });
+
+
+</script>
+
+

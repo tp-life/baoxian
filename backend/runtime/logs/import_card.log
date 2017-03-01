@@ -1,0 +1,966 @@
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '24',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '24',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '24',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '24',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '828',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '795',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5390',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '1044',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '10',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '339',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '98',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0104801',
+  'coverage_id' => '2',
+  'count' => '144',
+)
+array (
+  'seller_id' => '46',
+  'coverage_code' => 'JT0104801',
+  'coverage_id' => '2',
+  'count' => '9',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '50',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '48',
+)
+array (
+  'seller_id' => '72',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '50',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0307801',
+  'coverage_id' => '6',
+  'count' => '45',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0612801',
+  'coverage_id' => '9',
+  'count' => '41',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '5',
+)
+array (
+  'seller_id' => '12',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '291',
+)
+array (
+  'seller_id' => '13',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '46',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '828',
+)
+array (
+  'seller_id' => '15',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '294',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '30',
+)
+array (
+  'seller_id' => '17',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '155',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '241',
+)
+array (
+  'seller_id' => '19',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '308',
+)
+array (
+  'seller_id' => '20',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '288',
+)
+array (
+  'seller_id' => '22',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '168',
+)
+array (
+  'seller_id' => '23',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '24',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '48',
+)
+array (
+  'seller_id' => '26',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '38',
+)
+array (
+  'seller_id' => '28',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '49',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '10',
+)
+array (
+  'seller_id' => '52',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '95',
+)
+array (
+  'seller_id' => '56',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '10',
+)
+array (
+  'seller_id' => '58',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '117',
+)
+array (
+  'seller_id' => '59',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '54',
+)
+array (
+  'seller_id' => '66',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '52',
+)
+array (
+  'seller_id' => '69',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '9',
+)
+array (
+  'seller_id' => '70',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '6',
+)
+array (
+  'seller_id' => '72',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '100',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '795',
+)
+array (
+  'seller_id' => '75',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '38',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '23',
+)
+array (
+  'seller_id' => '77',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '3',
+)
+array (
+  'seller_id' => '78',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '80',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '200',
+)
+array (
+  'seller_id' => '81',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '400',
+)
+array (
+  'seller_id' => '82',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '5',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5390',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '33',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '1044',
+)
+array (
+  'seller_id' => '15',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '164',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '42',
+)
+array (
+  'seller_id' => '17',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '114',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '70',
+)
+array (
+  'seller_id' => '19',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '104',
+)
+array (
+  'seller_id' => '20',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '39',
+)
+array (
+  'seller_id' => '22',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '42',
+)
+array (
+  'seller_id' => '23',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '14',
+)
+array (
+  'seller_id' => '25',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '50',
+)
+array (
+  'seller_id' => '28',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '20',
+)
+array (
+  'seller_id' => '47',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5',
+)
+array (
+  'seller_id' => '56',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '2',
+)
+array (
+  'seller_id' => '58',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '39',
+)
+array (
+  'seller_id' => '59',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '19',
+)
+array (
+  'seller_id' => '67',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '23',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '197',
+)
+array (
+  'seller_id' => '75',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '10',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '10',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '339',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '98',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0104801',
+  'coverage_id' => '2',
+  'count' => '144',
+)
+array (
+  'seller_id' => '46',
+  'coverage_code' => 'JT0104801',
+  'coverage_id' => '2',
+  'count' => '9',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '50',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '48',
+)
+array (
+  'seller_id' => '72',
+  'coverage_code' => 'JT0105801',
+  'coverage_id' => '3',
+  'count' => '50',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0307801',
+  'coverage_id' => '6',
+  'count' => '45',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'JT0612801',
+  'coverage_id' => '9',
+  'count' => '41',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '5',
+)
+array (
+  'seller_id' => '12',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '291',
+)
+array (
+  'seller_id' => '13',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '46',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '828',
+)
+array (
+  'seller_id' => '15',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '294',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '30',
+)
+array (
+  'seller_id' => '17',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '155',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '241',
+)
+array (
+  'seller_id' => '19',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '308',
+)
+array (
+  'seller_id' => '20',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '288',
+)
+array (
+  'seller_id' => '22',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '168',
+)
+array (
+  'seller_id' => '23',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '24',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '48',
+)
+array (
+  'seller_id' => '26',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '38',
+)
+array (
+  'seller_id' => '28',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '49',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '10',
+)
+array (
+  'seller_id' => '52',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '95',
+)
+array (
+  'seller_id' => '56',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '10',
+)
+array (
+  'seller_id' => '58',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '117',
+)
+array (
+  'seller_id' => '59',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '54',
+)
+array (
+  'seller_id' => '66',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '52',
+)
+array (
+  'seller_id' => '69',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '9',
+)
+array (
+  'seller_id' => '70',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '6',
+)
+array (
+  'seller_id' => '72',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '100',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '795',
+)
+array (
+  'seller_id' => '75',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '38',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '23',
+)
+array (
+  'seller_id' => '77',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '3',
+)
+array (
+  'seller_id' => '78',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '50',
+)
+array (
+  'seller_id' => '80',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '200',
+)
+array (
+  'seller_id' => '81',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '400',
+)
+array (
+  'seller_id' => '82',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '5',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5390',
+)
+array (
+  'seller_id' => '11',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '33',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '1044',
+)
+array (
+  'seller_id' => '15',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '164',
+)
+array (
+  'seller_id' => '16',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '42',
+)
+array (
+  'seller_id' => '17',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '114',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '70',
+)
+array (
+  'seller_id' => '19',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '104',
+)
+array (
+  'seller_id' => '20',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '39',
+)
+array (
+  'seller_id' => '22',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '42',
+)
+array (
+  'seller_id' => '23',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '14',
+)
+array (
+  'seller_id' => '25',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '50',
+)
+array (
+  'seller_id' => '28',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '20',
+)
+array (
+  'seller_id' => '47',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5',
+)
+array (
+  'seller_id' => '56',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '2',
+)
+array (
+  'seller_id' => '58',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '39',
+)
+array (
+  'seller_id' => '59',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '19',
+)
+array (
+  'seller_id' => '67',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '23',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '197',
+)
+array (
+  'seller_id' => '75',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '10',
+)
+array (
+  'seller_id' => '76',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '828',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '795',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5390',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '1044',
+)
+array (
+  'seller_id' => '18',
+  'coverage_code' => 'JT0103801',
+  'coverage_id' => '1',
+  'count' => '978',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '14872',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '828',
+)
+array (
+  'seller_id' => '73',
+  'coverage_code' => 'RS1218801',
+  'coverage_id' => '10',
+  'count' => '795',
+)
+array (
+  'seller_id' => '1',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '5390',
+)
+array (
+  'seller_id' => '14',
+  'coverage_code' => 'RS1229901',
+  'coverage_id' => '11',
+  'count' => '1044',
+)

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+   .weui-cells{margin-top:5px;}
+   .weui-cell__hd div{font-size: 14px;}
+    .weui-agree__checkbox{width: 16px;height: 16px;top:4px;}
+    </style>
+</head> 
+<body ontouchstart>
+    <div class="page">
+        <div class="page__hd">
+        <div class="weui-cells__title">
+            <div>提示：</div>
+            <div>请确保机主姓名和身份证号码真实有效，否则无法申请维修！</div>
+        </div>
+         <div class="weui-cells weui-cells_form">
+            <div class="weui-cell weui-cell_access" id="type">
+                <div class="weui-cell__hd"><label for="" class="weui-label">手机品牌</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="mobileTypeText" readonly="true" value="" placeholder="请选择手机品牌"/>
+                    <input type="hidden" id="brand" value=""/>
+                </div>
+                <div class="weui-cell__ft">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_access" id="model">
+                <div class="weui-cell__hd"><label for="" class="weui-label">手机型号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="mobileModelText"  readonly="true"  value="" placeholder="请选择手机型号"/>
+                     <input type="hidden" id="phoneModel" value=""/>
+                </div>
+                <div class="weui-cell__ft">
+                </div>
+            </div>
+        </div>
+           
+             <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">机主姓名</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text"  maxlength="20" id="username" placeholder="请输入机主姓名"/>
+                    </div>
+                </div>
+             </div>
+             <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">IMEI</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" onpaste="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')"  minlength="15" maxlength="20" id="IEMI" placeholder="在拨号界面输入*#06#可查询"/>
+                    </div>
+                </div>
+             </div>
+             <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">身份证号</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="text" maxlength="18" id="cardNo" placeholder="身份证号"/>
+                    </div>
+                </div>
+             </div>
+             <label for="weuiAgree" class="weui-agree">
+                <input id="weuiAgree" type="checkbox" class="weui-agree__checkbox">
+                <span class="weui-agree__text">
+                    我确认以上内容填写正确，且投保的手机显示屏尚未遭受损坏，也未经维修与更换。我已阅读并同意<a href="javascript:protocolDialog();">《碎屏维修服务协议》</a>
+                </span>
+            </label>
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_warn" href="javascript:" id="okBtn">确定</a>
+            </div>
+        </div>
+    </div>
+    <div>
+            <div class="weui-mask" id="typeMask" style="display: none"></div>
+            <div class="weui-actionsheet" id="typeActionsheet">
+                <div class="weui-actionsheet__menu" id="mobileType">
+                    
+                    
+                </div>
+                <div class="weui-actionsheet__action">
+                    <div class="weui-actionsheet__cell" id="typeActionsheetCancel">取消</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="weui-mask" id="modelMask" style="display: none"></div>
+            <div class="weui-actionsheet" id="modelActionsheet">
+                <div class="weui-actionsheet__menu" id="mobileModel">
+                    
+                    
+                </div>
+                <div class="weui-actionsheet__action">
+                    <div class="weui-actionsheet__cell" id="modelActionsheetCancel">取消</div>
+                </div>
+            </div>
+        </div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var url = window.location.href;
+        var id = getQueryString("id", url);
+        $.ajax({
+            type:'post',
+            url:domain+"/brand/index",
+            data:{"pid":0,"token":token},
+            success:function(data){
+                    if(data.code == 200){
+                       // window.location.href="orderLists.html";
+                       setPhoneBrand(data.data);
+                    }else{
+                        tooltip(data.message,3000);
+                    }
+            }
+         });
+        $.ajax({
+            type:'get',
+            url:domain+"/account/getinfo",
+            data:{"order_id":id,"token":token},
+            success:function(data){
+                    if(data.code == 200){
+                     
+                       $("#mobileTypeText").val(data.data.brand);
+                       $("#brand").val(data.data.brand_id);
+                       $("#mobileModelText").val(data.data.model);
+                       $("#phoneModel").val(data.data.model_id);
+                       $("#username").val(data.data.buyer);
+                       $("#IEMI").val(data.data.imei_code);
+                       $("#cardNo").val(data.data.idcrad);
+                    }else{
+                        tooltip(data.message,3000);
+                    }
+            }
+         });
+       var $typeActionsheet = $('#typeActionsheet');
+        var $typeMask = $('#typeMask');
+        var $modelActionsheet = $('#modelActionsheet');
+        var $modelMask = $('#modelMask');
+        function hideTypeActionSheet() {
+            $typeActionsheet.removeClass('weui-actionsheet_toggle');
+            $typeMask.fadeOut(200);
+        }
+        function hideModelActionSheet() {
+            $modelActionsheet.removeClass('weui-actionsheet_toggle');
+            $modelMask.fadeOut(200);
+        }
+        $typeMask.on('click', hideTypeActionSheet);
+        $('#typeActionsheetCancel').on('click', hideTypeActionSheet);
+        $("#type").on("click", function(){
+            $("#mobileModelText").val("");
+            $("#phoneModel").val("");
+            $typeActionsheet.addClass('weui-actionsheet_toggle');
+            $typeMask.fadeIn(200);
+        });
+        $modelMask.on('click', hideModelActionSheet);
+        $('#modelActionsheetCancel').on('click', hideModelActionSheet);
+        $("#model").on("click", function(){
+            $modelActionsheet.addClass('weui-actionsheet_toggle');
+            $modelMask.fadeIn(200);
+        });
+
+        function setMobileModel(data){
+               var arr = [];
+             $.each(data,function(index,val){
+                
+                    arr.push(' <div class="weui-actionsheet__cell" data="'+val.id+'">'+val.model_name+'</div>');
+               
+              }) ;
+              $("#mobileModel").html(arr.join("")); 
+             $("#mobileModel > .weui-actionsheet__cell").click(function(){
+                var text = $(this).html();
+                var data = $(this).attr("data");
+                $("#mobileModelText").val(text);
+                $("#mobileModelText").attr("data",data);
+                $("#phoneModel").val(data);
+                hideModelActionSheet();
+            });
+        }
+       $("#okBtn").click(function(){
+            var mobileType = $("#brand").val();
+            var mobileModel =$("#phoneModel").val();
+            var username = $("#username").val();
+            var IEMI = $("#IEMI").val();
+            var cardNo = $("#cardNo").val();
+            if(mobileType == 0){
+                tooltip("请选择手机品牌",3000);
+                return false;
+            }
+            if(mobileModel == 0){
+                tooltip("请选择手机型号",3000);
+                return false;
+            }
+            if(username == ""){
+                tooltip("请输入机主姓名",3000);
+                return false;
+            }
+            if(IEMI == ""){
+                tooltip("请输入IEMI",3000);
+                return false;
+            }
+            if(cardNo == ""){
+                tooltip("请输入身份证号码",3000);
+                return false;
+            }
+            var reg = /[^u4E00-u9FA5]/g;
+            if(!reg.test(username)){
+                tooltip("机主姓名只能输入中文",3000);
+                return false;
+            }
+            var IEMIReg = /[\a-\z\A-\Z0-9]/g;
+            var IEMILen = IEMI.length;
+            if(!IEMIReg.test(IEMI)){
+                tooltip("IEMI只能输入数字和字符",3000);
+                return false;
+            }
+            if(IEMILen < 15){
+                tooltip("IEMI长度为15-20位",3000);
+                return false;
+            }
+            var flag = isCardNo(cardNo);
+            if(!flag){
+                tooltip("身份证号码错误",3000);
+                return false;
+            }
+            var weuiAgree = $("#weuiAgree").attr("checked");
+            if(!$("#weuiAgree").is(":checked")){
+                tooltip("阅读并同意相关条款",3000);
+                return false;
+            }
+            // var type = $("#mobileTypeText").attr("data");
+            // var model = $("#mobileModelText").attr("data");
+             loadingToast();
+             $.ajax({
+                    type:'post',
+                    url:domain+"/order/index",
+                    data:{"order_id":id,"brand": mobileType,"model":mobileModel,"name":username,"imei":IEMI,"id_card":cardNo,"is_confirm":"true","token":token},
+                    success:function(data){
+                        //tooltip(data.message,3000);
+                        closeLoading();
+                            if(data.code==200){
+                                if(data.data.bstop == 1){
+                                   window.location.href="orderUploadBasicInfo.html?order_id="+id; 
+                               }else{
+                                tooltipSuccess("恭喜你，材料提交成功!<br>客服人员在24小时内进行审核，审核通过后第8天0点生效。具体情况关注订单详情或致电<a href='tel:400-0900-299' class='orange'>400-0900-299</a>，祝你生活愉快。",id);
+                               }
+                                return ;
+                                
+                                //
+                            }else{
+                                tooltip(data.message,3000);
+                            }
+                           
+                    }
+                 });
+
+       });
+       function setPhoneBrand(data){
+            var arr = [];
+            $.each(data,function(index,val){
+                if(val.parent_id == 0){
+                   var str = '<div class="weui-actionsheet__cell" data="'+val.id+'">'+val.model_name+'</div>';
+                   arr.push(str); 
+                }
+                
+            })
+            $("#mobileType").html(arr.join(""));
+            $("#mobileType > .weui-actionsheet__cell").click(function(){
+                var text = $(this).html();
+                var id = $(this).attr("data");
+                $("#mobileTypeText").val(text);
+                $("#mobileTypeText").attr("data",id);
+                 $("#mobileTypeText").val(text);
+                 $("#brand").val(id);
+                hideTypeActionSheet();
+                //获得手机型号
+                
+                 $.ajax({
+                        type:'get',
+                        url:domain+"/brand/index",
+                        data:{"pid":id,"token":token},
+                        success:function(data){
+                            setMobileModel(data.data);
+                        }
+                     });
+            })
+       } 
+    });
+</script>
+</body>

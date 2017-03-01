@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+        .disabled{color:#fff!important;background:#DDDDDD!important;}
+        .weui-label{width:80px!important;}
+        .weui-icon-cancel{position:absolute;color:#999999;right:10px;top:0px;display: none;}
+        .relative{position:relative;}
+         #mobileCancel{top:10px;}
+        .grey{color:#A9A9A9;}
+        .weui-vcode-btn{background:#FEAE17;color: #fff;}
+        button,input[type='button']{border:0px;outline: 0px;}
+            </style>
+     
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__hd">
+        <img src="images/card_img.jpg" width="100%"/>
+    </div>
+    <div class="page__bd" id="firstStep">          
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell weui-cell_access" id="type">
+                <div class="weui-cell__hd"><label for="" class="weui-label">手机品牌</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="mobileTypeText" readonly="true" value="" placeholder="请选择手机品牌"/>
+                    <input type="hidden" id="brand" value=""/>
+                </div>
+                <div class="weui-cell__ft">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_access" id="model">
+                <div class="weui-cell__hd"><label for="" class="weui-label">手机型号</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="mobileModelText"  readonly="true"  value="" placeholder="请选择手机型号"/>
+                    <input type="hidden" id="phoneModel" value=""/>
+                </div>
+                <div class="weui-cell__ft">
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">手机号码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" maxlength=11 placeholder="请输入手机号" id="mobile">
+                    <i class="weui-icon-cancel" id="mobileCancel"></i>
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+            <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd relative">
+                    <input class="weui-input" type="text" maxlength=6 placeholder="请输入验证码" id="vcode"/>
+                    <i class="weui-icon-cancel" id="vcodeCancel"></i>
+                </div>
+                 <div class="weui-cell__ft relative">
+                    <button  type="button"  class="weui-vcode-btn disabled" disabled id="getCodeBtn" value="">获取验证码</button>
+                </div>
+            </div>
+         </div>
+         <div>
+            <div class="weui-mask" id="typeMask" style="display: none"></div>
+            <div class="weui-actionsheet" id="typeActionsheet">
+                <div class="weui-actionsheet__menu" id="mobileType">
+                </div>
+                <div class="weui-actionsheet__action">
+                    <div class="weui-actionsheet__cell" id="typeActionsheetCancel">取消</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="weui-mask" id="modelMask" style="display: none"></div>
+            <div class="weui-actionsheet" id="modelActionsheet">
+                <div class="weui-actionsheet__menu" id="mobileModel">
+                </div>
+                <div class="weui-actionsheet__action">
+                    <div class="weui-actionsheet__cell" id="modelActionsheetCancel">取消</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <input  type="button" class="weui-btn weui-btn_warn "   value="下一步" id="okBtn"/>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //获得手机品牌
+        $.ajax({
+            type:'post',
+            url:domain+"/brand/index",
+            data:{"pid":0,"token":token},
+            success:function(data){
+                    if(data.code == 200){
+                       setPhoneBrand(data.data);
+                    }else{
+                        tooltip(data.message,3000);
+                    }
+            }
+         });
+        var $typeActionsheet = $('#typeActionsheet');
+        var $typeMask = $('#typeMask');
+        var $modelActionsheet = $('#modelActionsheet');
+        var $modelMask = $('#modelMask');
+        function hideTypeActionSheet() {
+            $typeActionsheet.removeClass('weui-actionsheet_toggle');
+            $typeMask.fadeOut(200);
+        }
+        function hideModelActionSheet() {
+            $modelActionsheet.removeClass('weui-actionsheet_toggle');
+            $modelMask.fadeOut(200);
+        }
+        $typeMask.on('click', hideTypeActionSheet);
+        $('#typeActionsheetCancel').on('click', hideTypeActionSheet);
+        $("#type").on("click", function(){
+              $("#mobileModelText").val("");
+              $("#phoneModel").val("");
+            $typeActionsheet.addClass('weui-actionsheet_toggle');
+            $typeMask.fadeIn(200);
+        });
+        $modelMask.on('click', hideModelActionSheet);
+        $('#modelActionsheetCancel').on('click', hideModelActionSheet);
+        $("#model").on("click", function(){
+            $modelActionsheet.addClass('weui-actionsheet_toggle');
+            $modelMask.fadeIn(200);
+        });
+        function setMobileModel(data,id){
+               var arr = [];
+             $.each(data,function(index,val){
+                
+                    arr.push(' <div class="weui-actionsheet__cell" data="'+val.id+'">'+val.model_name+'</div>');
+              }) ;
+              $("#mobileModel").html(arr.join("")); 
+             $("#mobileModel > .weui-actionsheet__cell").click(function(){
+                var text = $(this).html();
+                var data = $(this).attr("data");
+                $("#phoneModel").val(data);
+                $("#mobileModelText").val(text);
+                $("#mobileModelText").attr("data",data);
+                hideModelActionSheet();
+            });
+        }
+        var url = window.location.href;
+        var coverage_id = getQueryString("coverage_id", url);//保险商品ID
+        $("#okBtn").on("click",function(){
+            // var type=$("#mobileTypeText").attr("data");
+            // var model = $('#mobileModelText').attr("data");
+            var type = $("#brand").val();
+            var model = $("#phoneModel").val();
+            var mobile = $("#mobile").val();
+            var vcode = $("#vcode").val();
+            if(type==""){
+                tooltip("请选择手机品牌",3000);
+                return false;
+            }
+            if(model==""){
+                tooltip("请选择手机型号",3000);
+                return false;
+            }
+            if(mobile==""){
+                tooltip("请输入手机号码",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            var flag = checkMobile(mobile);
+            if(!flag){
+                tooltip("手机号码输入错误",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            if(vcode==""){
+                tooltip("请输入验证码",3000);
+                $("#vcode").focus();
+                return false;
+            }
+            //服务器验证信息
+             loadingToast();
+            $.ajax({
+                    type:'post',
+                    url:domain+"/buy/index",
+                    data:{"brand":type,"model":model,"tel":mobile,"code":vcode,"token":token,"coverage_id":coverage_id},
+                    success:function(data){
+                            closeLoading();
+                            if(data.code == 200){
+                                 window.location.href="payment.html?order_id="+data.data.order_id;
+                            }else{
+                                tooltip(data.message,3000);
+                            }
+                    }
+                 });
+        });
+        var clock = '';
+        var nums = 60;
+        var btn;
+        function doLoop(){
+             nums--;
+             if(nums > 0){
+                $("#getCodeBtn").addClass("disabled").text(nums+"秒后重新获取");
+             }else{
+              clearInterval(clock); //清除js定时器
+              $("#getCodeBtn").removeClass("disabled").removeAttr("disabled").text("点击重新获取");
+              nums = 60; //重置时间
+             }
+        }
+        $("#mobile").on("keyup",function(){
+            var mobile = $(this).val();
+            if(mobile!=""){
+                $("#mobileCancel").show();
+            }else{
+                 $("#mobileCancel").hide();
+            }
+            var flag = checkMobile(mobile);
+            var vcodeLen = $("#vcode").val().length;
+            if(flag){
+               $("#getCodeBtn").removeClass("disabled").removeAttr("disabled");
+            }else{
+                $("#getCodeBtn").addClass("disabled").attr("disabled","true");
+            }
+        });
+        $("#vcode").on("keyup",function(){
+            var vcode = $(this).val();
+            var mobileLen = $("#mobile").val().length;
+            var len = vcode.length;
+            if(vcode!=""){
+                $("#vcodeCancel").show();
+            }else{
+                 $("#vcodeCancel").hide();
+            }
+            if(len > 6){
+                var v = vcode.substring(0,6);
+                $(this).val(v);
+            }
+        })
+        $("#mobileCancel").on("click",function(){
+            $("#mobile").val("");
+            $("#mobile").focus();
+            $("#mobileCancel").hide();
+            $("#getCodeBtn").addClass("disabled").attr("disabled","true");;
+        })
+        $("#vcodeCancel").on("click",function(){
+            $("#vcode").val("");
+            $("#vcode").focus();
+            $("#vcodeCancel").hide();
+        })
+        $("#getCodeBtn").on("click",function(){
+            var mobile = $("#mobile").val();
+            if(mobile == ""){
+                tooltip("请输入手机号码",3000);
+                $("#mobile").focus();
+                return false;
+            }
+            var flag = checkMobile(mobile);
+            if(flag){
+               $.ajax({
+                    type:'post',
+                    url:domain+"/default/verifycode",
+                    data:{"phone":mobile,"code_type":"","token":token},
+                    success:function(data){
+                        if(data.code!=200){
+                           tooltip(data.message,3000); 
+                        }else{
+                            $("#getCodeBtn").addClass("disabled").attr("disabled","true").text(nums+"秒后重新获取");
+                            clock = setInterval(doLoop, 1000);
+                        }
+                    }
+                 });
+            }else{
+                tooltip("手机号码错误",3000);
+                $("#mobile").focus();
+            }
+        })
+       function setPhoneBrand(data){
+            var arr = [];
+            $.each(data,function(index,val){
+                if(val.parent_id == 0){
+                   var str = '<div class="weui-actionsheet__cell" data="'+val.id+'">'+val.model_name+'</div>';
+                   arr.push(str); 
+                }
+            })
+            $("#mobileType").html(arr.join(""));
+            $("#mobileType > .weui-actionsheet__cell").click(function(){
+                var text = $(this).html();
+                var id = $(this).attr("data");
+                $("#mobileTypeText").val(text);
+                $("#mobileTypeText").attr("data",id);
+                $("#brand").val(id);
+                hideTypeActionSheet();
+                 $.ajax({
+                        type:'get',
+                        url:domain+"/brand/index",
+                        data:{"pid":id,"token":token},
+                        success:function(data){
+                            setMobileModel(data.data);
+                        }
+                     });
+            })
+       } 
+    });
+</script>
+</body>

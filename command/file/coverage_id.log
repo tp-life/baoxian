@@ -1,0 +1,101 @@
+array (
+  'JT0103801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额400',
+    'id' => '1',
+    'old_id' => '5',
+    'coverage_code' => 'JT0103801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0104801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额800',
+    'id' => '2',
+    'old_id' => '8',
+    'coverage_code' => 'JT0104801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0105801' => 
+  array (
+    'name' => '乐换新碎屏无忧/全额理赔',
+    'id' => '3',
+    'old_id' => '9',
+    'coverage_code' => 'JT0105801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0304801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额400',
+    'id' => '4',
+    'old_id' => '10',
+    'coverage_code' => 'JT0304801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0306801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额800',
+    'id' => '5',
+    'old_id' => '11',
+    'coverage_code' => 'JT0306801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0307801' => 
+  array (
+    'name' => '乐换新碎屏无忧/全额理赔',
+    'id' => '6',
+    'old_id' => '12',
+    'coverage_code' => 'JT0307801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0606801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额400',
+    'id' => '7',
+    'old_id' => '13',
+    'coverage_code' => 'JT0606801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0608801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额800',
+    'id' => '8',
+    'old_id' => '14',
+    'coverage_code' => 'JT0608801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'JT0612801' => 
+  array (
+    'name' => '乐换新碎屏无忧/全额理赔',
+    'id' => '9',
+    'old_id' => '15',
+    'coverage_code' => 'JT0612801',
+    'type_id' => '1',
+    'company_id' => '1',
+  ),
+  'RS1218801' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额1000',
+    'id' => '10',
+    'old_id' => '21',
+    'coverage_code' => 'RS1218801',
+    'type_id' => '1',
+    'company_id' => '2',
+  ),
+  'RS1229901' => 
+  array (
+    'name' => '乐换新碎屏无忧/理赔金额2000',
+    'id' => '11',
+    'old_id' => '22',
+    'coverage_code' => 'RS1229901',
+    'type_id' => '1',
+    'company_id' => '2',
+  ),
+)

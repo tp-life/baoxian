@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style>
+    .weui-uploader__bd{margin-right:0px;}
+        .weui-cells__title div{font-size:12px;}
+        .weui-cell:before{border-top:0px;} 
+        .weui-uploader__bd > div:first-child{width:46%;float:left;height:180px; }
+        .weui-uploader__input-box{height:150px;width:100%;-webkit-border-radius:10px;border-radius:10px;}
+        .weui-uploader__bd > div.figure{width:46%;float:right;height: 180px;}
+        .weui-uploader__files{width:100%;height: 150px;}
+        .weui-uploader__file,#img0{width:100%;height: 150px;-webkit-border-radius:10px;border-radius:10px;}
+        .text{text-align: center;color:#666666;}
+        .clear{clear:both;}
+        .delete-box{position: absolute;top:0px;right:0px;display: none;z-index: 90;width:20px;}
+        .opacity::before,.opacity::after{opacity: 0;}
+    </style>
+
+
+</head> 
+<body ontouchstart>
+    <div class="page">
+    <div class="page__bd">
+        <div class="weui-cells__title">
+            <div>上传说明：</div>
+            <div>请参照示例图，将投保手机在开机状态下拨号*#06#拍照上传，建议在4G或WIFI环境下上传。请务必保证上传的照片清晰可见，无修改痕迹。</div>
+        </div>
+        <div class="weui-cells weui-cells_form">
+        <form method="post" action="" id="postForm"  enctype="multipart/form-data">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                    
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="frontWrap" name="UploadForm">
+                                    <input id="uploaderInputFront" name="face_image" class="weui-uploader__input" type="file" accept="image/*"  />
+                                    <img id="img0" src="" style="width:100%;height:100%;display:none;"/>
+                                    <div class="delete-box del-front"><img src="images/x-altx-alt.png" style="width:20px;"></div>
+                                </div>
+                                <div class="text">手机正面</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" style="background-image:url(./images/front_img.jpg)"></li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="backWrap">
+                                    <input id="uploaderInputBack" name="back_image" class="weui-uploader__input" type="file" accept="image/*"  />
+                                    <img id="img1" src="" style="width:100%;height:100%;display:none;"/>
+                                    <div class="delete-box del-back"><img src="images/x-altx-alt.png" style="width:20px;"></div>
+                                </div>
+                                <div class="text">手机背面</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" style="background-image:url(./images/back_img.jpg)"></li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="token" id="token" />
+            <input type="hidden" name="order_id" value="" id="orderId"  />
+         </form>
+        </div>
+        <div class="weui-btn-area">
+            <a class="weui-btn weui-btn_warn" href="javascript:" id="submit">提交</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#token").val(token);
+        var url = window.location.href;
+        var orderId = getQueryString("order_id", url);
+        $("#orderId").val(orderId);
+       $("#submit").click(function(){
+            
+            
+            var front = $("#uploaderInputFront").val().split('.');
+            if(!/(gif|jpg|jpeg|png|GIF|JPG|PNG|JPEG)$/.test(front[front.length-1])){
+                tooltip("请选择手机正面图片",3000);
+                return false    
+            }
+            var back = $("#uploaderInputBack").val().split('.');
+            if(!/(gif|jpg|jpeg|png|GIF|JPG|PNG|JPEG)$/.test(back[back.length-1])){
+                tooltip("请选择手机背面图片",3000);
+                return false    
+            }
+            var formData = new FormData($( "#postForm" )[0]); 
+            var file = $("#uploaderInputFront").val();
+             loadingToast();
+            $.ajax({
+                type:'post',
+                url:domain+"/buy/prefect",
+                data:formData,
+                cache : false,
+                processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+                contentType : false, // 不设置Content-type请求头
+                success:function(data){
+                        closeLoading();
+                        if(data.code == 200){
+                            tooltipSuccess("恭喜你，材料提交成功!<br>客服人员在24小时内进行审核，审核通过后第8天0点生效。具体情况关注订单详情或致电<a href='tel:400-0900-299' class='orange'>400-0900-299</a>，祝你生活愉快。",orderId);
+                            return ;
+                        }else{
+                            tooltip(data.message,3000);
+                        }
+                }
+             });
+       });
+       $("#uploaderInputFront").change(function(){
+            var last = $(this).val().split('.');
+            if(!/(gif|jpg|jpeg|png|GIF|JPG|PNG|JPEG)$/.test(last[last.length-1])){
+                tooltip("请选择手机正面图片",3000);
+                return false    
+            }
+            var objUrl = getObjectURL(this.files[0]) ;
+            if (objUrl) {
+                $("#img0").attr("src", objUrl) ;
+
+                $("#img0").show();
+                $(".del-front").show();
+                $("#frontWrap").addClass("opacity");
+            }
+       });
+        $(".del-front").click(function(){
+            $("#img0").hide();
+            $(".del-front").hide();
+            $("#frontWrap").removeClass("opacity");
+        });
+        $("#uploaderInputBack").change(function(){
+             var last = $(this).val().split('.');
+            if(!/(gif|jpg|jpeg|png|GIF|JPG|PNG|JPEG)$/.test(last[last.length-1])){
+                tooltip("请选择手机背面图片",3000);
+                return false    
+            }
+            var objUrl = getObjectURL(this.files[0]) ;
+            console.log(objUrl);
+            if (objUrl) {
+                $("#img1").attr("src", objUrl) ;
+
+                $("#img1").show();
+                $(".del-back").show();
+                $("#backWrap").addClass("opacity");
+            }
+       });
+        $(".del-back").click(function(){
+            $("#img1").hide();
+            $(".del-back").hide();
+            $("#backWrap").removeClass("opacity");
+        });
+    });
+</script>
+</body>  

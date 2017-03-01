@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <style type="text/css">
+ 
+        .weui-cell__bd p{font-size: 14px;line-height: 20px;height: 40px;}
+        .page_list{margin-bottom: 15px;}
+        .weui-cells{position: relative;}
+        .weui-cell__ft{position:absolute;top:0;z-index: 99;right:10px;top:75px;}
+        .weui-cells{padding:10px 10px;margin-top:0px;}
+        .order-detail{padding-top:10px;}
+        .order-detail > div{font-size:12px;color:#787878;padding:2px 5px 2px 6px;}
+        .grey-list div,.grey-list p,.grey-list .weui-cells__title_status{color:#666666;}
+        .weui-cells__title{background: #fff;margin-top: 0px;font-size: 13px;padding:20px ;}
+        .weui-cells__title div{padding-left:5px;color:#666666;}
+        .weui-cells__person{background: #fff;margin-top: 0px;font-size: 13px ;padding-left:10px;color:#787878;}
+        .weui-cells__person div{color:#787878;padding:2px 5px 2px 6px;}
+        .mobile-info div{color:#787878;font-size: 13px;}
+        .weui-cells:before{margin:0px 15px;}
+        .weui-cell{padding:10px 6px 18px 6px;}
+    </style>
+</head> 
+<body ontouchstart>
+    <div class="page">
+        <div class="page__hd">
+
+            <div id="message">
+                
+            </div>
+            <div class="page_list">
+                <div class="weui-cells__title__hd">
+                    <div class="weui-cells__title_text">订单编号：<span id="orderSn"></span></div>
+                    <div class="weui-cells__title_status" id="orderState"></div>
+                </div>
+                <div class="weui-cells__person">
+                    <div>姓名：<span id="memberName"></span></div>
+                    <div>电话号码：<span id="buyerPhone"></span></div>
+                    <div id="idcrad"></div>
+                </div>
+                <div class="weui-cells" style="margin-top:0px;">
+
+                    <a class="weui-cell weui-cell_access" href="" style="border-bottom:1px solid #D9D9D9;">
+                        <div class="weui-cell__hd"><img src="" id="img" alt="" style="width:80px;margin-right:5px;display:block"></div>
+                        <div class="weui-cell__bd">
+                            <p id="coverageName"></p>
+                            <div class="mobile-info">
+                                <div id="imei"></div>
+                                <div id="brand"></div>
+                                <div id="model"></div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <div class="order-detail">
+                        <div>下单时间：<span id="addTime"></span></div>
+                        
+                        <div class="effe_date">生效时间：<span id="startTime"></span></div>
+                        <div class="effe_date">截止时间：<span id="endTime"></span></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="weui-btn-area">
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         loadingToast();
+        var url = window.location.href;
+        var id = getQueryString("id", url);
+        
+        $.ajax({
+                    type:'get',
+                    url:domain+"/account/detail",
+                    data:{"order_id":id,"token":token},
+                    success:function(data){
+                        closeLoading();
+                        if(data.code!=200){
+                           tooltip(data.message,3000); 
+                        }else{
+                            $("#orderSn").html(data.data.order_sn);
+                            var state ="";  
+                             if(data.data.state ==null){
+                                var status = getOrderStatusString(data.data.order_state);
+                             }else{
+                                var status = getStateString(data.data.state);
+                             }
+                            
+                            $("#orderState").html(status);
+                            $("#memberName").html(data.data.member_name);
+                            $("#buyerPhone").html(data.data.buyer_phone);
+                            if(data.data.idcrad!=""){
+                                var idcrad = data.data.idcrad.substring(0,6)+"********"+data.data.idcrad.substring(14,18);
+                            $("#idcrad").html("身份证号："+idcrad);
+                            }
+                            $("#img").attr("src",data.data.image);
+                            $("#coverageName").html(data.data.coverage_name);
+                            if(data.data.imei_code!="")$("#imei").html("IMEI:"+data.data.imei_code);
+                            if(data.data.brand!="")$("#brand").html("手机品牌："+data.data.brand);
+                            if(data.data.model!="")$("#model").html("手机型号："+data.data.model);
+                           
+                            $("#addTime").html(data.data.add_time);
+                            $("#startTime").html(data.data.start_time);
+                            $("#endTime").html(data.data.end_time);
+                            if(data.data.start_time == 0){
+                                $(".effe_date").hide();
+                            }
+                            if((data.data.order_state == "30" && data.data.state==null)|| data.data.state == "0" || data.data.state == "7"){
+                                $(".weui-btn-area").html('<a class="weui-btn weui-btn_warn" href="maintain.html?id='+id+'" id="okBtn">申请维修</a>');
+                            }
+                            if(data.data.state == "0" || data.data.state == "7"){
+                                 $("#message").html('<div class="weui-cells__title"><div style="text-align:left;color:#6A6A6A;display:table;"><div style="display:table-cell;vertical-align:middle;"><img src="images/tishi2x.png"/></div><div style="display:table-cell;">'+data.data.remark+'<div></div></div> ');
+                            }
+                            if(data.data.order_state == "23" ){
+                             
+                                $("#message").html('<div class="weui-cells__title"><div style="text-align:left;color:#6A6A6A;display:table;"><div style="display:table-cell;vertical-align:middle;"><img src="images/tishi2x.png"/></div><div style="display:table-cell;">'+data.data.remark+'<div></div></div> ');
+                                if(data.data.bstop == 1){
+                                $(".weui-btn-area").html('<a class="weui-btn weui-btn_warn" href="orderUploadBasicInfo.html?order_id='+id+'" id="okBtn">修改资料</a>');
+
+                                }else{
+                                $(".weui-btn-area").html('<a class="weui-btn weui-btn_warn" href="orderInfo.html?id='+id+'" id="okBtn">修改资料</a>');
+
+                                }
+                            }
+                            if(data.data.order_state == "20"){
+                                 $(".weui-btn-area").html('<a class="weui-btn weui-btn_warn" href="orderInfo.html?id='+id+'" id="okBtn">完善资料</a>');
+                            }
+                            if(data.data.order_state == "10"){
+                                 $(".weui-btn-area").html('<a class="weui-btn weui-btn_warn" href="payment.html?order_id='+id+'" id="okBtn">付款</a><a class="weui-btn weui-btn_warn" href="javascript:confirmDialog('+id+');" id="okBtn">取消</a>');
+                            }
+                            if(parseInt(data.data.state)>=3 || parseInt(data.data.state) == 3){
+                                var modifyType = data.data.type;
+                                var type ="";
+                                if(modifyType == "1"){
+                                    type="上门";
+                                }else if(modifyType == "2"){
+                                    type="到店";
+                                }else if(modifyType == "3"){
+                                    type="邮寄";
+                                }
+                                $("#message").html('<div class="weui-cells__title"><div>报修时间：'+data.data.xiu_time+'</div><div>报修方式：'+type+'</div><div>报修地址：'+data.data.real_address+'</div><div>维修商电话：'+data.data.seller_tel+'</div></div> ');
+                            }
+                            if(parseInt(data.data.order_state) ==90){
+                              
+                                $("#message").html('<div class="weui-cells__title"><div style="text-align:left;color:#6A6A6A;display:table;"><div style="display:table-cell;vertical-align:middle;"><img src="images/tishi2x.png"/></div><div style="display:table-cell;">您的订单已过保修日期，订单已失效，感谢您对乐换新的支持，谢谢！<div></div></div> ');
+                            }
+                           if(parseInt(data.data.order_state) ==21){
+                                $("#message").html('<div class="weui-cells__title"><div style="text-align:left;color:#6A6A6A;display:table;"><div style="display:table-cell;vertical-align:middle;"><img src="images/tishi2x.png"/></div><div style="display:table-cell;">您的资料已提交成功！<br>我们会在24小时内进行审核，审核通过后第8天0点生效，服务热线<a href="tel:400-0900-299" style="color:#FF8225">400-0900-299</a>。祝您生活愉快！<div></div></div> ');
+                            }
+                            if(parseInt(data.data.state) ==1){
+                               
+                                $("#message").html('<div class="weui-cells__title"><div style="text-align:left;color:#6A6A6A;display:table;"><div style="display:table-cell;vertical-align:middle;"><img src="images/tishi2x.png"/></div><div style="display:table-cell;">申请维修提交成功！<br>我们会在24小时内进行审核，审核结果会以短信或电话告知，请耐心等待，具体情况关注订单详情或致电<a style="color:#FF8225" href="tel:400-0900-299">400-0900-299</a>，祝您生活愉快！<div></div></div>');
+                            }
+
+                        }
+                       
+                    }
+                 });
+    });
+</script>
+</body>

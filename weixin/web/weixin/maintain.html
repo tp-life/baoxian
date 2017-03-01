@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>申请维修</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/webuploader.css"/>
+    <style>
+        .weui-uploader__bd{margin-right:0px;}
+        .weui-cells__title div{font-size:12px;color: red;}
+        .weui-cell:before{border-top:0px;} 
+        .weui-uploader__bd > div:first-child{width:46%;float:left;height:180px; }
+        .weui-uploader__input-box{height:150px;width:100%;-webkit-border-radius:10px;border-radius:10px;}
+        .weui-uploader__bd > div.figure{width:46%;float:right;height: 180px;}
+        .weui-uploader__files{height: 150px;border:1px solid #d9d9d9;text-align: center;    -webkit-border-radius: 10px;border-radius: 10px;}
+        .weui-uploader__file,#img0{width:100%;height: 150px;-webkit-border-radius:10px;border-radius:10px;}
+        .text{text-align: center;color:#666666;}
+        .clear{clear:both;}
+        .delete-box{position: absolute;top:0px;right:0px;display: none;z-index: 90;width:20px;}
+        .opacity::before,.opacity::after{opacity: 0;}
+        .weui-cell{background: #fff;}
+        #idFrontWrap ,#idBackWrap{text-align: center;}
+        #img1{-webkit-border-radius:10px;border-radius:10px;}
+    </style>
+</head> 
+<body ontouchstart>
+	<div class="page">
+    <div class="page__bd">
+    <form method="post" action="" id="postForm"  enctype="multipart/form-data">
+        <div class="weui-cells__title">
+            <div>拍照说明：</div>
+            <div>请参照示例图，将投保手机在开机状态下拨号*#06#拍照上传，建议在4G或WIFI环境下上传。请务必保证上传的照片清晰可见，无修改痕迹，图片大小不超过8M。</div>
+        </div>
+         <div class="weui-cell" >
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                    
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="frontWrap">
+                                    <div class="imgList" id="frontImg"></div>
+                                    <input type="hidden" id="frontPath" value=""/>
+                                </div>
+                                <div class="text">手机正面</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" style="background-image:url(./images/maintain.jpg)"></li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="backWrap" name="UploadForm">
+                                    <div class="imgList" id="backImg"></div>
+                                   <input type="hidden" id="backPath" value=""/>
+                                </div>
+                                <div class="text">手机背面</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" style="background-image:url(./images/maintain_back.jpg)"></li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="idFrontWrap" name="UploadForm">
+                                    <div class="imgList" id="idFrontImg"></div>
+                                   <input type="hidden" id="idFrontPath" value=""/>
+                                </div>
+                                <div class="text">投保人身份证正面照</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" >
+                                         <img src="./images/idcard_front.jpg" style="width:90%;margin-top:27px;" />
+                                    </li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <div class="weui-uploader">
+                        <div class="weui-uploader__bd">
+                            <div>
+                                <div class="weui-uploader__input-box" id="idBackWrap" name="UploadForm">
+                                    <div class="imgList" id="idBackImg"></div>
+                                   <input type="hidden" id="idBackPath" value=""/>
+                                </div>
+                                <div class="text">投保人身份证反面照</div>
+                            </div>
+                            <div class="figure">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+                                    <li class="weui-uploader__file" >
+                                        <img src="./images/idcard_back.jpg" style="width:90%;margin-top:27px;" />
+                                    </li>
+                                </ul>
+                                <div class="text">示例图片</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="weui-cells__title">问题选择</div>
+        <div class="weui-cells weui-cells_radio" style="padding:15px 0px;">
+            <label for="issueChk1" class="weui-agree">
+                <input id="issueChk1" type="checkbox" class="issueChk__checkbox">
+                <span class="issueChk__text">
+                    屏幕碎裂手机能正常使用
+                </span>
+            </label>
+            <label for="issueChk" class="weui-agree">
+                <input id="issueChk" type="checkbox" class="issueChk__checkbox">
+                <span class="issueChk__text">
+                    屏幕碎裂手机无法正常使用
+                </span>
+            </label>
+  
+        </div>
+        <div class="weui-cells__title">问题描述</div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" id="desc" name="mark" placeholder="请输入手机屏幕是否存在问题" rows="3"></textarea>
+                    <div class="weui-textarea-counter"><span class="number">0</span>/200</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <a class="weui-btn weui-btn_warn" href="javascript:" id="submit">提交</a>
+        </div>
+        <input type="hidden" name="token" id="token" />
+        <input type="hidden" name="order_id" value="" id="orderId"  />
+        </form>
+    </div>
+  
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/unit.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/webuploader.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         $("#token").val(token);
+            var url = window.location.href;
+            var id = getQueryString("id", url);
+
+        $("#issueChk1").click(function(){
+            if($(this).is(":checked")){
+                var text = $.trim($(this).next("span").html());
+                var len = text.length;
+                $("#desc").val(text);
+                $(".number").html(len);
+                $("#issueChk").prop("checked",false);
+            }
+        })
+        $("#issueChk").click(function(){
+            if($(this).is(":checked")){
+                var text = $.trim($(this).next("span").html());
+                var len = text.length;
+                $("#desc").val(text);
+                $(".number").html(len);
+                $("#issueChk1").prop("checked",false);
+            }
+        })
+        $("#desc").on("keyup",function(){
+            var len = $(this).val().length;
+            $(".number").html(len);
+            if(len > 200){
+                var value = $(this).val().substring(0,200);
+            }
+        });
+        $("#submit").click(function(){
+            $("#token").val(token);
+            var url = window.location.href;
+            var id = getQueryString("id", url);
+            var front = $("#frontPath").val();
+            var back = $("#backPath").val();
+            var idFront = $("#idFrontPath").val();
+            var idBack = $("#idBackPath").val();
+            var remark = $("#desc").val();
+             if(front == ""){
+                tooltip("请选择手机正面图片",3000);
+                    return false 
+            }
+            if(back == ""){
+                tooltip("请选择手机背面图片",3000);
+                    return false 
+            } if(idFront == ""){
+                tooltip("请选择投保人身份证正面照",3000);
+                    return false 
+            }
+            if(idBack == ""){
+                tooltip("请选择投保人身份证反面照",3000);
+                    return false 
+            }
+             loadingToast();
+            $.ajax({
+                type:'post',
+                url:domain+"/maintain/index",
+                data:{"order_id":id,"phone_img":front,"face_image":back,"id_back_image":idBack,"id_face_image":idFront,"token":token,"mark":remark},  
+                success:function(data){
+                        closeLoading();
+                        if(data.code == 200){
+                             tooltipSuccess("申请维修提交成功，我们会在24小时内进行审核，审核结果会以短信或电话形式告知，请您耐心等待。具体情况关注订单详情或致电<span class='orange'>400-0900-299</span>，祝你生活愉快。",id); return ;
+                        }else{
+                            tooltip(data.message,3000);
+                        }
+                }
+             });
+       });
+        uploadImage("front");
+        uploadImage("back");
+        uploadImage("idFront");
+        uploadImage("idBack");
+    });
+</script>
+</body>
