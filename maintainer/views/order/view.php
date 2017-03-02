@@ -209,7 +209,11 @@
 																?>
 															<tr>
 																<th class="font-red-thunderbird">理赔状态更新</th>
-																<td><a class="btn green  sbold" data-target="#service-responsive" href="<?= \yii\helpers\Url::to(['order/showlipei','order_id'=>$order['id'],'order_service_id'=>$model['id']]) ?>" data-toggle="modal"><i class="fa fa-share"></i>理赔流程处理</a></td>
+																<td>
+                                                                    <a class="btn green  sbold" data-target="#service-responsive" href="<?= \yii\helpers\Url::to(['order/showlipei','order_id'=>$order['id'],'order_service_id'=>$model['id']]) ?>" data-toggle="modal">
+                                                                        <i class="fa fa-share"></i>理赔流程处理
+                                                                    </a>
+                                                                </td>
 
 															</tr>
 														   <?php endif; ?>

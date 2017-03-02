@@ -15,6 +15,15 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12">
+                <div class="note note-danger">
+                    <p> 卡券导出默认导出当前条件下全部卡券,<font color="#ff4500">最好不要超过5000张</font></p>
+                    <p> <font color="#ff4500">通过加强筛选条件导出，导出数据限制5000张</font></p>
+                    <p> 复选框选择只对发放有效</p>
+                    <p> <font color="#ff4500">复选框卡券发放必须为单一险种</font></p>
+                    <p> <font color="#ff4500">复选框卡券发放必须为未激活卡券</font></p>
+                </div>
+            </div>
             <div class="portlet-body">
                 <div class="table-actions-wrapper ">
                 </div>
@@ -23,10 +32,14 @@
                         <div class="table-search">
                             <div class="row">
                                 <div class="col-sm-3 text-left">
-
+                                   <!-- <a class="btn green  sbold" id="service-responsive_mm" data-target="#service-responsive" href="http://www.baidu.com" data-toggle="modal">-->
+                                    <a class="btn green  sbold" id="service-responsive_mm"  href="javascript:;">
+                                    <i class="fa fa-share"></i>发放给子商户
+                                    </a>
                                 </div>
                                 <div class="col-sm-9">
                                     <div class="table-search text-right">
+										<?= \yii\helpers\Html::dropDownList('coverage_code','',\common\models\InsuranceCoverage::getCoverageDataCodeAll(),['prompt'=>'选择险种','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?>
                                         <select
                                             class="table-group-action-input form-control form-filter input-inline  input-sm"
                                             id="datatable_filter" name="status">
@@ -59,7 +72,7 @@
                            id="datatable_ajax">
                         <thead>
                         <tr role="row" class="heading">
-
+                            <th width="2%"><input type="checkbox"  name="id_all" class="group-checkable">全选</th>
                             <th width="5%"> ID&nbsp;#</th>
                             <th width="10%"> 卡券号</th>
                             <th width="8%">  险种</th>
@@ -86,6 +99,19 @@
 <script type="text/javascript">
     $(function () {
         EcommerceList.init('<?=Yii::$app->urlManager->createUrl('card/getme')?>', {}, false, 'datatable_ajax');
+
+        $("#service-responsive_mm").on('click',function(){
+           //$('#service-responsive').modal('toggle');
+            //$('body').modalmanager('loading');
+            setTimeout(function(){
+                var url ='<?= \yii\helpers\Url::to(['card/selsendcard']) ?>';
+                $('#service-responsive').load(url, '', function(){
+                    $('#service-responsive').modal('toggle');
+                });
+            }, 1000);
+        });
+
+
     });
 
     function downloadCard() {
@@ -94,3 +120,15 @@
         window.location.href =url+'?'+data;
     }
 </script>
+<!-- begin 子商家发放 modal -->
+<div class="modal fade bs-modal-lg" tabindex="-1" id="service-responsive" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="<?= Yii::getAlias('@metro') ?>/global/img/loading-spinner-grey.gif" alt="" class="loading">
+                <span> &nbsp;&nbsp;Loading... </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end 商家理赔状态流程更新 modal -->

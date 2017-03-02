@@ -1,5 +1,6 @@
 <?php
 namespace backend\controllers;
+use common\models\Area;
 use common\models\BrandOffer;
 use common\models\MaintenanceOffer;
 use common\models\OrderExtend;
@@ -113,9 +114,11 @@ class OrdermaintenController extends LoginedController
     {
 		$model = $this->findModel($id);
 		$orderExtend = OrderExtend::findOne(['order_id'=>$model['order_id']]);
+		$area = Area::findAll(['area_parent_id' => 0]);
         return $this->render('view', [
             'model' => $model,
-			'orderExtend'=>$orderExtend
+			'orderExtend'=>$orderExtend,
+			'province' => $area
         ]);
     }
 
@@ -160,7 +163,7 @@ class OrdermaintenController extends LoginedController
         }
         $offer=BrandOffer::findOne(['brand_id'=>$order->brand_id,'model_id'=>$order->model_id]);
         if(!$offer){
-            return $this->getCheckNo('无当前品牌型号报价信息');
+            return $this->getCheckNo('查无商家对此品牌型号对应的报价信息');
         }
 
 		$data = Seller::find()->where("is_repair=1 AND status=1 AND $key like ('%$value%')")->orderBy('seller_id DESC')->limit(500)->asArray()->all();
@@ -197,7 +200,7 @@ class OrdermaintenController extends LoginedController
 		if(empty($seller)){
 			return $this->getCheckNo('指派商户无效');
 		}
-		if($model->zhipaiSeller($seller,Yii::$app->request->post('zhipai_note',''))){
+		if($model->zhipaiSeller($seller,Yii::$app->request->post('zhipai_note',''),Yii::$app->request->post())){
 			if($model['type'] != $type){
 				$model->type = $type;
 				$model->update(false,['type']);

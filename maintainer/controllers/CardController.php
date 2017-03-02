@@ -18,6 +18,8 @@ use Yii;
 use yii\data\ActiveDataProvider;
 use yii\db\Exception;
 use yii\db\Query;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 
 /**
  *
@@ -216,6 +218,9 @@ class CardController extends LoginedController
             if ($pay_sn = Yii::$app->request->post('pay_sn', '')) {
                 $query->andWhere(['a.pay_sn' => $pay_sn]);
             }
+			if ($seller_id = Yii::$app->request->post('seller_id', '0')) {
+				$query->andWhere(['b.to_seller_id' => $seller_id]);
+			}
             $apply_type = trim(Yii::$app->request->post('apply_type', ''));
             if ($apply_type !== '') {
                 $query->andWhere(['b.apply_type' => intval($apply_type)]);
@@ -254,9 +259,15 @@ class CardController extends LoginedController
 
             return json_encode(array('data' => $respon, 'recordsTotal' => $total, 'recordsFiltered' => $total));
         }
+		$d = [$this->seller->seller_id => $this->seller->seller_name];
+        if(!$this->seller->isRankTwo){
+			$seller_data = Seller::find()->where(['pid' => $this->seller->seller_id])->select('seller_id,seller_name')->asArray()->all();
+			if ($seller_data) {
+				$d = ArrayHelper::map($seller_data, 'seller_id', 'seller_name');
+			}
+		}
 
-
-        return $this->render('issue');
+        return $this->render('issue',['coverage_data' => InsuranceCoverage::getCoverageDataCodeAll(),'seller_data' => $d]);
     }
 
 
@@ -514,6 +525,7 @@ class CardController extends LoginedController
      */
     public function actionGetme()
     {
+    	$isRankTwo = $this->seller->getIsRankTwo();
         $pageSize = Yii::$app->request->post('length', 10);
         $start = Yii::$app->request->post('start', 0);//偏移量
         $model = $this->_meCondition();
@@ -543,15 +555,30 @@ class CardController extends LoginedController
             } else {
                 $s = '<span class="font-blue-chambray">购入</span>';
             }
-            $data['data'][] = [
-                $val['id'],
-                $val['card_number'],
-                $val['coverage_code'],
-                $val['order_id'],
-                '<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
-                $s,
-                date('Y-m-d H:i:s', $val['add_time'])
-            ];
+
+            if($isRankTwo){
+				$data['data'][] = [
+					$val['id'],
+					$val['card_number'],
+					$val['coverage_code'],
+					$val['order_id'],
+					'<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
+					$s,
+					date('Y-m-d H:i:s', $val['add_time'])
+				];
+			}else{
+				$data['data'][] = [
+					Html::checkbox('check_id[' . $val['id'] . ']'),
+					$val['id'],
+					$val['card_number'],
+					$val['coverage_code'],
+					$val['order_id'],
+					'<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
+					$s,
+					date('Y-m-d H:i:s', $val['add_time'])
+				];
+
+			}
         }
         echo json_encode($data);
         die();
@@ -707,6 +734,9 @@ class CardController extends LoginedController
         if (isset($post['status']) && $post['status'] !== '') {
             $search[$card_tb . '.status'] = intval($post['status']);
         }
+		if ($coverage_code = trim(Yii::$app->request->post('coverage_code', ''))) {
+			$search[$card_tb . '.coverage_code'] =$coverage_code;
+		}
         $filter->orderBy('id desc');
         $field = $card_tb . '.status ,' . $card_tb . '.card_secret,' . $card_tb . '.coverage_code';
         $model->select('c.*,' . $field)->from(['c' => $filter])->innerJoin($card_tb, 'c.card_id = ' . $card_tb . '.id');
@@ -762,6 +792,18 @@ class CardController extends LoginedController
             ->groupBy('cover.coverage_code')->orderBy('card.coverage_id DESC')->all();
         return $result;
     }
+
+
+	/**
+	 * 选择发放卡券处理
+	 */
+	public function actionSelsendcard()
+	{
+
+		return $this->renderPartial('_card_select_send', []);
+
+	}
+
 
 
 }

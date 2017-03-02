@@ -244,7 +244,7 @@ class OrderMaintenance extends \yii\db\ActiveRecord
 	/**
 	 * 商家指派
 	**/
-	public function zhipaiSeller($seller,$note)
+	public function zhipaiSeller($seller,$note,$params = [])
 	{
 
 		if($this->getServiceInfo()){
@@ -254,7 +254,10 @@ class OrderMaintenance extends \yii\db\ActiveRecord
 				return false;
 			}
 		}
-
+		$this->province_id = intval($params['province_id']);
+		$this->city_id = intval($params['city_id']);
+		$this->area_id = intval($params['area_id']);
+		$this->address = trim($params['detail_address']);
 		$this->state = self::_MT_STATE_IN_SERVICE;
 		if($this->update(false)){
 			$note_t = '指派商家:['.$seller['seller_name'].'|'.$seller['concat'].'|'.$seller['concat_tel'].']#'.$note;

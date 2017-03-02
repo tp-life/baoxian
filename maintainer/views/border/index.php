@@ -33,7 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
 					<th width="8%"> 保险险种</th>
 					<th width="8%"> 激活序列号</th>
 					<th width="6%"> 订单状态</th>
-					<th width=""> 下单时间</th>
+                    <th width="8%"> 销售商家</th>
+					<th width="12%"> 下单时间</th>
 					<th width=""> 操作</th>
 				</tr>
 				<tr>
@@ -42,10 +43,11 @@ $this->params['breadcrumbs'][] = $this->title;
 					<th><input type="text" name="buyer_phone" class="form-control form-filter input-sm" placeholder="请输入"></th>
 					<th><input type="text" name="imei_code" class="form-control form-filter input-sm" placeholder="请输入"></th>
 					<th></th>
-					<th><input type="text" name="coverage_code" class="form-control form-filter input-sm" placeholder="请输入"></th>
+					<th> <?= \yii\helpers\Html::dropDownList('coverage_code','',$coverage_data,['prompt'=>'选择险种','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?></th>
 					<th><input type="text" name="card_number" class="form-control form-filter input-sm" placeholder="请输入"></th>
 					<th><?= \yii\helpers\Html::dropDownList('status','',\common\models\Order::getBackendStatusData(),['prompt'=>'状态查询','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?></th>
-					<th>
+                    <th> <?= \yii\helpers\Html::dropDownList('seller_id','',$seller_data,['prompt'=>'选择商家','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?></th>
+                    <th>
 						<div class="input-group date date-picker margin-bottom-5" data-date-format="yyyy-mm-dd">
 							<input class="form-control form-filter input-sm" readonly="" name="add_time_from" placeholder="From" type="text">
                                                             <span class="input-group-btn">

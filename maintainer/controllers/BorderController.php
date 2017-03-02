@@ -1,14 +1,17 @@
 <?php
 namespace maintainer\controllers;
+
 use common\models\BrandModel;
 use common\models\CardCouponsGrant;
 use common\models\InsuranceCoverage;
 use common\models\Order;
 use common\models\OrderExtend;
 use common\models\OrderMaintenance;
+use common\models\Seller;
 use Yii;
 use maintainer\components\LoginedController;
 use yii\db\Query;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 
@@ -32,16 +35,29 @@ class BorderController extends LoginedController
 	 */
 	public function actionIndex()
 	{
+		$isRankTwo = $this->seller->isRankTwo;
 
-		if(Yii::$app->request->isAjax){
-
+		if (Yii::$app->request->isAjax) {
 			$pageSize = Yii::$app->request->post('length', 10);
 			$start = Yii::$app->request->post('start', 0);//偏移量
 			$query = new Query();
-			$query->select('o.order_id,o.order_sn,o.order_state,o.coverage_code,o.add_time,o_e.buyer,o_e.buyer_phone,o_e.imei_code,o_e.brand_id,o_e.model_id,o_e.end_time,g.card_number');
-			$query->from(['o'=>Order::tableName(),'o_e'=>OrderExtend::tableName(),'g'=>CardCouponsGrant::tableName()]);
-			$query->where('o.order_id = o_e.order_id and o.order_id=g.order_id and o_e.seller_id=:seller_id',[':seller_id'=>$this->seller->seller_id]);//test
-			//$query->where('o.order_id = o_e.order_id and o.order_id=g.order_id and o_e.seller_id=:seller_id',[':seller_id'=>11]);//test
+			$query->select('o.order_id,o.order_sn,o.order_state,o.coverage_code,o.add_time,o_e.buyer,o_e.buyer_phone,o_e.imei_code,o_e.brand_id,o_e.model_id,o_e.end_time,o_e.seller_name,g.card_number');
+			$query->from(['o' => Order::tableName()]);
+			$query->leftJoin(['o_e' => OrderExtend::tableName()], 'o.order_id = o_e.order_id');
+			$query->leftJoin(['g' => CardCouponsGrant::tableName()], 'o.order_id=g.order_id and g.order_id!=0');
+			if ($isRankTwo) {
+				$query->where('o_e.seller_id=:seller_id', [':seller_id' => $this->seller->seller_id]);
+				//$query->where('o_e.seller_id=:seller_id',[':seller_id'=>1]);//test
+			} else {
+				$sub_query = (new Query())->from(Seller::tableName())->select('seller_id')->where(['is_insurance' => 1, 'pid' => $this->seller->seller_id]);
+				$query->where('o_e.seller_id=:seller_id', [':seller_id' => $this->seller->seller_id]);
+				$query->orWhere(['o_e.seller_id' => $sub_query]);
+				//$query->where('o_e.seller_id=:seller_id',[':seller_id'=>11]);
+				//$query->orWhere(['o_e.seller_id'=>11]);//test sub query
+			}
+			if ($seller_id = intval(Yii::$app->request->post('seller_id', 0))) {
+				$query->andWhere(['o_e.seller_id' => $seller_id]);
+			}
 			if ($add_time_from = Yii::$app->request->post('add_time_from', '')) {
 				$query->andFilterCompare('o.add_time', strtotime($add_time_from), '>=');
 			}
@@ -67,39 +83,43 @@ class BorderController extends LoginedController
 			if ($coverage_code = trim(Yii::$app->request->post('coverage_code', ''))) {
 				$query->andWhere('o.coverage_code =:coverage_code', [':coverage_code' => $coverage_code]);
 			}
+			if ($seller_name = trim(Yii::$app->request->post('seller_name', ''))) {
+				$query->andWhere(['like', 'o_e.seller_name', $seller_name]);
+			}
 			if ($card_number = trim(Yii::$app->request->post('card_number', ''))) {
 				$query->andWhere('g.card_number =:card_number', [':card_number' => $card_number]);
 			}
-            $status=trim(Yii::$app->request->post('status',''));
-			if($status !==''){
-                if($status ==32){//过保处理
-                    $query->andWhere(['<','o_e.end_time',time()]);
-                    $query->andWhere(['<>','o_e.end_time',0]);
-                } else {
-                    $query->andWhere(['order_state'=>(int)$status]);
-                }
-            }
+			$status = trim(Yii::$app->request->post('status', ''));
+			if ($status !== '') {
+				if ($status == 32) {//过保处理
+					$query->andWhere(['<', 'o_e.end_time', time()]);
+					$query->andWhere(['<>', 'o_e.end_time', 0]);
+				} else {
+					$query->andWhere(['order_state' => (int)$status]);
+				}
+			}
 			$total = $query->count('o.order_id');
 			$respon = $data = [];
 			$data = $query->orderBy('o.order_id DESC')->limit($pageSize)->offset($start)->all();
-			$order=new Order();
+			$order = new Order();
 
 			if ($data) {
 				foreach ($data as $item) {
 					$brand = BrandModel::getInfo($item['brand_id']);
 					$model = BrandModel::getInfo($item['model_id']);
-					$name = $brand?$brand['model_name'].' ':'';
-					$name .=$model?$model['model_name']:'';
+					$name = $brand ? $brand['model_name'] . ' ' : '';
+					$name .= $model ? $model['model_name'] : '';
 					$btn = '<a class="btn green btn-xs  btn-default" target="_blank" title="点击查看详细" href="' . $this->createUrl(['border/view', 'id' => $item['order_id']]) . '"><i class="fa fa-share"></i> 查看详细</a>';
 					$respon[] = [
-						Html::a($item['order_sn'],['border/view','id'=>$item['order_id']],['target'=>'_blank','title'=>'订单详情']),
+						Html::a($item['order_sn'], ['border/view', 'id' => $item['order_id']], ['target' => '_blank', 'title' => '订单详情']),
 						$item['buyer'],
 						$item['buyer_phone'],
 						$item['imei_code'],
 						$name,
 						$item['coverage_code'],
 						$item['card_number'],
-						'<span class="font-purple-seance">'.$order->getStatus($item).'</span>',
+						'<span class="font-purple-seance">' . $order->getStatus($item) . '</span>',
+						$item['seller_name'],
 						$item['add_time'] ? date('Y-m-d H:i', $item['add_time']) : '',
 						$btn,
 					];
@@ -108,7 +128,18 @@ class BorderController extends LoginedController
 			return json_encode(array('data' => $respon, 'recordsTotal' => $total, 'recordsFiltered' => $total));
 		}
 
-		return $this->render('index');
+
+
+		$d = [$this->seller->seller_id => $this->seller->seller_name];
+		//$seller_data  = Seller::find()->where(['pid'=>11])->select('seller_id,seller_name')->asArray()->all();
+		if (!$isRankTwo) {
+			$seller_data = Seller::find()->where(['pid' => $this->seller->seller_id])->select('seller_id,seller_name')->asArray()->all();
+			if ($seller_data) {
+				$d = ArrayHelper::map($seller_data, 'seller_id', 'seller_name');
+			}
+		}
+
+		return $this->render('index', ['coverage_data' => InsuranceCoverage::getCoverageDataCodeAll(), 'seller_data' => $d]);
 	}
 
 	/**
@@ -118,26 +149,23 @@ class BorderController extends LoginedController
 	 */
 	public function actionView($id)
 	{
-		$query=new Query();
-		$order_info=$query->from(['o'=>Order::tableName(),'o_e'=>OrderExtend::tableName()])->where('o.order_id = o_e.order_id')
-			->andWhere(['o.order_id'=>$id])->one();
-		$converage=InsuranceCoverage::find()->where(['id'=>$order_info['coverage_id']])->one();
-		$brand=new BrandModel();
-		$brand_model=$brand->getBrand($order_info['brand_id'])->model_name.'#'.
+		$query = new Query();
+		$order_info = $query->from(['o' => Order::tableName(), 'o_e' => OrderExtend::tableName()])->where('o.order_id = o_e.order_id')
+			->andWhere(['o.order_id' => $id])->one();
+		$converage = InsuranceCoverage::find()->where(['id' => $order_info['coverage_id']])->one();
+		$brand = new BrandModel();
+		$brand_model = $brand->getBrand($order_info['brand_id'])->model_name . '#' .
 			$brand->getBrand($order_info['model_id'])->model_name;
-		$order_model=new Order();
+		$order_model = new Order();
 
 
 		return $this->render('view', [
-			'order'=>$order_info,
-			'coverage'=>$converage,
-			'brand'=>$brand_model,
-			'status'=>$order_model->getStatus($order_info)
+			'order' => $order_info,
+			'coverage' => $converage,
+			'brand' => $brand_model,
+			'status' => $order_model->getStatus($order_info)
 		]);
 	}
-
-
-
 
 
 }

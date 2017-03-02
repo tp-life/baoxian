@@ -32,9 +32,9 @@
 							<th width=""> 操作</th>
 						</tr>
 						<tr>
+                            <th> <?= \yii\helpers\Html::dropDownList('seller_id','',$seller_data,['prompt'=>'选择商家','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?></th>
 							<th></th>
-							<th></th>
-							<th><input class="form-control form-filter input-sm" name="coverage_code" placeholder="险种编码" type="text"></th>
+                            <th> <?= \yii\helpers\Html::dropDownList('coverage_code','',$coverage_data,['prompt'=>'选择险种','class'=>'table-group-action-input form-control form-filter input-inline  input-sm']) ?></th>
 							<th></th>
 							<th></th>
 							<th><input class="form-control form-filter input-sm" name="pay_sn" placeholder="批次货号" type="text"></th>

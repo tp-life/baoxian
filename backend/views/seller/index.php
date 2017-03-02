@@ -44,6 +44,21 @@ $this->title = '数据表格';
 				<div class="table-container">
 					<form id="datatable_form">
 						<div class="table-search text-right">
+
+                            <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="province_id" id="province_id">
+                                <option value="">请选择省</option>
+								<?php foreach ($province as $key => $val): ?>
+                                    <option value="<?= $val->area_id . ',' . $val->area_name ?>" ><?= $val->area_name ?></option>
+								<?php endforeach ?>
+                            </select>
+
+                            <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="city_id" id="city_id">
+                                <option value="">请选择市</option>
+                            </select>
+                            <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="area_id" id="area_id">
+                                <option value="">请选择区</option>
+                            </select>
+                            &nbsp;&nbsp;
 							<?= \yii\helpers\Html::dropDownList('seller_type','',[1=>'保险商家',2=>'理赔商家'],['prompt'=>'按商家类型','class'=>'table-group-action-input form-control form-filter input-inline  input-sm'])?>
 							&nbsp;&nbsp;
                             <select
@@ -52,15 +67,30 @@ $this->title = '数据表格';
 								<option value="">合作状态</option>
 								<option value="2">合作中</option>
 								<option value="1">已终止</option>
-							</select> &nbsp;&nbsp; <select
+							</select> &nbsp;
+                            <select
 								class="table-group-action-input form-control form-filter input-inline  input-sm"
-								name="p_p">
+								name="p_p" id="p_p_s_1">
 								<option value="">商户等级</option>
 								<option value="2">签约商户</option>
 								<option value="1">子商家</option>
-							</select> &nbsp;&nbsp; <input type="text" size="30"
+							</select>&nbsp;
+                            <select
+                                    class="table-group-action-input form-control form-filter input-inline  input-sm"
+                                    name="p_s_id" id="p_s_id">
+                                <option value="">子商家所属上级</option>
+                            </select>
+                        &nbsp;
+                            <select
+                                    class="table-group-action-input form-control form-filter input-inline  input-sm"
+                                    name="filter_search_key" onchange="$('#datatable_search').attr('placeholder','请输入'+$(this).children('option:selected').text())" >
+                                <option  value="seller_name">商户名称</option>
+                                <option value="concat">联系人</option>
+                                <option value="concat_tel">联系电话</option>
+                            </select>
+                            <input type="text" size="30"
 								id="datatable_search" name="filter" class="input-md form-filter form-control input-inline"
-								placeholder="请输入商户名称/商户ID进行查询" />
+								placeholder="请输入商户名称" />
 							<button class="btn btn-sm green filter-submit " type="button"
 								id="datatable_submit">
 								<i class="fa fa-search"></i> 搜索
@@ -74,14 +104,14 @@ $this->title = '数据表格';
 
 							<tr role="row" class="heading">
 								<th width="10%">商户名称</th>
-								<th width="10%">登陆账号</th>
-								<th width="15%">所在区域</th>
-								<th width="10%">联系人</th>
+								<th width="8%">登陆账号</th>
+								<th width="12%">所在区域</th>
+								<th width="8%">联系人</th>
 								<th width="8%">联系电话</th>
-								<!-- <th width="20%"> 收款信息</th>-->
 								<th width="7%">合作状态</th>
 								<th width="8%">商家类型</th>
 								<th width="8%">商家等级</th>
+                                <th width="8%">所属上级</th>
 								<th>操作</th>
 							</tr>
 						</thead>
@@ -98,7 +128,8 @@ $this->title = '数据表格';
 <script type="text/javascript">
     $(function(){
 
-        EcommerceList.init('/seller/getdata',{},false,'datatable_ajax');
+        var URL = '<?= \yii\helpers\Url::to(['seller/index']) ?>';
+        EcommerceList.init(URL,{},false,'datatable_ajax');
 
 
         //条件导出下载
@@ -115,20 +146,93 @@ $this->title = '数据表格';
         });
 
 
+        //省市区加载
+        $('#province_id , #city_id').on('change', function () {
+            var html = '<option value="">请选择地区</option>';
+            var province = $(this).val();
+            if(!province){
+                $('#city_id').html(html);
+                $('#area_id').html(html);
+                return ;
+            }
+            var pval = province.split(',');
+            var name = this.name;
+            App.startPageLoading();
+            $.post('<?= \yii\helpers\Url::to(['seller/getarea']) ?>', {
+                'id': pval[0],
+                '_csrf-backend': $('meta[name="csrf-token"]').attr("content")
+            }, function (data) {
+                data = typeof data == 'string' ? $.parseJSON(data) : data;
+                if (data.code !== 'yes') {
+                    showToastr('warning', data.message);
+                    return false;
+                }
+
+                $.each(data.data, function (index, ele) {
+                    html += '<option value="' + ele.area_id + ',' + ele.area_name + '">' + ele.area_name + '</option>';
+                })
+                if (name == 'province_id') {
+                    $('#city_id').html(html);
+                    $('#area_id').html(html);
+
+                } else if (name == 'city_id') {
+                    $('#area_id').html(html);
+                }
+                App.stopPageLoading();
+            });
+        });
+
+        //子商家所属上级
+        var flag_is_req = false;
+        $('#p_p_s_1').on('change', function () {
+            var value = $(this).val();
+            if (flag_is_req === false && value === '1') {
+                App.startPageLoading();
+                $.post(URL, {
+                    '_csrf-backend': $('meta[name="csrf-token"]').attr("content"),
+                    'leader': 'yes'
+                }, function (data) {
+                    if (data.code == 'yes') {
+
+                        var str = '<option value="">子商家所属上级</option>';
+                        $.each(data.data, function (index, val) {
+                            str += '<option value=' + val.seller_id + '>' + val.seller_name + '</option>';
+                        })
+                        $('#p_s_id').html(str);
+                        App.stopPageLoading();
+                        flag_is_req = true;
+                    }
+
+                }, 'json');
+            } else {
+                $('#p_s_id')[0].selectedIndex = 0;
+            }
+        });
+
+
     });
 
-    function handleStatus(seller_id,status){
-        App.blockUI();
-        $.post('<?=Yii::$app->urlManager->createUrl(['seller/change']);?>',{'_csrf-backend':$('meta[name="csrf-token"]').attr("content"),'seller_id':seller_id,'status':status},function(data){
-            App.unblockUI();
-            if(data.code !='yes'){
-                showToastr('error',data.message);
-                return false;
+    function handleStatus(seller_id, status) {
+        var s_text = (status == 0) ? '确定终止合作并冻结其所以未激活卡券？' : '确定重启合作并保持相关冻结卡券状态不变？';
+        bootbox.confirm(s_text, function (result) {
+            if (result) {
+                App.blockUI();
+                $.post('<?=Yii::$app->urlManager->createUrl(['seller/change']);?>', {
+                    '_csrf-backend': $('meta[name="csrf-token"]').attr("content"),
+                    'seller_id': seller_id,
+                    'status': status
+                }, function (data) {
+                    App.unblockUI();
+                    if (data.code != 'yes') {
+                        showToastr('error', data.message);
+                        return false;
+                    }
+                    showToastr('success', data.message);
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 1000);
+                });
             }
-            showToastr('success',data.message);
-            setTimeout(function(){
-                window.location.reload();
-            },1000);
         });
     }
 

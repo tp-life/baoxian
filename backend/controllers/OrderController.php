@@ -86,8 +86,7 @@ class OrderController extends LoginedController
         $where = [];
         $model->from(['o' => Order::tableName()]);
 		$model->leftJoin(['o_e' => OrderExtend::tableName()],'o.order_id = o_e.order_id');
-		$model->leftJoin(['c' => InsuranceCoverage::tableName()],'o.coverage_id = c.id');
-        $model->select('o.*,o_e.*,c.period');
+        $model->select('o.*,o_e.*');
         if ($post['status'] !== '') {
             if($post['status'] =='32'){//过保处理
                 $model->andWhere(['<','o_e.end_time',$this->time]);
@@ -173,8 +172,7 @@ class OrderController extends LoginedController
                 }
             }
             $data['data'][]=array(
-//                '<input type="checkbox" name="id[]" value="'.$val['order_id'].'">',
-                $val['order_id'],
+                //$val['order_id'],
                 $val['order_sn'],
                 $val['buyer'],
                 $val['buyer_phone'],
@@ -184,7 +182,7 @@ class OrderController extends LoginedController
                 $val['add_time']?date('Y-m-d H:i',$val['add_time']):'',
                 '<label class="btn purple-seance btn-xs">'.$order->getStatus($val).'</label>',
                 $val['policy_number'],
-                $val['period'] . ' 月',
+                $val['seller_name'],
                 $btn
             );
         }

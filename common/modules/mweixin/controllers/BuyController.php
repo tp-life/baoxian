@@ -140,7 +140,8 @@ class BuyController extends BaseController
        }
 
        $key = $this->member_id.'_active'.$this->token;
-       if(!$cache = Yii::$app->cache->get($key)){
+	   $cache = Yii::$app->cache->get($key);
+       if(!$cache){
             return $this->getCheckNo('操作已过期，请重新操作');
        }
        $coverage_info = InsuranceCoverage::findOne(['id'=>$status->coverage_id]);

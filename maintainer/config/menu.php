@@ -130,7 +130,7 @@ return [
 							'action_id' => 0,
 							'active' => false,
 							'role' =>'insurance',
-							'level'=>1,
+							'level'=>0,
 							'url' => '/border/index',
 						],
 

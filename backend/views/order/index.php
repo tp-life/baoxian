@@ -88,20 +88,18 @@ $this->title = '数据表格';
                            id="datatable_ajax">
                         <thead>
                         <tr role="row" class="heading">
-<!--                            <th width="2%">-->
-<!--                                <input type="checkbox" class="group-checkable"></th>-->
-                            <th width="5%"> ID&nbsp;#</th>
-                            <th width="10%"> 订单编号</th>
-                            <th width="10%"> 投保人</th>
+                           <!-- <th width="5%"> ID&nbsp;#</th>-->
+                            <th width="12%"> 订单编号</th>
+                            <th width="8%"> 投保人</th>
                             <th width="8%"> 投保手机号</th>
                             <th width="10%"> 手机IEMI号</th>
                             <th width="10%"> 品牌型号</th>
-                            <th width="10%"> 保险险种</th>
-                            <th width="13%"> 下单时间</th>
+                            <th width="8%"> 保险险种</th>
+                            <th width="10%"> 下单时间</th>
                             <th width="8%"> 订单状态</th>
                             <th width="10%"> 保单号</th>
-                            <th width="8%"> 保期</th>
-                            <th width="10%"> 操作</th>
+                            <th width="8%"> 销售商家</th>
+                            <th width=""> 操作</th>
                         </tr>
                         </thead>
                         <tbody></tbody>

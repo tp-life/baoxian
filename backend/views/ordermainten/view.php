@@ -488,6 +488,7 @@
 								<p class="font-yellow-casablanca">
 									&nbsp;&nbsp;搜索结果：商家名称#联系人#联系电话
 								</p>
+                                <p class="font-yellow-casablanca">&nbsp;&nbsp;品牌机型：<?= $orderExtend->getPhoneInfo() ?></p>
 							</div>
 						</div>
 					</form>
@@ -506,6 +507,45 @@
 
 							</div>
 						</div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2">报修区域
+                                <span class="required"> * </span>
+                            </label>
+
+                            <div class="col-md-6">
+
+                                <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="province_id"
+                                        id="province_id">
+                                    <option value="">请选择省</option>
+									<?php foreach ($province as $key => $val): ?>
+                                        <option
+                                                value="<?= $val->area_id . ',' . $val->area_name ?>" ><?= $val->area_name ?></option>
+									<?php endforeach ?>
+                                </select>
+
+                                <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="city_id" id="city_id"
+                                        >
+                                    <option value="">请选择市</option>
+                                </select>
+                                <select class="table-group-action-input form-control form-filter input-inline  input-sm" name="area_id" id="area_id"
+                                        >
+                                    <option value="">请选择区</option>
+                                </select>
+                                <br/>
+                                <font style="margin: 0px 1px 0px 0px;font-size: small" class="font-purple-medium">默认商家地址</font>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2">详细地址
+                                <span class="required">*</span>
+                            </label>
+
+                            <div class="col-md-6">
+                                <input id="detail_address" type="text" class="form-control" value="" name="detail_address" placeholder=""/>
+                            </div>
+                        </div>
 						<div class="form-group">
 							<label class="control-label col-md-2">指派留言
 								<span class="required">* </span>
@@ -556,10 +596,17 @@
 										if(e.code == 'yes'){
 											showToastr('success', e.message,'','toast-top-right');
 											var optionString = '<option value="">搜索商家并选择指派</option>';
+											var ct = 0;
+                                            var se_val = '';
 											$.each(e.data,function(key,value){
-												optionString += '<option  value="'+value['seller_id']+'">'+value['seller_name']+'#'+value['concat']+'#'+value['concat_tel']+'</option>';
+											    //console.log(key);
+                                                se_val = ct==0?'selected':'';
+												optionString += '<option '+se_val+' value="'+value['seller_id']+'">'+value['seller_name']+'#'+value['concat']+'#'+value['concat_tel']+'</option>';
+											    ct = ct+1;
 											});
 											$('#m_id').empty().html(optionString);
+                                            $('#m_id').trigger('change');
+
 
 										}else{
 											showToastr('error', e.message,'','toast-top-right');
@@ -582,6 +629,18 @@
 									m_id: {
 										required: '必填项'
 									},
+                                    province_id:{
+                                        required: '必填项'
+                                    },
+                                    city_id:{
+                                        required: '必填项'
+                                    },
+                                    area_id:{
+                                        required: '必填项'
+                                    },
+                                    detail_address:{
+                                        required: '必填项'
+                                    },
 									zhipai_note: {
 										required: '必填项',
 										maxlength:'请输入不超过100个审核建议字符'
@@ -590,8 +649,19 @@
 								rules: {
 									m_id: {
 										required: true
-
 									},
+                                    province_id: {
+                                        required: true
+                                    },
+                                    city_id: {
+                                        required: true
+                                    },
+                                    area_id: {
+                                        required: true
+                                    },
+                                    detail_address: {
+                                        required: true
+                                    },
 									zhipai_note: {
 										required: true,
 										maxlength:100
@@ -645,7 +715,108 @@
 								}
 							});
 
-						})
+
+
+                            //省市区加载
+
+                            $('#province_id,#city_id').on('change',function(){
+                                getArea(this,0)
+                            });
+
+
+                            //商户选择事件
+                            $('#m_id').on('change',function(){
+                               getSellerInfo(this,function(respon){
+                                    $('#province_id')[0].selectedIndex = respon.province_id_value;
+                                    getArea('#province_id',respon.city_id_value);
+                                   setTimeout(function () {
+                                       getArea('#city_id',respon.area_id_value);
+                                       $('#detail_address').val(respon.detail_address);
+                                   },300)
+
+
+                                });
+
+                            });
+
+
+						});
+
+
+                        function getSellerInfo(obj,callback) {
+
+                            //商家地址对象
+                            var respon = {
+                                province_id_value: '0',
+                                city_id_value: '0',
+                                area_id_value: '0',
+                                area_info: '',
+                                detail_address: ''
+                            };
+                            var seller_id = $(obj).val();
+                            if (!seller_id) {
+                                $('#province_id')[0].selectedIndex = 0;
+                                $('#city_id')[0].selectedIndex = 0;
+                                $('#area_id')[0].selectedIndex = 0;
+                                $('#detail_address').val('');
+                                return respon;
+                            }
+                            App.startPageLoading();
+                            $.post('<?= \yii\helpers\Url::to(['seller/index']) ?>',
+                                {
+                                    '_csrf-backend': $('meta[name="csrf-token"]').attr("content"),
+                                    'leader': 'yes_and_info',
+                                    'seller_id': seller_id
+                                },
+                                function (e) {
+                                    if (e.code == 'yes') {
+                                        respon = {
+                                            province_id_value: e.data.province_id,
+                                            city_id_value: e.data.city_id,
+                                            area_id_value: e.data.area_id,
+                                            area_info: e.data.area_info,
+                                            detail_address: e.data.detail_address
+                                        };
+
+                                        typeof callback == 'function' && callback(respon)
+
+                                    }
+                                },'json');
+                            App.stopPageLoading();
+                        }
+
+                        function getArea(obj, default_id) {
+                            var default_id = default_id || 0;
+                            var html = '<option value="">请选择地区</option>';
+                            var area = $(obj).val();
+                            if (!area) {
+                                $('#city_id').html(html);
+                                $('#area_id').html(html);
+                                return;
+                            }
+                            var area_k_v = area.split(',');
+                            App.startPageLoading();
+                            $.post('<?= \yii\helpers\Url::to(['seller/getarea']) ?>', {
+                                'id': area_k_v[0],
+                                '_csrf-backend': $('meta[name="csrf-token"]').attr("content")
+                            }, function (data) {
+                                if (data.code !== 'yes') {
+                                    showToastr('warning', data.message);
+                                    return false;
+                                }
+                                console.log(default_id)
+                                $.each(data.data, function (index, ele) {
+                                    if (ele.area_id == default_id) {
+                                        html += '<option selected value="' + ele.area_id + ',' + ele.area_name + '">' + ele.area_name + '</option>';
+                                    } else {
+                                        html += '<option value="' + ele.area_id + ',' + ele.area_name + '">' + ele.area_name + '</option>';
+                                    }
+                                })
+                                $(obj).attr('name') == 'province_id' ? $('#city_id').html(html) : $('#area_id').html(html);
+                                App.stopPageLoading();
+                            }, 'json');
+                        }
+
 
 					</script>
 				</div>

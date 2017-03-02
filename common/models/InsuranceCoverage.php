@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "fj_insurance_coverage".
@@ -80,4 +81,14 @@ class InsuranceCoverage extends \yii\db\ActiveRecord
     public function getCoverage($id=0){
         return $this->findOne(['id'=>$id]);
     }
+
+    /**
+	 * 险种下啦筛选
+    **/
+	static function getCoverageDataCodeAll()
+	{
+		$coverage_data = self::find()->select('coverage_code')->asArray()->all();
+		$coverage_data = ArrayHelper::getColumn($coverage_data, 'coverage_code');
+		return array_combine($coverage_data, $coverage_data);
+	}
 }
