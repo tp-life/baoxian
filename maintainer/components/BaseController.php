@@ -126,7 +126,7 @@ class BaseController extends  Controller
 
 		}
 		$this->layout = null;
-		echo $this->render("//layouts/messageBox", $data);
+		echo $this->renderPartial("//layouts/messageBox", $data);
 		exit;
 	}
 

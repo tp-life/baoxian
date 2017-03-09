@@ -523,66 +523,53 @@ class CardController extends LoginedController
     /**
      * 一级商家我的卡券
      */
-    public function actionGetme()
-    {
-    	$isRankTwo = $this->seller->getIsRankTwo();
-        $pageSize = Yii::$app->request->post('length', 10);
-        $start = Yii::$app->request->post('start', 0);//偏移量
-        $model = $this->_meCondition();
-        $count = $model->count('*');
-        $dataProvider = new ActiveDataProvider([
-            'query' => $model->limit($pageSize)->offset($start)->asArray(),
-            'pagination' => [
-                'pageSize' => $pageSize,
-                'page' => intval($start / $pageSize),
-                'totalCount' => $count
-            ]
-        ]);
-        $data = [
-            'draw' => intval($_REQUEST['draw']),
-            'recordsTotal' => $count,
-            'recordsFiltered' => $count,
-            'data' => []
-        ];
-        $result = $dataProvider->getModels();
-        $seller_info = Yii::$app->user->identity->getSellerInfo();
-        $seller_id = $seller_info->seller_id;
-        $to_seller_ids = array_column($result, 'to_seller_id');
-        $seller = Seller::getIdKeySeller(['seller_id' => $to_seller_ids]);
-        foreach ($result as $val) {
-            if ($val['to_seller_id'] != $seller_id) {
-                $s = '<span class="font-red-thunderbird"> 卖出 至 【 ' . $seller[$val['to_seller_id']]['seller_name'] . ' 】 </span>';
-            } else {
-                $s = '<span class="font-blue-chambray">购入</span>';
-            }
-
-            if($isRankTwo){
-				$data['data'][] = [
-					$val['id'],
-					$val['card_number'],
-					$val['coverage_code'],
-					$val['order_id'],
-					'<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
-					$s,
-					date('Y-m-d H:i:s', $val['add_time'])
-				];
-			}else{
-				$data['data'][] = [
-					Html::checkbox('check_id[' . $val['id'] . ']'),
-					$val['id'],
-					$val['card_number'],
-					$val['coverage_code'],
-					$val['order_id'],
-					'<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
-					$s,
-					date('Y-m-d H:i:s', $val['add_time'])
-				];
-
+	public function actionGetme()
+	{
+		$pageSize = Yii::$app->request->post('length', 10);
+		$start = Yii::$app->request->post('start', 0);//偏移量
+		$model = $this->_meCondition();
+		$count = $model->count('*');
+		$dataProvider = new ActiveDataProvider([
+			'query' => $model->limit($pageSize)->offset($start)->asArray(),
+			'pagination' => [
+				'pageSize' => $pageSize,
+				'page' => intval($start / $pageSize),
+				'totalCount' => $count
+			]
+		]);
+		$data = [
+			'draw' => intval($_REQUEST['draw']),
+			'recordsTotal' => $count,
+			'recordsFiltered' => $count,
+			'data' => []
+		];
+		$result = $dataProvider->getModels();
+		$seller_info = Yii::$app->user->identity->getSellerInfo();
+		$seller_id = $seller_info->seller_id;
+		$to_seller_ids = array_column($result, 'to_seller_id');
+		$seller = Seller::getIdKeySeller(['seller_id' => $to_seller_ids]);
+		foreach ($result as $val) {
+			if ($val['to_seller_id'] != $seller_id) {
+				$s = '<span class="font-red-thunderbird"> 卖出 至 【 ' . $seller[$val['to_seller_id']]['seller_name'] . ' 】 </span>';
+			} else {
+				$s = '<span class="font-blue-chambray">购入</span>';
 			}
-        }
-        echo json_encode($data);
-        die();
-    }
+
+			$data['data'][] = [
+				Html::checkbox('check_id[' . $val['card_id'] . ']'),
+				'F'.$val['id'],
+				$val['card_number'],
+				$val['coverage_code'],
+				$val['order_id'],
+				'<span class="' . (!$val['status'] ? 'font-purple-seance' : 'font-grey-mint') . '">' . CardCouponsGrant::statusData()[$val['status']] . '</span>',
+				$s,
+				date('Y-m-d H:i:s', $val['add_time'])
+			];
+
+		}
+		echo json_encode($data);
+		die();
+	}
 
     /**
      * 二级商家我的卡券
@@ -712,22 +699,9 @@ class CardController extends LoginedController
         $post=array_merge($get,$post);
         $search = [];
         $filter = $query->select('*')->from(['u' => $tb])->where($where);
-        if (isset($post['type']) && $post['type'] && $post['keyword'] !== '') {
+        if ($post['keyword'] !== '') {
             $post['keyword'] =trim($post['keyword']);
-            if ($post['type'] == 1) {
-                $child = Seller::find()->select('seller_id')->where(['like', 'seller_name', $post['keyword']])->asArray()->all();
-                if ($child) {
-                    $to_seller_id = array_column($child, 'seller_id');
-                    $tj['to_seller_id'] = $to_seller_id;
-                } else {
-                    $tj['to_seller_id'] = -1;
-                }
-                $filter->where(['from_seller_id' => $seller_id])->andWhere($tj);
-            } else if ($post['type'] == 2) {
-                $search[$card_tb . '.coverage_code'] = $post['keyword'];
-            }else if($post['type'] == 3){
                 $search[$card_tb . '.card_number'] = $post['keyword'];
-            }
         } else {
             $filter->where(['or', 'from_seller_id = ' . $seller_id, 'to_seller_id = ' . $seller_id]);
         }
@@ -796,12 +770,107 @@ class CardController extends LoginedController
 
 	/**
 	 * 选择发放卡券处理
+	 * Array
+	 * (
+	 * [coverage_code] =>  //险种
+	 * [status] =>   //卡券状态
+	 * [keyword] =>  //关键字
+	 * [id_all] => on //是否全选
+	 * [check_id] => Array
+	 * (
+	 * [272] => 1
+	 * [271] => 1
+	 * [270] => 1
+	 * [269] => 1
+	 * [268] => 1
+	 * [267] => 1
+	 * )
 	 */
 	public function actionSelsendcard()
 	{
+		$coverage_code = trim($_REQUEST['coverage_code']);
+		$status = $_REQUEST['status'];
+		$keyword = trim($_REQUEST['keyword']);
+		$is_check_all = Yii::$app->request->get('id_all', '') == 'on' ? true : false;
+		$card_id_list = Yii::$app->request->get('check_id', []);
+        if($card_id_list){
+			$card_id_list = array_keys($card_id_list);
+		}
+		if ($status != '' && $status != '0') {
+			$this->showMessage('只有未激活状态卡券才能激活', '', self::__MSG_DANGER);
+		}
+		if (!$is_check_all && !$card_id_list) {
+			$this->showMessage('请选择复选框确定发放卡券数量', '', self::__MSG_DANGER);
+		}
+		$query = CardCouponsGrant::find()->select('id,card_number,card_secret,coverage_code')->where(['seller_id' => $this->seller->seller_id]);
 
-		return $this->renderPartial('_card_select_send', []);
+		if ($coverage_code) {
+			$query->andWhere(['coverage_code' => $coverage_code]);
+		}
+		if ($status!='') {
+			$query->andWhere(['status' => intval($status)]);
+		}
+		if ($keyword) {
+			$query->andWhere(['card_number' => $keyword]);
+		}
+		if (!$is_check_all && $card_id_list) {
+			$query->andWhere(['id' => $card_id_list]);
+		}
 
+		$ct = $query->count('id');
+		if($ct == 0){
+			$this->showMessage('查无可分配卡券发放', '', self::__MSG_DANGER);
+		}
+
+		$query->andWhere(['status'=>0]);
+		$ct_strict = $query->count('id');
+		if($ct!=$ct_strict){
+			$this->showMessage('发放卡券包含非激活状态卡券', '', self::__MSG_DANGER);
+		}
+		if($ct_strict>1000){
+			$this->showMessage('一次性发放卡券不超过1000张', '', self::__MSG_DANGER);
+		}
+
+		$query_group = clone $query;
+		$ct_strict_group = $query_group->groupBy('coverage_code')->limit(2)->all();
+		if(count($ct_strict_group)!=1){
+			$this->showMessage('不支持多险种同时发放', '', self::__MSG_DANGER);
+		}
+
+		$data = $query->asArray()->all();
+		//print_r($data);die;
+
+		if(!$coverage_code){
+			//$coverage_code = $data[0]['coverage_code'];
+			$coverage_model = InsuranceCoverage::findOne(['coverage_code'=>$coverage_code]);
+			if(!$coverage_model){
+				$this->showMessage('无效险种信息，请联系管理人员', '', self::__MSG_DANGER);
+			}
+		}else{
+			$coverage_code = $data[0]['coverage_code'];
+			$coverage_model = InsuranceCoverage::findOne(['coverage_code'=>$coverage_code]);
+			if(!$coverage_model){
+				$this->showMessage('无效险种信息，请联系管理人员', '', self::__MSG_DANGER);
+			}
+		}
+		$card_number_list = [];
+		foreach ($data as $v){
+			$card_number_list[] = $v['card_number'];
+		}
+
+
+		//启用状态子商家处理
+		$d = [];
+		$seller_data = Seller::find()->where(['pid' => $this->seller->seller_id, 'status' => 1])->select('seller_id,seller_name')->asArray()->all();
+		if ($seller_data) {
+			$d = ArrayHelper::map($seller_data, 'seller_id', 'seller_name');
+		}
+
+		return $this->renderPartial('_card_select_send', ['seller_data' => $d,
+			'coverage_model'=>$coverage_model,
+			'count'=>$ct_strict,
+			'card_number_str'=>trim(implode(',',$card_number_list),',')
+		]);
 	}
 
 

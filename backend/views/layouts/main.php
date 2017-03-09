@@ -46,12 +46,12 @@ if ($articleFlag) {
 	<link href="<?= Yii::getAlias('@metro'); ?>/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
 	<link href="<?= Yii::getAlias('@metro'); ?>/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?= Yii::getAlias('@metro'); ?>/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
-<!--	<!-- END PAGE LEVEL PLUGINS -->-->
-<!--	<!-- BEGIN THEME GLOBAL STYLES -->-->
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN THEME GLOBAL STYLES -->
 	<link href="<?= Yii::getAlias('@metro'); ?>/global/css/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
 	<link href="<?= Yii::getAlias('@metro'); ?>/global/css/plugins-md.min.css" rel="stylesheet" type="text/css" />
-<!--	<!-- END THEME GLOBAL STYLES -->-->
-<!--	<!-- BEGIN THEME LAYOUT STYLES -->-->
+	<!-- END THEME GLOBAL STYLES -->
+	<!-- BEGIN THEME LAYOUT STYLES -->
 	<link href="<?= Yii::getAlias('@metro'); ?>/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?= Yii::getAlias('@metro'); ?>/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
 	<link href="<?= Yii::getAlias('@metro'); ?>/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />

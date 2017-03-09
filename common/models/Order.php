@@ -138,6 +138,7 @@ class Order extends \yii\db\ActiveRecord
 			self::__ORDER_CACEL=>'已取消',
 			self::__ORDER_ENSURE=>'保障中',
 			32=>'已过保',
+			self::__ORDER_COMPLETE=>'已完成'
 		];
 
 	}

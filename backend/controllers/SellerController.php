@@ -102,7 +102,7 @@ class SellerController extends LoginedController
 			$value = Yii::$app->request->get($name, '');
 		}
 		if (stripos($value, ',') !== false) {
-			$value = explode($value, ',')[0];
+			$value = explode(',',$value)[0];
 		}
 		return intval($value);
 	}

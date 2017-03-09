@@ -229,6 +229,9 @@ class Sms extends Object
      * @return bool
      */
 	public static function checkVerifyCode($phone='',$captcha='',$code_type=self::TYPE_USER_VERFIY_CODE){
+		if (YII_DEBUG) {
+			return true;
+		}
         $log = SmsLog::findOne(['captcha'=>$captcha,'type'=>$code_type,'phone'=>$phone]);
         if($log){
             return true;

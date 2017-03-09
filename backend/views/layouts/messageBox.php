@@ -1,15 +1,5 @@
 
-<div class="page-bar">
-	<ul class="page-breadcrumb">
-		<li>
-			<a href="<?= \yii\helpers\Url::to([$this->context->id]) ?>"><?= ucfirst($this->context->id) ?>&nbsp;<?= ucfirst($this->context->action->id) ?></a>
-			<i class="fa fa-angle-right"></i>
-		</li>
-		<li>
-			<span><?= $title ?></span>
-		</li>
-	</ul>
-</div>
+
 <div class="box">
 	<div class="box-content text-center" style='min-height: 400px;'>
 		<div class="row">

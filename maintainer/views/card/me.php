@@ -22,6 +22,7 @@
                     <p> 复选框选择只对发放有效</p>
                     <p> <font color="#ff4500">复选框卡券发放必须为单一险种</font></p>
                     <p> <font color="#ff4500">复选框卡券发放必须为未激活卡券</font></p>
+                    <p> <font color="#ff4500">单次卡券单险种发放不超过1000张</font></p>
                 </div>
             </div>
             <div class="portlet-body">
@@ -32,8 +33,8 @@
                         <div class="table-search">
                             <div class="row">
                                 <div class="col-sm-3 text-left">
-                                   <!-- <a class="btn green  sbold" id="service-responsive_mm" data-target="#service-responsive" href="http://www.baidu.com" data-toggle="modal">-->
-                                    <a class="btn green  sbold" id="service-responsive_mm"  href="javascript:;">
+                                   <!--<a class="btn green  sbold" id="service-responsive_mm" data-target="#service-responsive" href="<?/*= \yii\helpers\Url::to(['card/selsendcard']) */?>" data-toggle="modal">-->
+                                       <a class="btn green  sbold" id="service-responsive_mm">
                                     <i class="fa fa-share"></i>发放给子商户
                                     </a>
                                 </div>
@@ -49,17 +50,7 @@
                                             <option value="2">已失效</option>
                                             <option value="3">冻结中</option>
                                         </select>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <select
-                                            class="table-group-action-input form-control form-filter input-inline  input-sm"
-                                             name="type">
-                                            <option value="">搜索类型</option>
-                                            <option value="1">商家</option>
-                                            <option value="2">险种</option>
-                                            <option value="3">卡号</option>
-                                        </select>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <input type="text" size="30" id="datatable_search" name="keyword" class="input-md form-filter form-control input-inline" placeholder="请输入 商家名称/险种/卡号 进行查询"/>
+                                        <input type="text" size="30" id="datatable_search" name="keyword" class="input-md form-filter form-control input-inline" placeholder="请输入 卡号 进行查询"/>
                                         <button class="btn btn-sm green filter-submit " type="button" id="datatable_submit">
                                             <i class="fa fa-search"></i> 搜索
                                         </button>
@@ -67,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+
                     <table class="table table-striped table-bordered table-hover table-checkable"
                            id="datatable_ajax">
                         <thead>
@@ -84,6 +75,7 @@
                         </thead>
                         <tbody></tbody>
                     </table>
+                    </form>
                 </div>
             </div>
 
@@ -101,14 +93,20 @@
         EcommerceList.init('<?=Yii::$app->urlManager->createUrl('card/getme')?>', {}, false, 'datatable_ajax');
 
         $("#service-responsive_mm").on('click',function(){
-           //$('#service-responsive').modal('toggle');
-            //$('body').modalmanager('loading');
+            $('#service-responsive').modal('show');
+
+            $('#service-responsive').on('show.bs.modal', function () {
+                //初始化
+            });
+
             setTimeout(function(){
                 var url ='<?= \yii\helpers\Url::to(['card/selsendcard']) ?>';
-                $('#service-responsive').load(url, '', function(){
-                    $('#service-responsive').modal('toggle');
+                $('.modal-content').load(url, $('#datatable_form').serialize(), function(){
+                    $('#service-responsive').modal('show');
                 });
-            }, 1000);
+
+            },200);
+
         });
 
 

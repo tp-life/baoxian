@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-Date: 2017-03-01 16:58:18
+Date: 2017-03-09 10:41:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -37,7 +37,7 @@ CREATE TABLE `fj_admin` (
 -- ----------------------------
 -- Records of fj_admin
 -- ----------------------------
-INSERT INTO `fj_admin` VALUES ('1', 'admin', '83e9bf070e34b228128f378f706e040e', '19999999999', '', '1', '1', '137', '1488245237', '127.0.0.1');
+INSERT INTO `fj_admin` VALUES ('1', 'admin', '83e9bf070e34b228128f378f706e040e', '19999999999', '', '1', '1', '137', '1489023298', '127.0.0.1');
 INSERT INTO `fj_admin` VALUES ('3', 'admin_yan', '83e9bf070e34b228128f378f706e040e', '18612178282', null, '0', '1', '133', null, null);
 INSERT INTO `fj_admin` VALUES ('4', 'yanzhiwei', '1b5165da6820d6a135516283cc1f4841', '18612178247', null, '0', '1', '137', null, null);
 INSERT INTO `fj_admin` VALUES ('5', 'test', '613f29514da1c5b778b51c4016184a3d', '18080081133', null, '0', '1', '138', '0', '');
@@ -56,7 +56,7 @@ CREATE TABLE `fj_admin_log` (
   `username` varchar(45) DEFAULT NULL,
   `uid` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_admin_log
@@ -127,6 +127,34 @@ INSERT INTO `fj_admin_log` VALUES ('63', '登陆角色【超级管理员】#IP:1
 INSERT INTO `fj_admin_log` VALUES ('64', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-02-27 14:19:07', 'admin', '1');
 INSERT INTO `fj_admin_log` VALUES ('65', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-02-28 09:10:13', 'admin', '1');
 INSERT INTO `fj_admin_log` VALUES ('66', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-02-28 09:27:17', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('67', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-02 08:59:17', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('68', '退出角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-02 09:18:28', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('69', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-02 09:19:20', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('70', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-03 09:13:55', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('71', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-03 09:48:15', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('72', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-03 14:12:06', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('73', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-03 16:03:12', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('74', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-03 16:18:52', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('75', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-06 08:58:08', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('76', '登陆角色【超级管理员】#IP:192.168.50.2#电话：19999999999', null, null, null, '2017-03-06 13:41:32', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('77', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-06 14:02:54', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('78', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-06 14:31:06', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('79', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-06 16:04:33', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('80', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-07 09:47:14', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('81', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-07 10:12:31', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('82', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-07 14:46:52', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('83', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 09:13:02', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('84', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-08 11:15:11', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('85', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 14:33:52', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('86', '退出角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 14:36:16', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('87', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 14:36:25', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('88', '退出角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 14:36:28', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('89', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 14:44:08', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('90', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 16:07:16', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('91', '退出角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 16:50:42', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('92', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-08 17:09:26', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('93', '登陆角色【超级管理员】#IP:192.168.50.123#电话：19999999999', null, null, null, '2017-03-09 09:32:50', 'admin', '1');
+INSERT INTO `fj_admin_log` VALUES ('94', '登陆角色【超级管理员】#IP:127.0.0.1#电话：19999999999', null, null, null, '2017-03-09 09:34:58', 'admin', '1');
 
 -- ----------------------------
 -- Table structure for fj_area
@@ -3554,7 +3582,7 @@ CREATE TABLE `fj_bank` (
   PRIMARY KEY (`bank_id`),
   KEY `member_id` (`member_id`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COMMENT='用户银行卡';
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COMMENT='用户银行卡';
 
 -- ----------------------------
 -- Records of fj_bank
@@ -3581,6 +3609,7 @@ INSERT INTO `fj_bank` VALUES ('22', '7694', '', '', '', '0', '1', '0', '14829095
 INSERT INTO `fj_bank` VALUES ('23', '7695', '', '', '', '0', '1', '0', '1487828778');
 INSERT INTO `fj_bank` VALUES ('24', '7697', '', '', '', '0', '1', '0', '1488160578');
 INSERT INTO `fj_bank` VALUES ('25', '7698', '工商银行', '123456789789789', '', '0', '1', '0', '1488333405');
+INSERT INTO `fj_bank` VALUES ('26', '7704', '', '', '234234', '0', '1', '0', '1488525532');
 
 -- ----------------------------
 -- Table structure for fj_bank_house
@@ -3800,7 +3829,7 @@ CREATE TABLE `fj_brand_offer` (
   `status` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '是否启用 0 否 1 是',
   `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP COMMENT '每次插入或者更新',
   PRIMARY KEY (`offer_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1289 DEFAULT CHARSET=utf8 COMMENT='维修报价基础表';
+) ENGINE=InnoDB AUTO_INCREMENT=1290 DEFAULT CHARSET=utf8 COMMENT='维修报价基础表';
 
 -- ----------------------------
 -- Records of fj_brand_offer
@@ -4050,6 +4079,7 @@ INSERT INTO `fj_brand_offer` VALUES ('1285', '367', '426', '0', '华为P7', '222
 INSERT INTO `fj_brand_offer` VALUES ('1286', '367', '427', '0', '华为Mate7', '50.00', '10.00', '5', '1', '2016-09-09 14:12:57');
 INSERT INTO `fj_brand_offer` VALUES ('1287', '208', '406', '0', '三星 GALAXY S6 ', '100.00', '200.00', '5', '1', '0000-00-00 00:00:00');
 INSERT INTO `fj_brand_offer` VALUES ('1288', '208', '406', '530', '三星 GALAXY S6 黑色', '500.00', '200.00', '10', '1', '2016-09-09 16:28:35');
+INSERT INTO `fj_brand_offer` VALUES ('1289', '208', '533', '0', '三星 dd3 ', '100.00', '200.00', '5', '1', '2017-03-02 13:54:07');
 
 -- ----------------------------
 -- Table structure for fj_brand_offer_update_log
@@ -4121,7 +4151,7 @@ CREATE TABLE `fj_card_coupons_grant` (
   UNIQUE KEY `card_secret` (`card_secret`),
   KEY `seller_id` (`seller_id`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=39094 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=39124 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_card_coupons_grant
@@ -12207,7 +12237,7 @@ INSERT INTO `fj_card_coupons_grant` VALUES ('38084', '0009075', '270214977504', 
 INSERT INTO `fj_card_coupons_grant` VALUES ('38085', '0009076', '720238688296', '1', '0', '0', '0', '0', '3', 'JT0608801', '4', '1', '2017-02-27 18:03:25');
 INSERT INTO `fj_card_coupons_grant` VALUES ('38086', '0009077', '660221788436', '1', '0', '0', '0', '0', '3', 'JT0608801', '4', '1', '2017-02-27 18:03:25');
 INSERT INTO `fj_card_coupons_grant` VALUES ('38087', '0009078', '620238800289', '1', '0', '0', '0', '0', '3', 'JT0608801', '4', '1', '2017-02-27 18:03:25');
-INSERT INTO `fj_card_coupons_grant` VALUES ('38088', '0009079', '160293355710', '1', '0', '0', '0', '0', '3', 'JT0608801', '4', '1', '2017-02-27 18:03:25');
+INSERT INTO `fj_card_coupons_grant` VALUES ('38088', '0009079', '160293355710', '24', '0', '0', '0', '0', '3', 'JT0608801', '4', '1', '2017-03-06 15:22:56');
 INSERT INTO `fj_card_coupons_grant` VALUES ('38089', '0009080', '590297166701', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
 INSERT INTO `fj_card_coupons_grant` VALUES ('38090', '0009081', '430212711512', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
 INSERT INTO `fj_card_coupons_grant` VALUES ('38091', '0009082', '640227544555', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
@@ -13194,25 +13224,55 @@ INSERT INTO `fj_card_coupons_grant` VALUES ('39071', '0010062', '210266999672', 
 INSERT INTO `fj_card_coupons_grant` VALUES ('39072', '0010063', '920241900127', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39073', '0010064', '140227777625', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39074', '0010065', '610270777784', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39075', '0010066', '780215355821', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39076', '0010067', '460211822750', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39077', '0010068', '370247400989', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39078', '0010069', '780298922117', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39079', '0010070', '830213600485', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39080', '0010071', '490293511471', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39081', '0010072', '770258233749', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39082', '0010073', '950226100321', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39083', '0010074', '940272166674', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39084', '0010075', '140284011539', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39085', '0010076', '860261188981', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39086', '0010077', '650258833808', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39087', '0010078', '530240911832', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
-INSERT INTO `fj_card_coupons_grant` VALUES ('39088', '0010079', '970211777189', '1', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-02-28 09:10:40');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39075', '0010066', '780215355821', '24', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39076', '0010067', '460211822750', '24', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39077', '0010068', '370247400989', '24', '0', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39078', '0010069', '780298922117', '24', '1', '1488522758', '0', '1892', '4', 'JT1205007', '4', '1', '2017-03-03 14:32:38');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39079', '0010070', '830213600485', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39080', '0010071', '490293511471', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39081', '0010072', '770258233749', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39082', '0010073', '950226100321', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39083', '0010074', '940272166674', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39084', '0010075', '140284011539', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39085', '0010076', '860261188981', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39086', '0010077', '650258833808', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39087', '0010078', '530240911832', '24', '3', '0', '0', '0', '4', 'JT1205007', '4', '1', '2017-03-02 09:30:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39088', '0010079', '970211777189', '24', '1', '1488521101', '0', '1891', '4', 'JT1205007', '4', '1', '2017-03-03 14:05:01');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39089', '0010080', '680249199903', '2', '0', '0', '0', '0', '2', 'CS1201101', '1', '2', '2017-03-01 15:20:43');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39090', '0010081', '350241644606', '2', '0', '0', '0', '0', '2', 'CS1201101', '1', '2', '2017-03-01 15:20:43');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39091', '0010082', '690244711508', '2', '0', '0', '0', '0', '2', 'CS1201101', '1', '2', '2017-03-01 15:20:43');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39092', '0010083', '700298522145', '2', '0', '0', '0', '0', '2', 'CS1201101', '1', '2', '2017-03-01 15:20:43');
 INSERT INTO `fj_card_coupons_grant` VALUES ('39093', '0010084', '780254400255', '2', '0', '0', '0', '0', '2', 'CS1201101', '1', '2', '2017-03-01 15:20:43');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39094', '0010085', '280337622394', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39095', '0010086', '510329400758', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39096', '0010087', '250366211447', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39097', '0010088', '270326522123', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39098', '0010089', '390312333679', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39099', '0010090', '530321444527', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39100', '0010091', '140391811305', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39101', '0010092', '420359166976', '24', '1', '1488525133', '0', '1897', '6', 'RS0301205', '5', '2', '2017-03-03 15:12:13');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39102', '0010093', '280380766376', '24', '1', '1488523872', '0', '1893', '6', 'RS0301205', '5', '2', '2017-03-03 14:51:12');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39103', '0010094', '930351411123', '24', '0', '0', '0', '0', '6', 'RS0301205', '5', '2', '2017-03-03 14:40:06');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39104', '0010095', '530322599905', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39105', '0010096', '720324088915', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39106', '0010097', '910396677488', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39107', '0010098', '620334244962', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39108', '0010099', '210371100321', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39109', '0010100', '180384900183', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39110', '0010101', '810379388712', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39111', '0010102', '730385322215', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39112', '0010103', '700393433997', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39113', '0010104', '850361444792', '26', '0', '0', '0', '0', '5', 'JT0603007', '2', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39114', '0010105', '620342177683', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39115', '0010106', '390375888784', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39116', '0010107', '640341366974', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39117', '0010108', '370314999762', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39118', '0010109', '820390611697', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39119', '0010110', '600353155627', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39120', '0010111', '680366988644', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39121', '0010112', '690382877282', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39122', '0010113', '760393000691', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
+INSERT INTO `fj_card_coupons_grant` VALUES ('39123', '0010114', '420313777257', '26', '0', '0', '0', '0', '5', 'JT0603007', '7', '1', '2017-03-06 16:26:26');
 
 -- ----------------------------
 -- Table structure for fj_card_coupons_log
@@ -13226,7 +13286,7 @@ CREATE TABLE `fj_card_coupons_log` (
   `message` varchar(255) NOT NULL COMMENT '操作描述',
   `created` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=151 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券操作日志表';
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券操作日志表';
 
 -- ----------------------------
 -- Records of fj_card_coupons_log
@@ -13373,6 +13433,41 @@ INSERT INTO `fj_card_coupons_log` VALUES ('147', '3', '1', '2', '发放险种(CS
 INSERT INTO `fj_card_coupons_log` VALUES ('148', '3', '1', '2', '发放险种(CS1201101) (0010082)从[1] 到商家[2]', '2017-03-01 15:19:55');
 INSERT INTO `fj_card_coupons_log` VALUES ('149', '3', '1', '2', '发放险种(CS1201101) (0010083)从[1] 到商家[2]', '2017-03-01 15:19:55');
 INSERT INTO `fj_card_coupons_log` VALUES ('150', '3', '1', '2', '发放险种(CS1201101) (0010084)从[1] 到商家[2]', '2017-03-01 15:19:55');
+INSERT INTO `fj_card_coupons_log` VALUES ('151', '3', '1', '24', '发放险种(JT1205007) (0010070)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('152', '3', '1', '24', '发放险种(JT1205007) (0010071)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('153', '3', '1', '24', '发放险种(JT1205007) (0010072)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('154', '3', '1', '24', '发放险种(JT1205007) (0010073)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('155', '3', '1', '24', '发放险种(JT1205007) (0010074)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('156', '3', '1', '24', '发放险种(JT1205007) (0010075)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('157', '3', '1', '24', '发放险种(JT1205007) (0010076)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('158', '3', '1', '24', '发放险种(JT1205007) (0010077)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('159', '3', '1', '24', '发放险种(JT1205007) (0010078)从[1] 到商家[24]', '2017-03-02 09:29:31');
+INSERT INTO `fj_card_coupons_log` VALUES ('160', '3', '1', '24', '发放险种(JT1205007) (0010066)从[1] 到商家[24]', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_log` VALUES ('161', '3', '1', '24', '发放险种(JT1205007) (0010067)从[1] 到商家[24]', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_log` VALUES ('162', '3', '1', '24', '发放险种(JT1205007) (0010068)从[1] 到商家[24]', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_log` VALUES ('163', '3', '1', '24', '发放险种(JT1205007) (0010069)从[1] 到商家[24]', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_log` VALUES ('164', '3', '1', '24', '发放险种(JT1205007) (0010079)从[1] 到商家[24]', '2017-03-03 11:26:44');
+INSERT INTO `fj_card_coupons_log` VALUES ('165', '3', '2', '23', '发放险种(CS1201101) (0010084)从[2] 到商家[23]', '2017-03-03 13:43:53');
+INSERT INTO `fj_card_coupons_log` VALUES ('166', '3', '24', '25', '发放险种(JT1205007) (0010079)从[24] 到商家[25]', '2017-03-03 13:52:54');
+INSERT INTO `fj_card_coupons_log` VALUES ('167', '2', '24', '24', 'hz[5954]激活卡券(JT1205007)', '2017-03-03 14:05:01');
+INSERT INTO `fj_card_coupons_log` VALUES ('168', '3', '24', '25', '发放险种(JT1205007) (0010069)从[24] 到商家[25]', '2017-03-03 14:30:58');
+INSERT INTO `fj_card_coupons_log` VALUES ('169', '2', '24', '24', '激活二级商家hz3的卡券[5954]激活卡券(JT1205007)', '2017-03-03 14:32:38');
+INSERT INTO `fj_card_coupons_log` VALUES ('170', '3', '1', '24', '发放险种(RS0301205) (0010094)从[1] 到商家[24]', '2017-03-03 14:40:06');
+INSERT INTO `fj_card_coupons_log` VALUES ('171', '3', '1', '24', '发放险种(RS0301205) (0010085)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('172', '3', '1', '24', '发放险种(RS0301205) (0010086)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('173', '3', '1', '24', '发放险种(RS0301205) (0010087)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('174', '3', '1', '24', '发放险种(RS0301205) (0010088)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('175', '3', '1', '24', '发放险种(RS0301205) (0010089)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('176', '3', '1', '24', '发放险种(RS0301205) (0010090)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('177', '3', '1', '24', '发放险种(RS0301205) (0010091)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('178', '3', '1', '24', '发放险种(RS0301205) (0010092)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('179', '3', '1', '24', '发放险种(RS0301205) (0010093)从[1] 到商家[24]', '2017-03-03 14:49:22');
+INSERT INTO `fj_card_coupons_log` VALUES ('180', '3', '24', '25', '发放险种(RS0301205) (0010092)从[24] 到商家[25]', '2017-03-03 14:49:48');
+INSERT INTO `fj_card_coupons_log` VALUES ('181', '3', '24', '25', '发放险种(RS0301205) (0010093)从[24] 到商家[25]', '2017-03-03 14:49:48');
+INSERT INTO `fj_card_coupons_log` VALUES ('182', '2', '24', '24', '二级商家hz3卡券激活[5954]激活卡券(RS0301205)', '2017-03-03 14:51:12');
+INSERT INTO `fj_card_coupons_log` VALUES ('186', '2', '24', '24', '二级商户hz3的卡券[5954]激活卡券(RS0301205)', '2017-03-03 15:12:13');
+INSERT INTO `fj_card_coupons_log` VALUES ('187', '3', '1', '24', '发放险种(JT0608801) (0009079)从[1] 到商家[24]', '2017-03-06 15:22:56');
+INSERT INTO `fj_card_coupons_log` VALUES ('188', '1', '1', '26', '发放险种(JT0603007) (20)从[1] 到商家[26]', '2017-03-06 16:26:26');
 
 -- ----------------------------
 -- Table structure for fj_card_grant_relation
@@ -13389,7 +13484,7 @@ CREATE TABLE `fj_card_grant_relation` (
   `add_time` int(10) NOT NULL COMMENT '创建日期',
   `deadline` int(10) unsigned DEFAULT '0' COMMENT '冻结期限',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=273 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券发放商家关系表 期限限制表';
+) ENGINE=InnoDB AUTO_INCREMENT=323 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券发放商家关系表 期限限制表';
 
 -- ----------------------------
 -- Records of fj_card_grant_relation
@@ -13613,6 +13708,56 @@ INSERT INTO `fj_card_grant_relation` VALUES ('269', '39090', '0010081', '114', '
 INSERT INTO `fj_card_grant_relation` VALUES ('270', '39091', '0010082', '114', '230541696795544001', '1', '2', '1488352795', '0');
 INSERT INTO `fj_card_grant_relation` VALUES ('271', '39092', '0010083', '114', '230541696795544001', '1', '2', '1488352795', '0');
 INSERT INTO `fj_card_grant_relation` VALUES ('272', '39093', '0010084', '114', '230541696795544001', '1', '2', '1488352795', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('273', '39079', '0010070', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('274', '39080', '0010071', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('275', '39081', '0010072', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('276', '39082', '0010073', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('277', '39083', '0010074', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('278', '39084', '0010075', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('279', '39085', '0010076', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('280', '39086', '0010077', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('281', '39087', '0010078', '119', '340541762171654001', '1', '24', '1488418171', '1488504571');
+INSERT INTO `fj_card_grant_relation` VALUES ('282', '39075', '0010066', '120', '570541855604890001', '1', '24', '1488511604', '1488598004');
+INSERT INTO `fj_card_grant_relation` VALUES ('283', '39076', '0010067', '120', '570541855604890001', '1', '24', '1488511604', '1488598004');
+INSERT INTO `fj_card_grant_relation` VALUES ('284', '39077', '0010068', '120', '570541855604890001', '1', '24', '1488511604', '1488598004');
+INSERT INTO `fj_card_grant_relation` VALUES ('285', '39078', '0010069', '120', '570541855604890001', '1', '24', '1488511604', '1488598004');
+INSERT INTO `fj_card_grant_relation` VALUES ('286', '39088', '0010079', '120', '570541855604890001', '1', '24', '1488511604', '1488598004');
+INSERT INTO `fj_card_grant_relation` VALUES ('287', '39093', '0010084', '121', '350541863833502937', '2', '23', '1488519833', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('288', '39088', '0010079', '123', '970541864374490695', '24', '25', '1488520374', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('289', '39078', '0010069', '125', '110541866658865695', '24', '25', '1488522658', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('290', '39103', '0010094', '126', '500541867206677001', '1', '24', '1488523206', '1488609606');
+INSERT INTO `fj_card_grant_relation` VALUES ('291', '39094', '0010085', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('292', '39095', '0010086', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('293', '39096', '0010087', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('294', '39097', '0010088', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('295', '39098', '0010089', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('296', '39099', '0010090', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('297', '39100', '0010091', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('298', '39101', '0010092', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('299', '39102', '0010093', '131', '600541867762414001', '1', '24', '1488523762', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('300', '39101', '0010092', '132', '690541867788846695', '24', '25', '1488523788', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('301', '39102', '0010093', '132', '690541867788846695', '24', '25', '1488523788', '0');
+INSERT INTO `fj_card_grant_relation` VALUES ('302', '38088', '0009079', '134', '790542128976569001', '1', '24', '1488784976', '1488871376');
+INSERT INTO `fj_card_grant_relation` VALUES ('303', '39104', '0010095', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('304', '39105', '0010096', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('305', '39106', '0010097', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('306', '39107', '0010098', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('307', '39108', '0010099', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('308', '39109', '0010100', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('309', '39110', '0010101', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('310', '39111', '0010102', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('311', '39112', '0010103', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('312', '39113', '0010104', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('313', '39114', '0010105', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('314', '39115', '0010106', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('315', '39116', '0010107', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('316', '39117', '0010108', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('317', '39118', '0010109', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('318', '39119', '0010110', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('319', '39120', '0010111', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('320', '39121', '0010112', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('321', '39122', '0010113', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
+INSERT INTO `fj_card_grant_relation` VALUES ('322', '39123', '0010114', '135', '180542131979950698', '1', '26', '1488788786', '1488875186');
 
 -- ----------------------------
 -- Table structure for fj_card_order_item
@@ -13628,7 +13773,7 @@ CREATE TABLE `fj_card_order_item` (
   `add_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
   `send_time` int(10) unsigned DEFAULT '0' COMMENT '卡券发放时间',
   PRIMARY KEY (`order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8 COMMENT='商家卡券申领表';
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=utf8 COMMENT='商家卡券申领表';
 
 -- ----------------------------
 -- Records of fj_card_order_item
@@ -13721,6 +13866,17 @@ INSERT INTO `fj_card_order_item` VALUES ('111', '580541250795036001', 'CS0301002
 INSERT INTO `fj_card_order_item` VALUES ('112', '730541504987204695', 'wn0616820', '10', '123.00', '3', '1488161751', '0');
 INSERT INTO `fj_card_order_item` VALUES ('113', '730541504987204695', 'RS0301205', '10', '12.00', '3', '1488161674', '0');
 INSERT INTO `fj_card_order_item` VALUES ('114', '230541696795544001', 'CS1201101', '6', '11.00', '2', '1488352795', '1488352795');
+INSERT INTO `fj_card_order_item` VALUES ('115', '320541761828881695', 'JT1205007', '10', '20.00', '0', '1488417828', '0');
+INSERT INTO `fj_card_order_item` VALUES ('119', '340541762171654001', 'JT1205007', '9', '20.00', '2', '1488418171', '1488418171');
+INSERT INTO `fj_card_order_item` VALUES ('120', '570541855604890001', 'JT1205007', '5', '20.00', '2', '1488511604', '1488511604');
+INSERT INTO `fj_card_order_item` VALUES ('121', '350541863833502937', 'CS1201101', '1', '11.00', '2', '1488519833', '1488519833');
+INSERT INTO `fj_card_order_item` VALUES ('123', '970541864374490695', 'JT1205007', '1', '20.00', '2', '1488520374', '1488520374');
+INSERT INTO `fj_card_order_item` VALUES ('125', '110541866658865695', 'JT1205007', '1', '20.00', '2', '1488522658', '1488522658');
+INSERT INTO `fj_card_order_item` VALUES ('126', '500541867206677001', 'RS0301205', '1', '12.00', '2', '1488523206', '1488523206');
+INSERT INTO `fj_card_order_item` VALUES ('131', '600541867762414001', 'RS0301205', '9', '12.00', '2', '1488523762', '1488523762');
+INSERT INTO `fj_card_order_item` VALUES ('132', '690541867788846695', 'RS0301205', '2', '12.00', '2', '1488523788', '1488523788');
+INSERT INTO `fj_card_order_item` VALUES ('134', '790542128976569001', 'JT0608801', '1', '77.00', '2', '1488784976', '1488784976');
+INSERT INTO `fj_card_order_item` VALUES ('135', '180542131979950698', 'JT0603007', '20', '10.00', '2', '1488787979', '1488788786');
 
 -- ----------------------------
 -- Table structure for fj_card_order_item_log
@@ -13734,7 +13890,7 @@ CREATE TABLE `fj_card_order_item_log` (
   `name` varchar(50) NOT NULL,
   `update_time` timestamp NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COMMENT='商家卡券申领表处理日志表';
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COMMENT='商家卡券申领表处理日志表';
 
 -- ----------------------------
 -- Records of fj_card_order_item_log
@@ -13790,6 +13946,10 @@ INSERT INTO `fj_card_order_item_log` VALUES ('48', '111', '全款', '1', '平台
 INSERT INTO `fj_card_order_item_log` VALUES ('49', '113', '领取消#RS0301205', '1', '平台管理员 admin', '2017-02-27 10:14:34');
 INSERT INTO `fj_card_order_item_log` VALUES ('50', '112', '领取消#wn0616820', '1', '平台管理员 admin', '2017-02-27 10:15:51');
 INSERT INTO `fj_card_order_item_log` VALUES ('51', '114', '发放', '1', '平台管理员 admin', '2017-03-01 15:19:55');
+INSERT INTO `fj_card_order_item_log` VALUES ('52', '121', '0010084', '5937', '13982146367', '2017-03-03 13:43:53');
+INSERT INTO `fj_card_order_item_log` VALUES ('53', '125', '发放成功', '7695', '13438896182', '2017-03-03 14:30:58');
+INSERT INTO `fj_card_order_item_log` VALUES ('54', '132', 'fa', '7695', '13438896182', '2017-03-03 14:49:48');
+INSERT INTO `fj_card_order_item_log` VALUES ('55', '135', '发放了20', '1', '平台管理员 admin', '2017-03-06 16:26:26');
 
 -- ----------------------------
 -- Table structure for fj_card_order_payback
@@ -13812,7 +13972,7 @@ CREATE TABLE `fj_card_order_payback` (
   `add_time` int(10) NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`pay_id`),
   UNIQUE KEY `pay_sn` (`pay_sn`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券发放与退款 财务表';
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='卡券发放与退款 财务表';
 
 -- ----------------------------
 -- Records of fj_card_order_payback
@@ -13891,6 +14051,17 @@ INSERT INTO `fj_card_order_payback` VALUES ('110', '740541178163307695', '3', '3
 INSERT INTO `fj_card_order_payback` VALUES ('111', '580541250795036001', '1', '3', '0', '1', '24', '1', '10.00', '10.00', '0.00', '0.00', '0.00', '1487906795');
 INSERT INTO `fj_card_order_payback` VALUES ('112', '730541504987204695', '0', '3', '1', '1', '24', '0', '0.00', '0.00', '0.00', '0.00', '0.00', '1488161751');
 INSERT INTO `fj_card_order_payback` VALUES ('113', '230541696795544001', '1', '3', '0', '1', '2', '6', '66.00', '66.00', '0.00', '0.00', '0.00', '1488352795');
+INSERT INTO `fj_card_order_payback` VALUES ('114', '320541761828881695', '0', '3', '1', '1', '24', '10', '200.00', '0.00', '0.00', '0.00', '0.00', '1488417828');
+INSERT INTO `fj_card_order_payback` VALUES ('118', '340541762171654001', '1', '3', '0', '1', '24', '9', '180.00', '180.00', '0.00', '0.00', '0.00', '1488418171');
+INSERT INTO `fj_card_order_payback` VALUES ('119', '570541855604890001', '1', '3', '0', '1', '24', '5', '100.00', '100.00', '0.00', '0.00', '0.00', '1488511604');
+INSERT INTO `fj_card_order_payback` VALUES ('120', '350541863833502937', '1', '3', '0', '2', '23', '1', '11.00', '11.00', '0.00', '0.00', '0.00', '1488519833');
+INSERT INTO `fj_card_order_payback` VALUES ('122', '970541864374490695', '1', '3', '0', '24', '25', '1', '20.00', '20.00', '0.00', '0.00', '0.00', '1488520374');
+INSERT INTO `fj_card_order_payback` VALUES ('124', '110541866658865695', '1', '3', '0', '24', '25', '1', '20.00', '20.00', '0.00', '0.00', '0.00', '1488522658');
+INSERT INTO `fj_card_order_payback` VALUES ('125', '500541867206677001', '1', '3', '0', '1', '24', '1', '12.00', '12.00', '0.00', '0.00', '0.00', '1488523206');
+INSERT INTO `fj_card_order_payback` VALUES ('130', '600541867762414001', '1', '3', '0', '1', '24', '9', '108.00', '108.00', '0.00', '0.00', '0.00', '1488523762');
+INSERT INTO `fj_card_order_payback` VALUES ('131', '690541867788846695', '1', '3', '0', '24', '25', '2', '24.00', '24.00', '0.00', '0.00', '0.00', '1488523788');
+INSERT INTO `fj_card_order_payback` VALUES ('133', '790542128976569001', '1', '3', '0', '1', '24', '1', '77.00', '77.00', '0.00', '0.00', '0.00', '1488784976');
+INSERT INTO `fj_card_order_payback` VALUES ('134', '180542131979950698', '0', '3', '1', '1', '26', '20', '200.00', '200.00', '0.00', '0.00', '0.00', '1488788786');
 
 -- ----------------------------
 -- Table structure for fj_card_refund
@@ -14270,7 +14441,7 @@ CREATE TABLE `fj_maintenance_offer` (
   `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP COMMENT '每次插入或者更新',
   `offer_change_log_id` int(10) unsigned DEFAULT '0' COMMENT '如果存在 表明需要提醒商家报价调整',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8 COMMENT='商家维修报价表 受 后台报价设置表 brand_offer 价格变动影响';
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8 COMMENT='商家维修报价表 受 后台报价设置表 brand_offer 价格变动影响';
 
 -- ----------------------------
 -- Records of fj_maintenance_offer
@@ -14318,6 +14489,10 @@ INSERT INTO `fj_maintenance_offer` VALUES ('94', '24', '889', '1', '2017-02-23 1
 INSERT INTO `fj_maintenance_offer` VALUES ('95', '3', '880', '1', '2017-02-24 16:54:32', '0');
 INSERT INTO `fj_maintenance_offer` VALUES ('96', '3', '881', '1', '2017-02-24 16:54:40', '0');
 INSERT INTO `fj_maintenance_offer` VALUES ('97', '3', '868', '1', '2017-02-28 10:27:39', '0');
+INSERT INTO `fj_maintenance_offer` VALUES ('98', '25', '1289', '1', '2017-03-02 13:54:53', '0');
+INSERT INTO `fj_maintenance_offer` VALUES ('99', '19', '1289', '1', '2017-03-03 14:21:25', '0');
+INSERT INTO `fj_maintenance_offer` VALUES ('100', '24', '1289', '1', '2017-03-03 14:53:45', '0');
+INSERT INTO `fj_maintenance_offer` VALUES ('101', '25', '870', '1', '2017-03-06 14:25:27', '0');
 
 -- ----------------------------
 -- Table structure for fj_member
@@ -14333,7 +14508,7 @@ CREATE TABLE `fj_member` (
   `state` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态 1为开启 0为关闭',
   PRIMARY KEY (`member_id`),
   UNIQUE KEY `phone` (`phone`)
-) ENGINE=InnoDB AUTO_INCREMENT=7699 DEFAULT CHARSET=utf8 COMMENT='会员表';
+) ENGINE=InnoDB AUTO_INCREMENT=7705 DEFAULT CHARSET=utf8 COMMENT='会员表';
 
 -- ----------------------------
 -- Records of fj_member
@@ -14368,7 +14543,7 @@ INSERT INTO `fj_member` VALUES ('5957', '18782943093', '18782943093', '', 'e10ad
 INSERT INTO `fj_member` VALUES ('5958', '18782943094', '18782943094', '', 'e10adc3949ba59abbe56e057f20f883e', null, '1');
 INSERT INTO `fj_member` VALUES ('5959', '18221190129', '18221190129', '', 'fd35d4c6011195fdeecd5beb309939f0', null, '1');
 INSERT INTO `fj_member` VALUES ('5960', '18782953058', '18782953058', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
-INSERT INTO `fj_member` VALUES ('5961', '13400000002', '13400000002', '', 'e10adc3949ba59abbe56e057f20f883e', null, '1');
+INSERT INTO `fj_member` VALUES ('5961', '13400000002', '13400000002', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 INSERT INTO `fj_member` VALUES ('5962', '13500000000', '13500000000', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 INSERT INTO `fj_member` VALUES ('5963', '18782943023', '18782943023', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 INSERT INTO `fj_member` VALUES ('5965', '18980011133', '18980011133', '', 'ebc7b098391022f8ff1c824c94362f15', null, '1');
@@ -16105,6 +16280,9 @@ INSERT INTO `fj_member` VALUES ('7695', '13438896182', '13438896182', '', 'e9e59
 INSERT INTO `fj_member` VALUES ('7696', '13438896181', '13438896181', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 INSERT INTO `fj_member` VALUES ('7697', '13438896183', '13438896183', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 INSERT INTO `fj_member` VALUES ('7698', '13438896184', '13438896184', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
+INSERT INTO `fj_member` VALUES ('7699', '13555555555', '13555555555', '', '92a6182203d9a5597199731cbc88bf5c', null, '1');
+INSERT INTO `fj_member` VALUES ('7703', '15555555555', '15555555555', '', '07edfb80949d49c32933002dc586287e', null, '1');
+INSERT INTO `fj_member` VALUES ('7704', '13438896185', '13438896185', '', 'e9e5971b770925807a047ec7bff0fdcc', null, '1');
 
 -- ----------------------------
 -- Table structure for fj_member_extend
@@ -16127,7 +16305,7 @@ CREATE TABLE `fj_member_extend` (
   `last_login_time` int(10) NOT NULL DEFAULT '0' COMMENT '保存时间戳',
   PRIMARY KEY (`id`),
   KEY `member_id` (`member_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4974 DEFAULT CHARSET=utf8 COMMENT='用户信息扩展';
+) ENGINE=InnoDB AUTO_INCREMENT=4980 DEFAULT CHARSET=utf8 COMMENT='用户信息扩展';
 
 -- ----------------------------
 -- Records of fj_member_extend
@@ -17895,6 +18073,9 @@ INSERT INTO `fj_member_extend` VALUES ('4970', '7695', '0', '0', '0', '0', '', '
 INSERT INTO `fj_member_extend` VALUES ('4971', '7696', '0', '0', '0', '0', '', '', '', '', '1487923092', '1', null, '0');
 INSERT INTO `fj_member_extend` VALUES ('4972', '7697', '0', '0', '0', '0', '', '', '', '', '1488160549', '1', null, '0');
 INSERT INTO `fj_member_extend` VALUES ('4973', '7698', '0', '0', '0', '0', '', '', '', '', '1488331673', '1', null, '0');
+INSERT INTO `fj_member_extend` VALUES ('4974', '7699', '0', '0', '0', '0', '', '', '', '', '1488523872', '1', null, '0');
+INSERT INTO `fj_member_extend` VALUES ('4978', '7703', '0', '0', '0', '0', '', '', '', '', '1488525133', '1', null, '0');
+INSERT INTO `fj_member_extend` VALUES ('4979', '7704', '0', '0', '0', '0', '', '', '', '', '1488525310', '1', null, '0');
 
 -- ----------------------------
 -- Table structure for fj_msg
@@ -17914,7 +18095,7 @@ CREATE TABLE `fj_msg` (
   PRIMARY KEY (`id`),
   KEY `seller_id` (`seller_id`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COMMENT='消息表';
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COMMENT='消息表';
 
 -- ----------------------------
 -- Records of fj_msg
@@ -17934,6 +18115,11 @@ INSERT INTO `fj_msg` VALUES ('32', '0', '425', 'withdrawal', '    商家[  保�
 INSERT INTO `fj_msg` VALUES ('33', '2', '9', 'assigned', '    您于 2016-12-30 14:41 收到订单号为 370534336607978000 ,手机型号: 三星 GALAXY S6 的维修指派.请尽快安排维修!', '0', '0', '0', '1483080106', '0');
 INSERT INTO `fj_msg` VALUES ('34', '2', '10', 'assigned', '    您于 2017-02-13 10:46 收到订单号为 34235235346546 ,手机型号: 三星 A7108 的维修指派.请尽快安排维修!', '1', '5937', '1487922721', '1486953972', '0');
 INSERT INTO `fj_msg` VALUES ('35', '24', '11', 'assigned', '    您于 2017-02-23 14:28 收到订单号为 790541174788490000 ,手机型号: 三星 A7108 的维修指派.请尽快安排维修!', '1', '7695', '1487922534', '1487831319', '0');
+INSERT INTO `fj_msg` VALUES ('36', '25', '12', 'assigned', '    您于 2017-03-02 14:00 收到订单号为 850541768504780000 ,手机型号: 三星 dd3 的维修指派.请尽快安排维修!', '0', '0', '0', '1488434436', '0');
+INSERT INTO `fj_msg` VALUES ('37', '25', '13', 'assigned', '    您于 2017-03-03 14:22 收到订单号为 430541865101237000 ,手机型号: 三星 dd3 的维修指派.请尽快安排维修!', '1', '7697', '1488522290', '1488522145', '0');
+INSERT INTO `fj_msg` VALUES ('38', '25', '14', 'assigned', '    您于 2017-03-03 14:55 收到订单号为 670541867872426000 ,手机型号: 三星 dd3 的维修指派.请尽快安排维修!', '0', '0', '0', '1488524114', '0');
+INSERT INTO `fj_msg` VALUES ('39', '25', '15', 'assigned', '    您于 2017-03-06 14:07 收到订单号为 670541867872426000 ,手机型号: 三星 dd3 的维修指派.请尽快安排维修!', '0', '0', '0', '1488780469', '0');
+INSERT INTO `fj_msg` VALUES ('40', '25', '16', 'assigned', '    您于 2017-03-06 14:47 收到订单号为 660541869133005000 ,手机型号: 三星 dd3 的维修指派.请尽快安排维修!', '0', '0', '0', '1488782867', '0');
 
 -- ----------------------------
 -- Table structure for fj_order
@@ -17964,13 +18150,13 @@ CREATE TABLE `fj_order` (
   `add_time` int(10) unsigned NOT NULL COMMENT '订单生成时间',
   PRIMARY KEY (`order_id`),
   KEY `add_time` (`add_time`)
-) ENGINE=InnoDB AUTO_INCREMENT=1889 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=1898 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_order
 -- ----------------------------
-INSERT INTO `fj_order` VALUES ('1', '34235235346546', '2', 'dsaf', '18080091122', 'kaquan', '', '4294967295', '18.00', '0', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '18.00', '0', '1', '0', null, '0', '1', '1461234560');
-INSERT INTO `fj_order` VALUES ('12', '950533061088252000', '5954', '15881109440', '15881109440', 'kaquan', '', '1479717088', '88.00', '0', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '88.00', '0', '1', '0', null, '0', '1', '1479717088');
+INSERT INTO `fj_order` VALUES ('1', '34235235346546', '2', 'dsaf', '18080091122', 'kaquan', '', '4294967295', '18.00', '40', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '18.00', '0', '1', '0', null, '0', '1', '1461234560');
+INSERT INTO `fj_order` VALUES ('12', '950533061088252000', '5954', '15881109440', '15881109440', 'kaquan', '', '1479717088', '88.00', '40', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '88.00', '0', '1', '0', null, '0', '1', '1479717088');
 INSERT INTO `fj_order` VALUES ('13', '140533061510280000', '5954', '15881109440', '15881109440', 'kaquan', '', '1479717510', '88.00', '30', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '88.00', '0', '1', '0', null, '0', '1', '1479717510');
 INSERT INTO `fj_order` VALUES ('14', '140533068510280000', '5954', '15881109440', '15881109440', 'kaquan', '', '1479717510', '88.00', '30', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '88.00', '0', '1', '0', '', '0', '1', '1479717510');
 INSERT INTO `fj_order` VALUES ('15', '140533091510280000', '5954', '15881109440', '15881109440', 'kaquan', '', '1479717510', '88.00', '30', '3', 'JT0608801', '锦泰保险-碎屏无忧-险种名称', '4', '88.00', '0', '1', '0', '', '0', '1', '1479717510');
@@ -17991,7 +18177,7 @@ INSERT INTO `fj_order` VALUES ('62', '280533726769518000', '5954', '15881109440'
 INSERT INTO `fj_order` VALUES ('63', '940533746973702000', '5954', '15881109440', '15881109440', 'kaquan', '', '1480402973', '10.00', '30', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1480402973');
 INSERT INTO `fj_order` VALUES ('64', '390533747626842000', '5954', '15881109440', '15881109440', 'kaquan', '', '1480403626', '600.00', '30', '10', 'JLBX0660021', '苹果专用半年险（多次）', '21', '600.00', '0', '1', '0', null, '0', '1', '1480403626');
 INSERT INTO `fj_order` VALUES ('65', '250533817270542000', '5954', '15881109440', '15881109440', 'kaquan', '', '1480473270', '455.00', '30', '9', 'JLBX0645521', '苹果专用半年险（一次）', '21', '455.00', '0', '1', '0', null, '0', '1', '1480473270');
-INSERT INTO `fj_order` VALUES ('66', '560533830483613000', '5954', '15881109440', '15881109440', 'kaquan', '', '1480486483', '455.00', '0', '9', 'JLBX0645521', '苹果专用半年险（一次）', '21', '455.00', '0', '1', '0', null, '0', '1', '1480486483');
+INSERT INTO `fj_order` VALUES ('66', '560533830483613000', '5954', '15881109440', '15881109440', 'kaquan', '', '1480486483', '455.00', '40', '9', 'JLBX0645521', '苹果专用半年险（一次）', '21', '455.00', '0', '1', '0', null, '0', '1', '1480486483');
 INSERT INTO `fj_order` VALUES ('67', '530534013570345000', '5965', '18980011133', '18980011133', '', '', '0', '10.00', '20', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1480669570');
 INSERT INTO `fj_order` VALUES ('68', '420534014495847000', '5954', '15881109440', '15881109440', '', '', '0', '10.00', '20', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1480670495');
 INSERT INTO `fj_order` VALUES ('69', '390534014527309000', '5954', '15881109440', '15881109440', '', '', '0', '10.00', '20', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1480670527');
@@ -19813,7 +19999,13 @@ INSERT INTO `fj_order` VALUES ('1884', 'A560534542951763316', '7692', '徐勇', 
 INSERT INTO `fj_order` VALUES ('1885', 'A390534781342087341', '7693', '陈凤', '13880619394', 'kaquan', '', '1481437342', '188.00', '30', '10', 'RS1218801', '乐换新碎屏无忧/理赔金额1000', '0', '188.00', '0', '1', '0', '品牌型号#VIVO X9', '0', '1', '1481437341');
 INSERT INTO `fj_order` VALUES ('1886', '160536755612127000', '5942', '18612178247', '18612178247', '', '', '0', '300.00', '0', '11', 'RS1230009', '三星半test', '9', '300.00', '0', '1', '0', null, '0', '1', '1483411612');
 INSERT INTO `fj_order` VALUES ('1887', '490537619970965000', '5931', '', '18080091133', 'kaquan', '', '1484275970', '10.00', '20', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1484275970');
-INSERT INTO `fj_order` VALUES ('1888', '790541174788490000', '7695', '13438896182', '13438896182', '', '', '0', '10.00', '30', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1487830788');
+INSERT INTO `fj_order` VALUES ('1888', '790541174788490000', '7695', '13438896182', '13438896182', '', '', '0', '10.00', '40', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1487830788');
+INSERT INTO `fj_order` VALUES ('1889', '850541768504780000', '7695', '13438896182', '13438896182', '', '', '0', '10.00', '30', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1488424504');
+INSERT INTO `fj_order` VALUES ('1890', '320541854550866000', '7695', '13438896182', '13438896182', '', '', '0', '10.00', '10', '1', 'CS0301002', '测试保险er', '2', '10.00', '0', '1', '0', null, '0', '1', '1488510550');
+INSERT INTO `fj_order` VALUES ('1891', '430541865101237000', '7695', '13438896182', '13438896182', 'kaquan', '', '1488521101', '50.00', '30', '4', 'JT1205007', 'JT-进水险', '7', '50.00', '0', '1', '0', null, '0', '1', '1488521101');
+INSERT INTO `fj_order` VALUES ('1892', '260541866758605000', '7695', '13438896182', '13438896182', 'kaquan', '', '1488522758', '50.00', '40', '4', 'JT1205007', 'JT-进水险', '7', '50.00', '0', '1', '0', null, '0', '1', '1488522758');
+INSERT INTO `fj_order` VALUES ('1893', '670541867872426000', '7699', '13555555555', '13555555555', 'kaquan', '', '1488523872', '12.00', '40', '6', 'RS0301205', '新增的', '5', '12.00', '0', '1', '0', null, '0', '1', '1488523872');
+INSERT INTO `fj_order` VALUES ('1897', '660541869133005000', '7703', '15555555555', '15555555555', 'kaquan', '', '1488525132', '12.00', '30', '6', 'RS0301205', '新增的', '5', '12.00', '0', '1', '0', null, '0', '1', '1488525133');
 
 -- ----------------------------
 -- Table structure for fj_order_extend
@@ -19847,7 +20039,7 @@ CREATE TABLE `fj_order_extend` (
   PRIMARY KEY (`common_id`),
   KEY `order_id` (`order_id`) USING BTREE,
   KEY `buyer_phone` (`buyer_phone`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2012 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=2018 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_order_extend
@@ -21697,6 +21889,12 @@ INSERT INTO `fj_order_extend` VALUES ('2008', '1885', '11', '蒋军#乐换新总
 INSERT INTO `fj_order_extend` VALUES ('2009', '1886', '1', '乐换新', '', '18612178247', '', '', '0', '', '', '', '208', '533', '0', '0', '0', '0', '0', '0', '', '0.00', '', '0');
 INSERT INTO `fj_order_extend` VALUES ('2010', '1887', '2', '保险商户测试1', '零售商测试', '18080091133', '54869753156456985', '511111188841411236', '0', '', '', '', '208', '405', '0', '0', '0', '0', '0', '0', '', '0.00', '', '0');
 INSERT INTO `fj_order_extend` VALUES ('2011', '1888', '1', '乐换新', '小葫芦', '13438896182', 'fsdfsdfsdfsdfsdfsdf', '222222222222222', '0', '', '/uploads/coverage/20170223/_36069dbac01a168ed53bbda3b681fea91481616d.jpg', '/uploads/coverage/20170223/_fb3184c55ebecc7d3cf3c0826dd232ec4532dfd1.jpg', '208', '511', '0', '1', '1488470400', '1496419199', '0', '0', '12312131333', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2012', '1889', '1', '乐换新', '保险', '13438896182', '45464564654654654', '456454646546465464', '0', '', '/uploads/coverage/20170302/_2dd0ad090b7f6854b2a7a658f38fc83e8805333f.jpg', '/uploads/coverage/20170302/_23e2ca6ddd28ce20458a86945fb6f58049571694.jpg', '208', '533', '0', '1', '1489075200', '1497023999', '0', '0', '21313212131', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2013', '1890', '1', '乐换新', '', '13438896182', '', '', '0', '', '', '', '208', '533', '0', '0', '0', '0', '0', '0', '', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2014', '1891', '24', 'hztest', 'hz', '13438896182', '545645645646465', '555555555555555555', '0', '', '/uploads/weixin_20170303/20170303_45f12fc0499af77cc3b79c526647c9c116b2ddd6.jpg', '/uploads/weixin_20170303/20170303_178cc1880df2db7352dbf4cc2655903809bb893b.jpg', '208', '533', '0', '1', '1489161600', '1520697599', '0', '0', '55555255222', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2015', '1892', '24', 'hztest', '激活二级商家hz3的卡券', '13438896182', '123456789012345', '555555555555555555', '0', '', '/uploads/weixin_20170303/20170303_6f53dc7fea4b81f9eabf698593476d7a9560139a.jpg', '/uploads/weixin_20170303/20170303_d22de4bcfea5a79d62c2f64ee78db8857d6792d3.jpg', '208', '511', '0', '1', '0', '0', '0', '0', '', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2016', '1893', '25', 'hztest', '二级商家hz3卡券激活', '13555555555', '111111111111111', '122222222222222222', '0', '', '/uploads/weixin_20170303/20170303_c652d1259e23168b8da147adbdb7a9f739c0ecf1.jpg', '/uploads/weixin_20170303/20170303_656b4c971027b7e005d7c85494f95d4bdeaf8714.jpg', '208', '533', '0', '1', '1489161600', '1497110399', '0', '0', '545454546666', '0.00', '', '0');
+INSERT INTO `fj_order_extend` VALUES ('2017', '1897', '25', 'hz3', '二级商户hz3的卡券', '15555555555', '222222222222222', '555555555555555555', '0', '', '/uploads/weixin_20170303/20170303_68578792058a4c46aa2efc5b4bc88bdfde9787f8.jpg', '/uploads/weixin_20170303/20170303_f9d0ffa87eb51bf866d7e7eb10c750b1c9a90a8e.jpg', '208', '533', '0', '1', '1489161600', '1497110399', '0', '0', '121212121231321', '0.00', '', '0');
 
 -- ----------------------------
 -- Table structure for fj_order_log
@@ -21712,7 +21910,7 @@ CREATE TABLE `fj_order_log` (
   `log_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP COMMENT '处理时间',
   `status` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '是否前端显示',
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=172 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=190 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_order_log
@@ -21851,6 +22049,21 @@ INSERT INTO `fj_order_log` VALUES ('168', '1887', '10', '10', '卡券激活下�
 INSERT INTO `fj_order_log` VALUES ('169', '1888', '10', '10', '购买下单', '', '2017-02-23 14:19:48', '1');
 INSERT INTO `fj_order_log` VALUES ('170', '1888', '21', '22', '通过了哦', 'admin', '2017-02-23 14:26:13', '1');
 INSERT INTO `fj_order_log` VALUES ('171', '1888', '22', '30', '更新保单号成功:12312131333', 'admin', '2017-02-23 14:26:40', '1');
+INSERT INTO `fj_order_log` VALUES ('172', '1889', '10', '10', '购买下单', '', '2017-03-02 11:15:04', '1');
+INSERT INTO `fj_order_log` VALUES ('173', '1889', '21', '22', '审核通过了，进入保障中', 'admin', '2017-03-02 13:50:58', '1');
+INSERT INTO `fj_order_log` VALUES ('174', '1889', '22', '30', '更新保单号成功:21313212131', 'admin', '2017-03-02 13:51:14', '1');
+INSERT INTO `fj_order_log` VALUES ('175', '1889', '22', '30', '更新保单号成功:21313212131', 'admin', '2017-03-02 13:51:28', '1');
+INSERT INTO `fj_order_log` VALUES ('176', '1890', '10', '10', '购买下单', '', '2017-03-03 11:09:10', '1');
+INSERT INTO `fj_order_log` VALUES ('177', '1891', '10', '10', '卡券激活下单', '', '2017-03-03 14:05:01', '1');
+INSERT INTO `fj_order_log` VALUES ('178', '1891', '21', '22', '商家卡券激活审核通过', 'admin', '2017-03-03 14:06:20', '1');
+INSERT INTO `fj_order_log` VALUES ('179', '1891', '22', '30', '更新保单号成功:55555255222', 'admin', '2017-03-03 14:07:44', '1');
+INSERT INTO `fj_order_log` VALUES ('180', '1892', '10', '10', '卡券激活下单', '', '2017-03-03 14:32:38', '1');
+INSERT INTO `fj_order_log` VALUES ('181', '1893', '10', '10', '卡券激活下单', '', '2017-03-03 14:51:12', '1');
+INSERT INTO `fj_order_log` VALUES ('182', '1893', '21', '22', '通过', 'admin', '2017-03-03 14:51:42', '1');
+INSERT INTO `fj_order_log` VALUES ('183', '1893', '22', '30', '更新保单号成功:545454546666', 'admin', '2017-03-03 14:51:58', '1');
+INSERT INTO `fj_order_log` VALUES ('187', '1897', '10', '10', '卡券激活下单', '', '2017-03-03 15:12:13', '1');
+INSERT INTO `fj_order_log` VALUES ('188', '1897', '21', '22', '', 'admin', '2017-03-03 15:20:01', '1');
+INSERT INTO `fj_order_log` VALUES ('189', '1897', '22', '30', '更新保单号成功:121212121231321', 'admin', '2017-03-03 15:20:15', '1');
 
 -- ----------------------------
 -- Table structure for fj_order_maintenance
@@ -21888,7 +22101,7 @@ CREATE TABLE `fj_order_maintenance` (
   PRIMARY KEY (`id`),
   KEY `vr_order_id` (`order_id`),
   KEY `type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=437 DEFAULT CHARSET=utf8 COMMENT='维保提交信息记录表（客户申请维保）';
+) ENGINE=InnoDB AUTO_INCREMENT=442 DEFAULT CHARSET=utf8 COMMENT='维保提交信息记录表（客户申请维保）';
 
 -- ----------------------------
 -- Records of fj_order_maintenance
@@ -21908,7 +22121,12 @@ INSERT INTO `fj_order_maintenance` VALUES ('432', '6821', '980', 'A1305351254886
 INSERT INTO `fj_order_maintenance` VALUES ('433', '7102', '1268', 'A650535121752353373', '3', '0', '', '雷茂繁', '18080607113', '0', '0', '0', '', '2', '0', '0', '', '1482910468', '', '', '', '', '0', '/uploads/maintain/20161228/_37cddb4a6d8beebc3c2b715a6065b361f98f0034.jpg', '/uploads/maintain/20161228/_bfe2f87887514ccb1655a18f597b4f88380062e1.jpg', '/uploads/maintain/20161228/_5c27407b0295d599f6dde96088799ca097bab7c6.jpg', '/uploads/maintain/20161228/_0beff11c5fef05cd91582af26786b154f46a4182.jpg', '');
 INSERT INTO `fj_order_maintenance` VALUES ('434', '6108', '244', 'A860535054274834372', '3', '0', '', '贺思芬', '18200542687', '0', '0', '0', '', '1', '0', '0', '', '1482913324', '', '', '', '', '0', '/uploads/maintain/20161228/_8cf9d2bc1a67d04a42a72df2f60fa477fc9db822.jpg', '/uploads/maintain/20161228/_54f5849db227815700475416e69376338223b17f.jpg', '/uploads/maintain/20161228/_4c6cad543ed1cebd649ffdfb4f4b1b62029b17aa.jpg', '/uploads/maintain/20161228/_ca3e844f1c13bfc815ed67174e1c6a26e4ffa2c5.jpg', '');
 INSERT INTO `fj_order_maintenance` VALUES ('435', '7663', '1855', 'A900535045267344369', '3', '0', '', '李水明', '13551500988', '0', '0', '0', '', '1', '0', '0', '', '1482913688', '', '', '', '', '0', '/uploads/maintain/20161228/_ceb0339bcfcd59d58eb9ce67fe5892c278040e9b.png', '/uploads/maintain/20161228/_f7084079069421570d75bcb2868c50299575ac43.jpg', '/uploads/maintain/20161228/_f25595a4853a6a0a88c68d1819ada1d8068ddc65.jpg', '/uploads/maintain/20161228/_2e80808d948b43626622b134246789c92fe8769e.jpg', '');
-INSERT INTO `fj_order_maintenance` VALUES ('436', '7695', '1888', '790541174788490000', '1', '0', '', '小葫芦', '13438896182', '0', '0', '0', '', '4', '0', '0', '', '1487831230', '', '', '', '', '0', '/uploads/maintain/20170223/_86c4fafd13bc30fe9589f396323ec3ef9f8d7fdd.jpg', '/uploads/maintain/20170223/_2001ed2704ac5293028a6b34113c569be7c6d261.jpg', '/uploads/maintain/20170223/_7b424d70b14f9c7b9507f552c425d164fedc2c7e.jpg', '/uploads/maintain/20170223/_ee674f83603e4df466f31962a57db31d1128b7c9.jpg', '');
+INSERT INTO `fj_order_maintenance` VALUES ('436', '7695', '1888', '790541174788490000', '1', '0', '', '小葫芦', '13438896182', '0', '0', '0', '', '5', '0', '0', '', '1487831230', '', '', '', '', '0', '/uploads/maintain/20170223/_86c4fafd13bc30fe9589f396323ec3ef9f8d7fdd.jpg', '/uploads/maintain/20170223/_2001ed2704ac5293028a6b34113c569be7c6d261.jpg', '/uploads/maintain/20170223/_7b424d70b14f9c7b9507f552c425d164fedc2c7e.jpg', '/uploads/maintain/20170223/_ee674f83603e4df466f31962a57db31d1128b7c9.jpg', '');
+INSERT INTO `fj_order_maintenance` VALUES ('437', '6667', '820', 'A130535043633665368', '3', '0', '', '廖霞', '13912334046', '0', '0', '0', '', '1', '0', '0', '', '1488418426', '', '', '', '', '0', '/uploads/maintain/20170302/_1ca5389b47b34c949eba6f985bba4ec2c2d8e6d3.jpg', '/uploads/maintain/20170302/_b5585e92e27e99da98f8064b1815da78d9f31605.png', '/uploads/maintain/20170302/_08c8052aa8db7efc62a882457cdda5e90d1bd1a0.png', '/uploads/maintain/20170302/_6ea6ce1e3bf3fa67d25b29e8dc2000fbf2750c98.png', '');
+INSERT INTO `fj_order_maintenance` VALUES ('438', '7695', '1889', '850541768504780000', '3', '29', '12123123131', '保险', '13438896182', '4', '86', '1321', '哪里啊', '3', '0', '0', '', '1488433919', '', '', '', '', '0', '/uploads/maintain/20170302/_cd0e29cdec116ebb0c7eff770e6127b6f899c998.png', '/uploads/maintain/20170302/_92108bcaa3132b2652994267b0224cb1bfecf04a.jpg', '/uploads/maintain/20170302/_133878512c3fb60d4b3540a5adc1c66f9d8d2e8f.png', '/uploads/maintain/20170302/_ff0a41c5b1140071b1510eda238fddc06c42dd47.jpg', '');
+INSERT INTO `fj_order_maintenance` VALUES ('439', '7695', '1891', '430541865101237000', '3', '0', '', 'hz', '13438896182', '4', '86', '1321', '哪里啊', '3', '0', '0', '', '1488521351', '', '', '', '', '0', '/uploads/maintain/20170303/_ccee0e931cf4c295e8493787e354c5992e5b6470.jpg', '/uploads/maintain/20170303/_5d2222a54836004313ff1ae94ccfdc497a9d8333.jpg', '/uploads/maintain/20170303/_0baf24090a797fc2cb753c8100620850e638996b.jpg', '/uploads/maintain/20170303/_961cf147a751384294da391c1b5ffcca9874b882.jpg', '');
+INSERT INTO `fj_order_maintenance` VALUES ('440', '7699', '1893', '670541867872426000', '1', '0', '', '二级商家hz3卡券激活', '13555555555', '4', '86', '1321', '哪里啊', '5', '0', '0', '', '1488523972', '', '', '', '', '1', '/uploads/maintain/20170303/_8dc0dfded3a276b14095ed16156d9fd21af85ba2.jpg', '/uploads/maintain/20170303/_6fedef3ee53d81ade71a420196f281fa1737e86c.jpg', '/uploads/maintain/20170303/_0a3f7d3b53d7868110cb9b73e7afa3c4cebc1ada.jpg', '/uploads/maintain/20170303/_a26081bb47a9a64a831adcb7536fbca2cdf94bd0.jpg', '');
+INSERT INTO `fj_order_maintenance` VALUES ('441', '7703', '1897', '660541869133005000', '3', '0', '', '二级商户hz3的卡券', '15555555555', '4', '86', '1321', '哪里啊', '3', '0', '0', '', '1488525634', '', '', '', '', '0', '/uploads/maintain/20170303/_e7a4b9c72109dae2d0de15a47552924f7b4f21be.jpg', '/uploads/maintain/20170303/_fadd8aebed3d458db7b35d5054446aa692021778.jpg', '/uploads/maintain/20170303/_cda89643faacde0a726130e1a0feff145c8be1be.jpg', '/uploads/maintain/20170303/_66e1a35c019633940518364c172920ab6c6576e7.jpg', '');
 
 -- ----------------------------
 -- Table structure for fj_order_maintenance_log
@@ -21925,7 +22143,7 @@ CREATE TABLE `fj_order_maintenance_log` (
   `add_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `service_id` (`m_order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1722 DEFAULT CHARSET=utf8 COMMENT='维保操作日志';
+) ENGINE=InnoDB AUTO_INCREMENT=1741 DEFAULT CHARSET=utf8 COMMENT='维保操作日志';
 
 -- ----------------------------
 -- Records of fj_order_maintenance_log
@@ -21985,6 +22203,25 @@ INSERT INTO `fj_order_maintenance_log` VALUES ('1718', '1888', '436', '审核成
 INSERT INTO `fj_order_maintenance_log` VALUES ('1719', '1888', '436', '指派商家:[hztest|hz|13438896182]#通过', '1', '[平台]admin', '1', '2017-02-23 14:28:39');
 INSERT INTO `fj_order_maintenance_log` VALUES ('1720', '1268', '433', '审核成功待指派#yes', '1', '[平台]admin', '1', '2017-02-24 16:51:26');
 INSERT INTO `fj_order_maintenance_log` VALUES ('1721', '1888', '436', '待理赔资料提交#总后台提交理赔资料', '1', '[平台]admin', '1', '2017-02-27 09:42:35');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1722', '1889', '438', '审核成功待指派#资料提交成功，进入维修', '1', '[平台]admin', '1', '2017-03-02 13:52:17');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1723', '1889', '438', '指派商家:[hz3|hz3|13438896183]#商家维修地址是不能修改的', '1', '[平台]admin', '1', '2017-03-02 14:00:36');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1724', '1889', '438', '服务中#待收快递', '7697', '[商家]13438896183[13438896183]', '1', '2017-03-02 14:04:06');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1725', '1891', '439', '审核成功待指派#成功了', '1', '[平台]admin', '1', '2017-03-03 14:09:25');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1726', '1891', '439', '指派商家:[hz3|hz3|13438896183]#请处理', '1', '[平台]admin', '1', '2017-03-03 14:22:25');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1727', '1893', '440', '审核成功待指派#资料ok，可维修', '1', '[平台]admin', '1', '2017-03-03 14:53:10');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1728', '1893', '440', '指派商家:[hz3|hz3|13438896183]#指派给二级商家hz3来维修', '1', '[平台]admin', '1', '2017-03-03 14:55:14');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1729', '1897', '441', '审核成功待指派#二胎', '1', '[平台]admin', '1', '2017-03-03 15:20:41');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1730', '1888', '436', '核查通过#维保完成', '1', '[平台]admin', '1', '2017-03-06 14:04:34');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1731', '1888', '436', '核查通过#维保完成', '1', '[平台]admin', '1', '2017-03-06 14:04:43');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1732', '1893', '440', '维保完成', '1', '[平台]admin', '1', '2017-03-06 14:06:26');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1733', '1893', '440', '待核查资料#上传资料', '1', '[平台]admin', '1', '2017-03-06 14:06:26');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1734', '1893', '440', '维修失败#维修失败', '1', '[平台]admin', '0', '2017-03-06 14:07:22');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1735', '1893', '440', '指派商家:[hz3|hz3|13438896183]#请处理', '1', '[平台]admin', '1', '2017-03-06 14:07:49');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1736', '1893', '440', '待核查资料#已处理', '7697', '[商家]13438896183[13438896183]', '1', '2017-03-06 14:15:32');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1737', '1893', '440', '核查未通过#价格不正确', '1', '[平台]admin', '1', '2017-03-06 14:16:10');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1738', '1893', '440', '待核查资料#屏幕价格更正为500', '7697', '[商家]13438896183[13438896183]', '1', '2017-03-06 14:16:40');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1739', '1893', '440', '核查通过#维保完成', '1', '[平台]admin', '1', '2017-03-06 14:17:12');
+INSERT INTO `fj_order_maintenance_log` VALUES ('1740', '1897', '441', '指派商家:[hz3|hz3|13438896183]#请处理', '1', '[平台]admin', '1', '2017-03-06 14:47:47');
 
 -- ----------------------------
 -- Table structure for fj_order_maintenance_service
@@ -22015,7 +22252,7 @@ CREATE TABLE `fj_order_maintenance_service` (
   KEY `m_order_id` (`m_order_id`),
   KEY `m_id` (`m_id`),
   KEY `service_status` (`service_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='商家维修表';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='商家维修表';
 
 -- ----------------------------
 -- Records of fj_order_maintenance_service
@@ -22029,7 +22266,12 @@ INSERT INTO `fj_order_maintenance_service` VALUES ('7', '12', '95053306108825200
 INSERT INTO `fj_order_maintenance_service` VALUES ('8', '94', '370534336607978000', '428', '2', '可以的', '', '0', '0', '{\"before_phone_image\":{\"href\":\"\\/uploads\\/business\\/20161215\\/_68067dc7ac2a65ccbeaf6176d204d6fb04ef720c.png\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u524d\\u7167\\u7247\"},\"after_phone_image\":{\"href\":\"\\/uploads\\/business\\/20161215\\/_a188ebc520e88c13fe19626f53403db302345f78.png\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u540e\\u7167\\u7247\"},\"old_and_new_screnn_image\":{\"href\":\"\\/uploads\\/business\\/20161215\\/_0905490dc570b0b8d25f30711509debd15e0f614.jpg\",\"name\":\"\\u65b0\\u65e7\\u5c4f\\u5e55\\u7167\\u7247\"},\"repair_order_image\":{\"href\":\"\\/uploads\\/business\\/20161215\\/_868429d2c46ff2a16aaf32d0cc96a26d27f1bf55.jpg\",\"name\":\"\\u7ef4\\u4fee\\u5de5\\u5355\\u7167\\u7247\"},\"payable_image\":{\"href\":\"\\/uploads\\/business\\/20161215\\/_6df6fd279135a10034e21c1ee9854e27df8584e4.png\",\"name\":\"\\u7ef4\\u4fee\\u53d1\\u7968\\u7167\\u7247\"}}', '就这样吧', '1', '500.00', '200.00', '10', '500.00', '1481789588', '系统重新指派，此指派单作废', '1481508254');
 INSERT INTO `fj_order_maintenance_service` VALUES ('9', '94', '370534336607978000', '428', '3', 'yes', '', '1', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '0', '', '1483080106');
 INSERT INTO `fj_order_maintenance_service` VALUES ('10', '1', '34235235346546', '420', '2', 'test', 'yes', '7', '0', '{\"before_phone_image\":{\"href\":\"\\/uploads\\/business\\/20170213\\/before_phone_image_64e58ab35de07afb8a81fadc2d25f25094888e58.jpg\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u524d\\u7167\\u7247\"},\"after_phone_image\":{\"href\":\"\\/uploads\\/business\\/20170213\\/after_phone_image_db0bae01827d762454b469f011fdea254bd4bf79.jpg\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u540e\\u7167\\u7247\"},\"old_and_new_screnn_image\":{\"href\":\"\\/uploads\\/business\\/20170213\\/old_and_new_screnn_image_7ebb5d8c8a88dab62936c84f6e1d2a5b19b56a7c.jpg\",\"name\":\"\\u65b0\\u65e7\\u5c4f\\u5e55\\u7167\\u7247\"},\"repair_order_image\":{\"href\":\"\\/uploads\\/business\\/20170213\\/repair_order_image_e9c0b66a3f13b2eea47cfb18375f8eb26985f727.jpg\",\"name\":\"\\u7ef4\\u4fee\\u5de5\\u5355\\u7167\\u7247\"},\"payable_image\":{\"href\":\"\\/uploads\\/business\\/20170213\\/payable_image_4eb6ed8435f2cd2cc6e3bf725a80914db5bd19b0.png\",\"name\":\"\\u7ef4\\u4fee\\u53d1\\u7968\\u7167\\u7247\"}}', '爱仕达', '3', '0.00', '0.00', '0', '23.00', '1486971274', '', '1486953972');
-INSERT INTO `fj_order_maintenance_service` VALUES ('11', '1888', '790541174788490000', '436', '24', '通过', '总后台提交理赔资料', '4', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '0', '', '1487831319');
+INSERT INTO `fj_order_maintenance_service` VALUES ('11', '1888', '790541174788490000', '436', '24', '通过', '检查资料通过', '7', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '1488780283', '', '1487831319');
+INSERT INTO `fj_order_maintenance_service` VALUES ('12', '1889', '850541768504780000', '438', '25', '商家维修地址是不能修改的', '待收快递', '2', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '0', '', '1488434436');
+INSERT INTO `fj_order_maintenance_service` VALUES ('13', '1891', '430541865101237000', '439', '25', '请处理', '', '1', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '0', '', '1488522145');
+INSERT INTO `fj_order_maintenance_service` VALUES ('14', '1893', '670541867872426000', '440', '25', '指派给二级商家hz3来维修', '维修失败', '0', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '1488780386', '系统重新指派，此指派单作废', '1488524114');
+INSERT INTO `fj_order_maintenance_service` VALUES ('15', '1893', '670541867872426000', '440', '25', '请处理', '维修结束', '7', '0', '{\"before_phone_image\":{\"href\":\"\\/uploads\\/business\\/20170306\\/before_phone_image_c8c56bcc742cd60bcfd8d2f0c1df1c820b4959cc.jpg\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u524d\\u7167\\u7247\"},\"after_phone_image\":{\"href\":\"\\/uploads\\/business\\/20170306\\/after_phone_image_d9a1da8faeb4ef0185970929e7fc04e4b226d4f1.jpg\",\"name\":\"\\u7ef4\\u4fee\\u4e4b\\u540e\\u7167\\u7247\"},\"old_and_new_screnn_image\":{\"href\":\"\\/uploads\\/business\\/20170306\\/old_and_new_screnn_image_97662849b516fa5dd1cfe83111c66dd6999d5127.jpg\",\"name\":\"\\u65b0\\u65e7\\u5c4f\\u5e55\\u7167\\u7247\"},\"repair_order_image\":{\"href\":\"\\/uploads\\/business\\/20170306\\/repair_order_image_e2134472f8821a110b254cc012f6b21725d2e098.jpg\",\"name\":\"\\u7ef4\\u4fee\\u5de5\\u5355\\u7167\\u7247\"},\"payable_image\":{\"href\":\"\\/uploads\\/business\\/20170306\\/payable_image_78f4af7d964a6554f4fb908ca30f8e94a751147b.jpg\",\"name\":\"\\u7ef4\\u4fee\\u53d1\\u7968\\u7167\\u7247\"}}', '屏幕价格更正为500', '3', '0.00', '0.00', '0', '500.00', '1488781032', '', '1488780469');
+INSERT INTO `fj_order_maintenance_service` VALUES ('16', '1897', '660541869133005000', '441', '25', '请处理', '', '1', '0', '', '', '0', '0.00', '0.00', '0', '0.00', '0', '', '1488782867');
 
 -- ----------------------------
 -- Table structure for fj_payment
@@ -22071,7 +22313,7 @@ CREATE TABLE `fj_payment_log` (
   PRIMARY KEY (`id`),
   KEY `pay_sn` (`pay_sn`),
   KEY `order_id` (`order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of fj_payment_log
@@ -22087,6 +22329,7 @@ INSERT INTO `fj_payment_log` VALUES ('13', 'wx20161129092615c713c629790305601167
 INSERT INTO `fj_payment_log` VALUES ('14', 'wx201612061500582c6c3ba5d10414617041', '95', '', 'a:9:{s:5:\"appid\";s:18:\"wx0bb212c6a0f6d627\";s:6:\"mch_id\";s:10:\"1233000802\";s:9:\"nonce_str\";s:16:\"ZOvEUeV0IFppPJUU\";s:9:\"prepay_id\";s:36:\"wx201612061500582c6c3ba5d10414617041\";s:11:\"result_code\";s:7:\"SUCCESS\";s:11:\"return_code\";s:7:\"SUCCESS\";s:10:\"return_msg\";s:2:\"OK\";s:4:\"sign\";s:32:\"F3C709B62C8C4FBF2B8128CFEAB7C9CD\";s:10:\"trade_type\";s:5:\"JSAPI\";}', '用户（15881109440）发起预支付', '1481014856', '1481007656');
 INSERT INTO `fj_payment_log` VALUES ('15', 'wx201612091412067f63ff5ec10511445230', '102', '', 'a:9:{s:5:\"appid\";s:18:\"wx0bb212c6a0f6d627\";s:6:\"mch_id\";s:10:\"1233000802\";s:9:\"nonce_str\";s:16:\"VGNiynoCaPYpfeBr\";s:9:\"prepay_id\";s:36:\"wx201612091412067f63ff5ec10511445230\";s:11:\"result_code\";s:7:\"SUCCESS\";s:11:\"return_code\";s:7:\"SUCCESS\";s:10:\"return_msg\";s:2:\"OK\";s:4:\"sign\";s:32:\"1C21D31D559E48591904302EF25FF526\";s:10:\"trade_type\";s:5:\"JSAPI\";}', '用户（15881109440）发起预支付', '1481271123', '1481263923');
 INSERT INTO `fj_payment_log` VALUES ('16', 'wx201702231419550a34712a450959153477', '1888', '', 'a:9:{s:5:\"appid\";s:18:\"wx0bb212c6a0f6d627\";s:6:\"mch_id\";s:10:\"1233000802\";s:9:\"nonce_str\";s:16:\"Cq54UIfo9NXx5FXo\";s:9:\"prepay_id\";s:36:\"wx201702231419550a34712a450959153477\";s:11:\"result_code\";s:7:\"SUCCESS\";s:11:\"return_code\";s:7:\"SUCCESS\";s:10:\"return_msg\";s:2:\"OK\";s:4:\"sign\";s:32:\"63994AD250845D35C5003699189FC89C\";s:10:\"trade_type\";s:5:\"JSAPI\";}', '用户（）发起预支付', '1487838038', '1487830838');
+INSERT INTO `fj_payment_log` VALUES ('17', 'wx2017030211142354d5bc5aba0405314847', '1889', '', 'a:9:{s:5:\"appid\";s:18:\"wx0bb212c6a0f6d627\";s:6:\"mch_id\";s:10:\"1233000802\";s:9:\"nonce_str\";s:16:\"c2AzcAtQAiogMc45\";s:9:\"prepay_id\";s:36:\"wx2017030211142354d5bc5aba0405314847\";s:11:\"result_code\";s:7:\"SUCCESS\";s:11:\"return_code\";s:7:\"SUCCESS\";s:10:\"return_msg\";s:2:\"OK\";s:4:\"sign\";s:32:\"208658DA8796AF24F9E77FA372095633\";s:10:\"trade_type\";s:5:\"JSAPI\";}', '用户（）发起预支付', '1488431710', '1488424510');
 
 -- ----------------------------
 -- Table structure for fj_role
@@ -22116,7 +22359,7 @@ CREATE TABLE `fj_role_access` (
   `module_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `role_id` (`role_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2247 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='权限关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=2579 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='权限关系表';
 
 -- ----------------------------
 -- Records of fj_role_access
@@ -22129,112 +22372,119 @@ INSERT INTO `fj_role_access` VALUES ('2137', '138', '18', '13');
 INSERT INTO `fj_role_access` VALUES ('2138', '138', '19', '13');
 INSERT INTO `fj_role_access` VALUES ('2139', '138', '20', '13');
 INSERT INTO `fj_role_access` VALUES ('2140', '138', '21', '13');
-INSERT INTO `fj_role_access` VALUES ('2141', '137', '4', '6');
-INSERT INTO `fj_role_access` VALUES ('2142', '137', '12', '6');
-INSERT INTO `fj_role_access` VALUES ('2143', '137', '13', '6');
-INSERT INTO `fj_role_access` VALUES ('2144', '137', '64', '6');
-INSERT INTO `fj_role_access` VALUES ('2145', '137', '65', '6');
-INSERT INTO `fj_role_access` VALUES ('2146', '137', '110', '6');
-INSERT INTO `fj_role_access` VALUES ('2147', '137', '5', '7');
-INSERT INTO `fj_role_access` VALUES ('2148', '137', '8', '7');
-INSERT INTO `fj_role_access` VALUES ('2149', '137', '7', '8');
-INSERT INTO `fj_role_access` VALUES ('2150', '137', '47', '8');
-INSERT INTO `fj_role_access` VALUES ('2151', '137', '48', '8');
-INSERT INTO `fj_role_access` VALUES ('2152', '137', '49', '8');
-INSERT INTO `fj_role_access` VALUES ('2153', '137', '51', '8');
-INSERT INTO `fj_role_access` VALUES ('2154', '137', '52', '8');
-INSERT INTO `fj_role_access` VALUES ('2155', '137', '53', '8');
-INSERT INTO `fj_role_access` VALUES ('2156', '137', '9', '10');
-INSERT INTO `fj_role_access` VALUES ('2157', '137', '73', '10');
-INSERT INTO `fj_role_access` VALUES ('2158', '137', '74', '10');
-INSERT INTO `fj_role_access` VALUES ('2159', '137', '75', '10');
-INSERT INTO `fj_role_access` VALUES ('2160', '137', '10', '11');
-INSERT INTO `fj_role_access` VALUES ('2161', '137', '66', '11');
-INSERT INTO `fj_role_access` VALUES ('2162', '137', '67', '11');
-INSERT INTO `fj_role_access` VALUES ('2163', '137', '68', '11');
-INSERT INTO `fj_role_access` VALUES ('2164', '137', '11', '12');
-INSERT INTO `fj_role_access` VALUES ('2165', '137', '14', '13');
-INSERT INTO `fj_role_access` VALUES ('2166', '137', '15', '13');
-INSERT INTO `fj_role_access` VALUES ('2167', '137', '16', '13');
-INSERT INTO `fj_role_access` VALUES ('2168', '137', '17', '13');
-INSERT INTO `fj_role_access` VALUES ('2169', '137', '18', '13');
-INSERT INTO `fj_role_access` VALUES ('2170', '137', '19', '13');
-INSERT INTO `fj_role_access` VALUES ('2171', '137', '20', '13');
-INSERT INTO `fj_role_access` VALUES ('2172', '137', '21', '13');
-INSERT INTO `fj_role_access` VALUES ('2173', '137', '22', '14');
-INSERT INTO `fj_role_access` VALUES ('2174', '137', '23', '14');
-INSERT INTO `fj_role_access` VALUES ('2175', '137', '24', '14');
-INSERT INTO `fj_role_access` VALUES ('2176', '137', '25', '14');
-INSERT INTO `fj_role_access` VALUES ('2177', '137', '26', '14');
-INSERT INTO `fj_role_access` VALUES ('2178', '137', '27', '15');
-INSERT INTO `fj_role_access` VALUES ('2179', '137', '32', '15');
-INSERT INTO `fj_role_access` VALUES ('2180', '137', '55', '15');
-INSERT INTO `fj_role_access` VALUES ('2181', '137', '58', '15');
-INSERT INTO `fj_role_access` VALUES ('2182', '137', '61', '15');
-INSERT INTO `fj_role_access` VALUES ('2183', '137', '98', '15');
-INSERT INTO `fj_role_access` VALUES ('2184', '137', '99', '15');
-INSERT INTO `fj_role_access` VALUES ('2185', '137', '100', '15');
-INSERT INTO `fj_role_access` VALUES ('2186', '137', '28', '16');
-INSERT INTO `fj_role_access` VALUES ('2187', '137', '29', '16');
-INSERT INTO `fj_role_access` VALUES ('2188', '137', '30', '16');
-INSERT INTO `fj_role_access` VALUES ('2189', '137', '31', '16');
-INSERT INTO `fj_role_access` VALUES ('2190', '137', '33', '17');
-INSERT INTO `fj_role_access` VALUES ('2191', '137', '34', '17');
-INSERT INTO `fj_role_access` VALUES ('2192', '137', '35', '17');
-INSERT INTO `fj_role_access` VALUES ('2193', '137', '36', '17');
-INSERT INTO `fj_role_access` VALUES ('2194', '137', '37', '18');
-INSERT INTO `fj_role_access` VALUES ('2195', '137', '38', '18');
-INSERT INTO `fj_role_access` VALUES ('2196', '137', '40', '18');
-INSERT INTO `fj_role_access` VALUES ('2197', '137', '44', '18');
-INSERT INTO `fj_role_access` VALUES ('2198', '137', '45', '18');
-INSERT INTO `fj_role_access` VALUES ('2199', '137', '46', '18');
-INSERT INTO `fj_role_access` VALUES ('2200', '137', '39', '19');
-INSERT INTO `fj_role_access` VALUES ('2201', '137', '41', '19');
-INSERT INTO `fj_role_access` VALUES ('2202', '137', '42', '19');
-INSERT INTO `fj_role_access` VALUES ('2203', '137', '43', '19');
-INSERT INTO `fj_role_access` VALUES ('2204', '137', '50', '20');
-INSERT INTO `fj_role_access` VALUES ('2205', '137', '62', '20');
-INSERT INTO `fj_role_access` VALUES ('2206', '137', '63', '20');
-INSERT INTO `fj_role_access` VALUES ('2207', '137', '56', '22');
-INSERT INTO `fj_role_access` VALUES ('2208', '137', '57', '22');
-INSERT INTO `fj_role_access` VALUES ('2209', '137', '59', '22');
-INSERT INTO `fj_role_access` VALUES ('2210', '137', '60', '22');
-INSERT INTO `fj_role_access` VALUES ('2211', '137', '69', '23');
-INSERT INTO `fj_role_access` VALUES ('2212', '137', '70', '23');
-INSERT INTO `fj_role_access` VALUES ('2213', '137', '71', '23');
-INSERT INTO `fj_role_access` VALUES ('2214', '137', '72', '23');
-INSERT INTO `fj_role_access` VALUES ('2215', '137', '77', '24');
-INSERT INTO `fj_role_access` VALUES ('2216', '137', '83', '24');
-INSERT INTO `fj_role_access` VALUES ('2217', '137', '84', '24');
-INSERT INTO `fj_role_access` VALUES ('2218', '137', '85', '24');
-INSERT INTO `fj_role_access` VALUES ('2219', '137', '78', '25');
-INSERT INTO `fj_role_access` VALUES ('2220', '137', '79', '25');
-INSERT INTO `fj_role_access` VALUES ('2221', '137', '80', '25');
-INSERT INTO `fj_role_access` VALUES ('2222', '137', '81', '25');
-INSERT INTO `fj_role_access` VALUES ('2223', '137', '82', '25');
-INSERT INTO `fj_role_access` VALUES ('2224', '137', '86', '26');
-INSERT INTO `fj_role_access` VALUES ('2225', '137', '87', '26');
-INSERT INTO `fj_role_access` VALUES ('2226', '137', '88', '26');
-INSERT INTO `fj_role_access` VALUES ('2227', '137', '89', '27');
-INSERT INTO `fj_role_access` VALUES ('2228', '137', '90', '27');
-INSERT INTO `fj_role_access` VALUES ('2229', '137', '91', '28');
-INSERT INTO `fj_role_access` VALUES ('2230', '137', '92', '28');
-INSERT INTO `fj_role_access` VALUES ('2231', '137', '93', '28');
-INSERT INTO `fj_role_access` VALUES ('2232', '137', '94', '28');
-INSERT INTO `fj_role_access` VALUES ('2233', '137', '95', '28');
-INSERT INTO `fj_role_access` VALUES ('2234', '137', '96', '28');
-INSERT INTO `fj_role_access` VALUES ('2235', '137', '97', '29');
-INSERT INTO `fj_role_access` VALUES ('2236', '137', '101', '30');
-INSERT INTO `fj_role_access` VALUES ('2237', '137', '102', '30');
-INSERT INTO `fj_role_access` VALUES ('2238', '137', '103', '30');
-INSERT INTO `fj_role_access` VALUES ('2239', '137', '104', '30');
-INSERT INTO `fj_role_access` VALUES ('2240', '137', '108', '30');
-INSERT INTO `fj_role_access` VALUES ('2241', '137', '105', '31');
-INSERT INTO `fj_role_access` VALUES ('2242', '137', '106', '31');
-INSERT INTO `fj_role_access` VALUES ('2243', '137', '107', '31');
-INSERT INTO `fj_role_access` VALUES ('2244', '137', '109', '32');
-INSERT INTO `fj_role_access` VALUES ('2245', '137', '111', '33');
-INSERT INTO `fj_role_access` VALUES ('2246', '137', '112', '33');
+INSERT INTO `fj_role_access` VALUES ('2466', '137', '4', '6');
+INSERT INTO `fj_role_access` VALUES ('2467', '137', '12', '6');
+INSERT INTO `fj_role_access` VALUES ('2468', '137', '13', '6');
+INSERT INTO `fj_role_access` VALUES ('2469', '137', '64', '6');
+INSERT INTO `fj_role_access` VALUES ('2470', '137', '65', '6');
+INSERT INTO `fj_role_access` VALUES ('2471', '137', '110', '6');
+INSERT INTO `fj_role_access` VALUES ('2472', '137', '5', '7');
+INSERT INTO `fj_role_access` VALUES ('2473', '137', '8', '7');
+INSERT INTO `fj_role_access` VALUES ('2474', '137', '7', '8');
+INSERT INTO `fj_role_access` VALUES ('2475', '137', '47', '8');
+INSERT INTO `fj_role_access` VALUES ('2476', '137', '48', '8');
+INSERT INTO `fj_role_access` VALUES ('2477', '137', '49', '8');
+INSERT INTO `fj_role_access` VALUES ('2478', '137', '51', '8');
+INSERT INTO `fj_role_access` VALUES ('2479', '137', '52', '8');
+INSERT INTO `fj_role_access` VALUES ('2480', '137', '53', '8');
+INSERT INTO `fj_role_access` VALUES ('2481', '137', '9', '10');
+INSERT INTO `fj_role_access` VALUES ('2482', '137', '73', '10');
+INSERT INTO `fj_role_access` VALUES ('2483', '137', '74', '10');
+INSERT INTO `fj_role_access` VALUES ('2484', '137', '75', '10');
+INSERT INTO `fj_role_access` VALUES ('2485', '137', '10', '11');
+INSERT INTO `fj_role_access` VALUES ('2486', '137', '66', '11');
+INSERT INTO `fj_role_access` VALUES ('2487', '137', '67', '11');
+INSERT INTO `fj_role_access` VALUES ('2488', '137', '68', '11');
+INSERT INTO `fj_role_access` VALUES ('2489', '137', '11', '12');
+INSERT INTO `fj_role_access` VALUES ('2490', '137', '14', '13');
+INSERT INTO `fj_role_access` VALUES ('2491', '137', '15', '13');
+INSERT INTO `fj_role_access` VALUES ('2492', '137', '16', '13');
+INSERT INTO `fj_role_access` VALUES ('2493', '137', '17', '13');
+INSERT INTO `fj_role_access` VALUES ('2494', '137', '18', '13');
+INSERT INTO `fj_role_access` VALUES ('2495', '137', '19', '13');
+INSERT INTO `fj_role_access` VALUES ('2496', '137', '20', '13');
+INSERT INTO `fj_role_access` VALUES ('2497', '137', '21', '13');
+INSERT INTO `fj_role_access` VALUES ('2498', '137', '113', '13');
+INSERT INTO `fj_role_access` VALUES ('2499', '137', '22', '14');
+INSERT INTO `fj_role_access` VALUES ('2500', '137', '23', '14');
+INSERT INTO `fj_role_access` VALUES ('2501', '137', '24', '14');
+INSERT INTO `fj_role_access` VALUES ('2502', '137', '25', '14');
+INSERT INTO `fj_role_access` VALUES ('2503', '137', '26', '14');
+INSERT INTO `fj_role_access` VALUES ('2504', '137', '27', '15');
+INSERT INTO `fj_role_access` VALUES ('2505', '137', '32', '15');
+INSERT INTO `fj_role_access` VALUES ('2506', '137', '55', '15');
+INSERT INTO `fj_role_access` VALUES ('2507', '137', '58', '15');
+INSERT INTO `fj_role_access` VALUES ('2508', '137', '61', '15');
+INSERT INTO `fj_role_access` VALUES ('2509', '137', '98', '15');
+INSERT INTO `fj_role_access` VALUES ('2510', '137', '99', '15');
+INSERT INTO `fj_role_access` VALUES ('2511', '137', '100', '15');
+INSERT INTO `fj_role_access` VALUES ('2512', '137', '28', '16');
+INSERT INTO `fj_role_access` VALUES ('2513', '137', '29', '16');
+INSERT INTO `fj_role_access` VALUES ('2514', '137', '30', '16');
+INSERT INTO `fj_role_access` VALUES ('2515', '137', '31', '16');
+INSERT INTO `fj_role_access` VALUES ('2516', '137', '33', '17');
+INSERT INTO `fj_role_access` VALUES ('2517', '137', '34', '17');
+INSERT INTO `fj_role_access` VALUES ('2518', '137', '35', '17');
+INSERT INTO `fj_role_access` VALUES ('2519', '137', '36', '17');
+INSERT INTO `fj_role_access` VALUES ('2520', '137', '37', '18');
+INSERT INTO `fj_role_access` VALUES ('2521', '137', '38', '18');
+INSERT INTO `fj_role_access` VALUES ('2522', '137', '40', '18');
+INSERT INTO `fj_role_access` VALUES ('2523', '137', '44', '18');
+INSERT INTO `fj_role_access` VALUES ('2524', '137', '45', '18');
+INSERT INTO `fj_role_access` VALUES ('2525', '137', '46', '18');
+INSERT INTO `fj_role_access` VALUES ('2526', '137', '39', '19');
+INSERT INTO `fj_role_access` VALUES ('2527', '137', '41', '19');
+INSERT INTO `fj_role_access` VALUES ('2528', '137', '42', '19');
+INSERT INTO `fj_role_access` VALUES ('2529', '137', '43', '19');
+INSERT INTO `fj_role_access` VALUES ('2530', '137', '50', '20');
+INSERT INTO `fj_role_access` VALUES ('2531', '137', '62', '20');
+INSERT INTO `fj_role_access` VALUES ('2532', '137', '63', '20');
+INSERT INTO `fj_role_access` VALUES ('2533', '137', '56', '22');
+INSERT INTO `fj_role_access` VALUES ('2534', '137', '57', '22');
+INSERT INTO `fj_role_access` VALUES ('2535', '137', '59', '22');
+INSERT INTO `fj_role_access` VALUES ('2536', '137', '60', '22');
+INSERT INTO `fj_role_access` VALUES ('2537', '137', '69', '23');
+INSERT INTO `fj_role_access` VALUES ('2538', '137', '70', '23');
+INSERT INTO `fj_role_access` VALUES ('2539', '137', '71', '23');
+INSERT INTO `fj_role_access` VALUES ('2540', '137', '72', '23');
+INSERT INTO `fj_role_access` VALUES ('2541', '137', '77', '24');
+INSERT INTO `fj_role_access` VALUES ('2542', '137', '83', '24');
+INSERT INTO `fj_role_access` VALUES ('2543', '137', '84', '24');
+INSERT INTO `fj_role_access` VALUES ('2544', '137', '85', '24');
+INSERT INTO `fj_role_access` VALUES ('2545', '137', '78', '25');
+INSERT INTO `fj_role_access` VALUES ('2546', '137', '79', '25');
+INSERT INTO `fj_role_access` VALUES ('2547', '137', '80', '25');
+INSERT INTO `fj_role_access` VALUES ('2548', '137', '81', '25');
+INSERT INTO `fj_role_access` VALUES ('2549', '137', '82', '25');
+INSERT INTO `fj_role_access` VALUES ('2550', '137', '86', '26');
+INSERT INTO `fj_role_access` VALUES ('2551', '137', '87', '26');
+INSERT INTO `fj_role_access` VALUES ('2552', '137', '88', '26');
+INSERT INTO `fj_role_access` VALUES ('2553', '137', '89', '27');
+INSERT INTO `fj_role_access` VALUES ('2554', '137', '90', '27');
+INSERT INTO `fj_role_access` VALUES ('2555', '137', '91', '28');
+INSERT INTO `fj_role_access` VALUES ('2556', '137', '92', '28');
+INSERT INTO `fj_role_access` VALUES ('2557', '137', '93', '28');
+INSERT INTO `fj_role_access` VALUES ('2558', '137', '94', '28');
+INSERT INTO `fj_role_access` VALUES ('2559', '137', '95', '28');
+INSERT INTO `fj_role_access` VALUES ('2560', '137', '96', '28');
+INSERT INTO `fj_role_access` VALUES ('2561', '137', '97', '29');
+INSERT INTO `fj_role_access` VALUES ('2562', '137', '101', '30');
+INSERT INTO `fj_role_access` VALUES ('2563', '137', '102', '30');
+INSERT INTO `fj_role_access` VALUES ('2564', '137', '103', '30');
+INSERT INTO `fj_role_access` VALUES ('2565', '137', '104', '30');
+INSERT INTO `fj_role_access` VALUES ('2566', '137', '108', '30');
+INSERT INTO `fj_role_access` VALUES ('2567', '137', '105', '31');
+INSERT INTO `fj_role_access` VALUES ('2568', '137', '106', '31');
+INSERT INTO `fj_role_access` VALUES ('2569', '137', '107', '31');
+INSERT INTO `fj_role_access` VALUES ('2570', '137', '109', '32');
+INSERT INTO `fj_role_access` VALUES ('2571', '137', '111', '33');
+INSERT INTO `fj_role_access` VALUES ('2572', '137', '112', '33');
+INSERT INTO `fj_role_access` VALUES ('2573', '137', '114', '34');
+INSERT INTO `fj_role_access` VALUES ('2574', '137', '117', '34');
+INSERT INTO `fj_role_access` VALUES ('2575', '137', '115', '35');
+INSERT INTO `fj_role_access` VALUES ('2576', '137', '116', '35');
+INSERT INTO `fj_role_access` VALUES ('2577', '137', '118', '36');
+INSERT INTO `fj_role_access` VALUES ('2578', '137', '119', '36');
 
 -- ----------------------------
 -- Table structure for fj_role_action
@@ -22249,7 +22499,7 @@ CREATE TABLE `fj_role_action` (
   PRIMARY KEY (`id`),
   KEY `module_id` (`module_id`) USING BTREE,
   KEY `group_id` (`group_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8 COMMENT='控制表  group_id 关联 role_nav';
+) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8 COMMENT='控制表  group_id 关联 role_nav';
 
 -- ----------------------------
 -- Records of fj_role_action
@@ -22364,6 +22614,12 @@ INSERT INTO `fj_role_action` VALUES ('110', 'log', '登进登出日志', '125', 
 INSERT INTO `fj_role_action` VALUES ('111', 'index', '短信日志', '126', '33');
 INSERT INTO `fj_role_action` VALUES ('112', 'create', '发短信', null, '33');
 INSERT INTO `fj_role_action` VALUES ('113', 'edit', '编辑订单', null, '13');
+INSERT INTO `fj_role_action` VALUES ('114', 'index', '整体统计', '127', '34');
+INSERT INTO `fj_role_action` VALUES ('115', 'index', '区域统计', '128', '35');
+INSERT INTO `fj_role_action` VALUES ('116', 'export', '统计导出', null, '35');
+INSERT INTO `fj_role_action` VALUES ('117', 'export', '统计导出', null, '34');
+INSERT INTO `fj_role_action` VALUES ('118', 'index', '品牌统计', '129', '36');
+INSERT INTO `fj_role_action` VALUES ('119', 'export', '品牌统计导出', null, '36');
 
 -- ----------------------------
 -- Table structure for fj_role_module
@@ -22376,7 +22632,7 @@ CREATE TABLE `fj_role_module` (
   `is_effect` tinyint(1) NOT NULL COMMENT '是否启用',
   PRIMARY KEY (`id`),
   KEY `is_effect` (`is_effect`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='模块表';
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='模块表';
 
 -- ----------------------------
 -- Records of fj_role_module
@@ -22408,6 +22664,9 @@ INSERT INTO `fj_role_module` VALUES ('30', 'finance', '财务管理', '1');
 INSERT INTO `fj_role_module` VALUES ('31', 'cardrefund', '卡券退回', '1');
 INSERT INTO `fj_role_module` VALUES ('32', 'offermain', '报价商家', '1');
 INSERT INTO `fj_role_module` VALUES ('33', 'sms', '短信日志', '1');
+INSERT INTO `fj_role_module` VALUES ('34', 'overall', '整体统计', '1');
+INSERT INTO `fj_role_module` VALUES ('35', 'areast', '区域统计', '1');
+INSERT INTO `fj_role_module` VALUES ('36', 'brandst', '品牌统计', '1');
 
 -- ----------------------------
 -- Table structure for fj_role_nav
@@ -22424,7 +22683,7 @@ CREATE TABLE `fj_role_nav` (
   KEY `nav_id` (`nav_id`),
   KEY `is_effect` (`is_effect`),
   KEY `sort` (`sort`)
-) ENGINE=InnoDB AUTO_INCREMENT=127 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='菜单导航列表';
+) ENGINE=InnoDB AUTO_INCREMENT=130 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='菜单导航列表';
 
 -- ----------------------------
 -- Records of fj_role_nav
@@ -22457,6 +22716,9 @@ INSERT INTO `fj_role_nav` VALUES ('123', '商家退卡', '23', '', '1', '99');
 INSERT INTO `fj_role_nav` VALUES ('124', '报价商家', '22', '', '1', '99');
 INSERT INTO `fj_role_nav` VALUES ('125', '管理员日志', '15', 'icon-trash', '1', '99');
 INSERT INTO `fj_role_nav` VALUES ('126', '短信日志', '15', 'icon-bubbles', '1', '99');
+INSERT INTO `fj_role_nav` VALUES ('127', '整体统计', '25', '', '1', '99');
+INSERT INTO `fj_role_nav` VALUES ('128', '区域统计', '25', '', '1', '99');
+INSERT INTO `fj_role_nav` VALUES ('129', '品牌统计', '25', '', '1', '99');
 
 -- ----------------------------
 -- Table structure for fj_role_nav_group
@@ -22471,7 +22733,7 @@ CREATE TABLE `fj_role_nav_group` (
   PRIMARY KEY (`id`),
   KEY `is_effect` (`is_effect`),
   KEY `sort` (`sort`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='菜单导航分组';
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='菜单导航分组';
 
 -- ----------------------------
 -- Records of fj_role_nav_group
@@ -22486,6 +22748,7 @@ INSERT INTO `fj_role_nav_group` VALUES ('21', '订单管理', 'icon-basket', '1'
 INSERT INTO `fj_role_nav_group` VALUES ('22', '品牌管理', 'icon-bell', '1', '99');
 INSERT INTO `fj_role_nav_group` VALUES ('23', '财务管理', 'icon-calculator', '1', '99');
 INSERT INTO `fj_role_nav_group` VALUES ('24', '系统首页', 'icon-pointer', '1', '0');
+INSERT INTO `fj_role_nav_group` VALUES ('25', '数据统计', '', '1', '99');
 
 -- ----------------------------
 -- Table structure for fj_seller
@@ -22513,7 +22776,7 @@ CREATE TABLE `fj_seller` (
   KEY `status` (`status`),
   KEY `is_insurance` (`is_insurance`),
   KEY `is_main` (`is_repair`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COMMENT='商家表';
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COMMENT='商家表';
 
 -- ----------------------------
 -- Records of fj_seller
@@ -22544,6 +22807,7 @@ INSERT INTO `fj_seller` VALUES ('23', '李四', '7694', '1', '1', '2', '1', '36'
 INSERT INTO `fj_seller` VALUES ('24', 'hztest', '7695', '1', '1', '0', '23', '385', '4210', '四川 成都市 大邑县', '天府新谷', 'hz', '13438896182', '1', '1487828778', '1');
 INSERT INTO `fj_seller` VALUES ('25', 'hz3', '7697', '1', '1', '24', '4', '86', '1321', '山西 阳泉市 盂县', '哪里啊', 'hz3', '13438896183', '1', '1488160578', '1');
 INSERT INTO `fj_seller` VALUES ('26', '睿萱汽车维护中心（我爱我车）', '7698', '1', '0', '0', '21', '340', '3287', '海南 保亭黎族苗族自治县 保亭黎族苗族自治县', '打瞌睡了', '8444', '13438896188', '1', '1488333405', '1');
+INSERT INTO `fj_seller` VALUES ('27', '测试一级建立账号', '7704', '1', '1', '0', '2', '40', '56', '天津 天津市 河东区', '水电费水电费', '的订单', '13438896185', '1', '1488525532', '1');
 
 -- ----------------------------
 -- Table structure for fj_seller_settle
@@ -22563,7 +22827,7 @@ CREATE TABLE `fj_seller_settle` (
   KEY `seller_id` (`seller_id`) USING BTREE,
   KEY `status` (`status`),
   KEY `settle_time` (`settle_time`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='商家结算金额表';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='商家结算金额表';
 
 -- ----------------------------
 -- Records of fj_seller_settle
@@ -22572,6 +22836,9 @@ INSERT INTO `fj_seller_settle` VALUES ('1', '1', '1', '1000.00', '5', '2', '1474
 INSERT INTO `fj_seller_settle` VALUES ('2', '2', '1', '1000.85', '5', '2', '1474867295', '1474905600', '1475033570');
 INSERT INTO `fj_seller_settle` VALUES ('3', '425', '19', '2.00', '5', '0', '1480733722', '1481437722', '0');
 INSERT INTO `fj_seller_settle` VALUES ('4', '420', '2', '23.00', '0', '1', '1488267274', '1486971274', '0');
+INSERT INTO `fj_seller_settle` VALUES ('5', '436', '24', '0.00', '0', '1', '1490076274', '1488780274', '0');
+INSERT INTO `fj_seller_settle` VALUES ('6', '436', '24', '0.00', '0', '1', '1490076283', '1488780283', '0');
+INSERT INTO `fj_seller_settle` VALUES ('7', '440', '25', '500.00', '0', '1', '1490077032', '1488781032', '0');
 
 -- ----------------------------
 -- Table structure for fj_seller_settle_log
@@ -22599,6 +22866,102 @@ INSERT INTO `fj_seller_settle_log` VALUES ('52', '2', '1', '951', 'Eg:通过支�
 INSERT INTO `fj_seller_settle_log` VALUES ('53', '1', '1', '950', 'Eg:通过支付宝账号XXXX打款5000.00,支付账单号:343454545665', '1', 'admin', '2016-09-28 11:32:51');
 INSERT INTO `fj_seller_settle_log` VALUES ('54', '425', '19', '2', '商家保险002于 2016-12-13 17:23:52 申请提现', '5961', '保险002', '2016-12-13 17:23:52');
 INSERT INTO `fj_seller_settle_log` VALUES ('55', '425', '19', '2', '商家保险002于 2016-12-13 17:26:58 申请提现', '5961', '保险002', '2016-12-13 17:26:58');
+
+-- ----------------------------
+-- Table structure for fj_seller_statistics
+-- ----------------------------
+DROP TABLE IF EXISTS `fj_seller_statistics`;
+CREATE TABLE `fj_seller_statistics` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `seller_id` int(10) unsigned NOT NULL COMMENT '卖家编号',
+  `card_num` mediumint(6) DEFAULT '0' COMMENT '卡券总量',
+  `active_num` mediumint(6) DEFAULT '0' COMMENT '激活数量',
+  `settle_num` mediumint(6) DEFAULT '0' COMMENT '理赔数量',
+  `lsoe_num` mediumint(8) unsigned DEFAULT '0' COMMENT '失效数量',
+  `frost_num` mediumint(8) unsigned DEFAULT '0' COMMENT '冻结数量',
+  `wait_num` mediumint(8) unsigned DEFAULT '0' COMMENT '未激活卡券',
+  `add_time` int(10) DEFAULT '0' COMMENT '保存时间戳',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8 COMMENT='商家统计表';
+
+-- ----------------------------
+-- Records of fj_seller_statistics
+-- ----------------------------
+INSERT INTO `fj_seller_statistics` VALUES ('1', '2', '65', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('2', '3', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('3', '6', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('4', '7', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('5', '8', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('6', '10', '1', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('7', '13', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('8', '15', '35', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('9', '16', '18', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('10', '17', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('11', '19', '3', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('12', '20', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('13', '21', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('14', '23', '1', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('15', '24', '22', '0', '0', '0', '9', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('16', '25', '4', '4', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('17', '26', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('18', '27', '0', '0', '0', '0', '0', '0', '1488786020');
+INSERT INTO `fj_seller_statistics` VALUES ('19', '2', '65', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('20', '3', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('21', '6', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('22', '7', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('23', '8', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('24', '10', '1', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('25', '13', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('26', '15', '35', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('27', '16', '18', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('28', '17', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('29', '19', '3', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('30', '20', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('31', '21', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('32', '23', '1', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('33', '24', '22', '0', '0', '0', '9', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('34', '25', '4', '4', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('35', '26', '20', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('36', '27', '0', '0', '0', '0', '0', '0', '1488789112');
+INSERT INTO `fj_seller_statistics` VALUES ('37', '2', '65', '0', '0', '0', '0', '65', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('38', '3', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('39', '6', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('40', '7', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('41', '8', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('42', '10', '1', '0', '0', '0', '0', '1', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('43', '13', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('44', '15', '35', '0', '0', '0', '0', '35', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('45', '16', '18', '0', '0', '0', '0', '18', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('46', '17', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('47', '19', '3', '0', '0', '0', '0', '3', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('48', '20', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('49', '21', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('50', '23', '1', '0', '0', '0', '0', '1', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('51', '24', '22', '0', '0', '0', '9', '13', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('52', '25', '4', '4', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('53', '26', '20', '0', '0', '0', '0', '20', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('54', '27', '0', '0', '0', '0', '0', '0', '1488852316');
+INSERT INTO `fj_seller_statistics` VALUES ('55', '2', '65', '0', '0', '0', '0', '65', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('56', '3', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('57', '6', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('58', '7', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('59', '8', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('60', '10', '1', '0', '0', '0', '0', '1', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('61', '11', '1', '0', '0', '0', '0', '1', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('62', '12', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('63', '13', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('64', '15', '35', '0', '0', '0', '0', '35', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('65', '16', '18', '0', '0', '0', '0', '18', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('66', '17', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('67', '19', '3', '0', '0', '0', '0', '3', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('68', '20', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('69', '21', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('70', '22', '0', '0', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('71', '23', '1', '0', '0', '0', '0', '1', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('72', '24', '22', '0', '0', '0', '9', '13', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('73', '25', '4', '4', '0', '0', '0', '0', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('74', '26', '20', '0', '0', '0', '0', '20', '1488853234');
+INSERT INTO `fj_seller_statistics` VALUES ('75', '27', '0', '0', '0', '0', '0', '0', '1488853234');
 
 -- ----------------------------
 -- Table structure for fj_sms_log
@@ -22717,7 +23080,7 @@ CREATE TABLE `fj_sms_queue` (
   `agent` text,
   `send_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP COMMENT '消息加入队列时间 ',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of fj_sms_queue
@@ -22725,7 +23088,15 @@ CREATE TABLE `fj_sms_queue` (
 INSERT INTO `fj_sms_queue` VALUES ('1', 'USER_VERFIY_CODE', '18080093730', '666666', '【心匠科技】您于2017-01-13手机验证码：666666。请勿将验证码泄露给他人。##Test##', '127.0.0.1', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.7.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-01-13 10:43:35');
 INSERT INTO `fj_sms_queue` VALUES ('2', 'USER_VERFIY_CODE', '18080091133', '666666', '【心匠科技】您于2017-01-13手机验证码：666666。请勿将验证码泄露给他人。##Test##', '127.0.0.1', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.7.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-01-13 11:05:42');
 INSERT INTO `fj_sms_queue` VALUES ('3', 'ORDER', '13438896182', '666666', '【心匠科技】尊敬的用户，您的订单（ 790541174788490000 ）已审核成功，服务生效日期 2017-03-03 ，截止日期 2017-06-02 ，如有任何疑问，请拨打400-0900-299，感谢您对乐换新的关注！ ##Test##', '192.168.50.123', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0', '2017-02-23 14:26:13');
-INSERT INTO `fj_sms_queue` VALUES ('4', 'USER_VERFIY_CODE', '13438896182', '666666', '【心匠科技】您于2017-02-27手机验证码：666666。请勿将验证码泄露给他人。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-02-27 09:45:08');
+INSERT INTO `fj_sms_queue` VALUES ('4', 'ORDER', '13438896182', '666666', '【欢欣科技】尊敬的用户，您的订单（ 850541768504780000 ）已审核成功，服务生效日期 2017-03-10 ，截止日期 2017-06-09 ，如有任何疑问，请拨打400-0900-299，感谢您对乐换新的关注！ ##Test##', '192.168.50.123', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0', '2017-03-02 13:50:58');
+INSERT INTO `fj_sms_queue` VALUES ('5', 'ORDER', '13438896182', '666666', '【欢欣科技】您的资料已提交成功，我们会在24小时内进行审核，审核通过第8天0点生效，如有任何疑问，请联系客服热线：400-0900-299。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-03-03 14:05:13');
+INSERT INTO `fj_sms_queue` VALUES ('6', 'ORDER', '13438896182', null, '【欢欣科技】尊敬的用户，您的订单（ 430541865101237000 ）已审核成功，服务生效日期 2017-03-11 ，截止日期 2018-03-10 ，如有任何疑问，请拨打400-0900-299，感谢您对乐换新的关注！ ##Test##', '192.168.50.123', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0', '2017-03-03 14:06:20');
+INSERT INTO `fj_sms_queue` VALUES ('7', 'ORDER', '13438896182', '666666', '【欢欣科技】您的资料已提交成功，我们会在24小时内进行审核，审核通过第8天0点生效，如有任何疑问，请联系客服热线：400-0900-299。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-03-03 14:32:49');
+INSERT INTO `fj_sms_queue` VALUES ('8', 'USER_VERFIY_CODE', '13438896182', '666666', '【欢欣科技】您于2017-03-03手机验证码：666666。请勿将验证码泄露给他人。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-03-03 14:50:27');
+INSERT INTO `fj_sms_queue` VALUES ('9', 'ORDER', '13555555555', null, '【欢欣科技】您的资料已提交成功，我们会在24小时内进行审核，审核通过第8天0点生效，如有任何疑问，请联系客服热线：400-0900-299。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-03-03 14:51:19');
+INSERT INTO `fj_sms_queue` VALUES ('10', 'ORDER', '13555555555', null, '【欢欣科技】尊敬的用户，您的订单（ 670541867872426000 ）已审核成功，服务生效日期 2017-03-11 ，截止日期 2017-06-10 ，如有任何疑问，请拨打400-0900-299，感谢您对乐换新的关注！ ##Test##', '192.168.50.123', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0', '2017-03-03 14:51:42');
+INSERT INTO `fj_sms_queue` VALUES ('11', 'ORDER', '15555555555', '666666', '【欢欣科技】您的资料已提交成功，我们会在24小时内进行审核，审核通过第8天0点生效，如有任何疑问，请联系客服热线：400-0900-299。##Test##', '192.168.50.123', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/0.4.0 MicroMessenger/6.3.9 Language/zh_CN webview/0', '2017-03-03 15:12:21');
+INSERT INTO `fj_sms_queue` VALUES ('12', 'ORDER', '15555555555', null, '【欢欣科技】尊敬的用户，您的订单（ 660541869133005000 ）已审核成功，服务生效日期 2017-03-11 ，截止日期 2017-06-10 ，如有任何疑问，请拨打400-0900-299，感谢您对乐换新的关注！ ##Test##', '192.168.50.123', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0', '2017-03-03 15:20:00');
 
 -- ----------------------------
 -- Table structure for fj_wx_member

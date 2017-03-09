@@ -41574,3 +41574,3260 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1488182608.0055
     'REQUEST_TIME' => 1488182608
 ]
+2017-03-08 16:50:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 16:50:53 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 16:50:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59753'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488963053.3378
+    'REQUEST_TIME' => 1488963053
+]
+2017-03-08 16:51:04 [127.0.0.1][5931][m0q8ft9mem1matjanpsf0tmck7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 16:51:04 [127.0.0.1][5931][m0q8ft9mem1matjanpsf0tmck7][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'm0q8ft9mem1matjanpsf0tmck7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5931'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=m0q8ft9mem1matjanpsf0tmck7'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59753'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488963064.6557
+    'REQUEST_TIME' => 1488963064
+]
+2017-03-08 17:12:48 [127.0.0.1][-][ch4f30t2i14v2b9ne7tehl64a7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:12:48 [127.0.0.1][-][ch4f30t2i14v2b9ne7tehl64a7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:12:48 [127.0.0.1][-][ch4f30t2i14v2b9ne7tehl64a7][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'ch4f30t2i14v2b9ne7tehl64a7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=ch4f30t2i14v2b9ne7tehl64a7'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60276'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964368.7152
+    'REQUEST_TIME' => 1488964368
+]
+2017-03-08 17:13:19 [127.0.0.1][-][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:13:19 [127.0.0.1][-][5hht9efcnqjp9fmo04hasekr32][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:13:19 [127.0.0.1][-][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60276'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964399.7035
+    'REQUEST_TIME' => 1488964399
+]
+2017-03-08 17:18:48 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Seller::id' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('id')
+#1 E:\jd\baoxian\branches\dev\maintainer\controllers\BrandstController.php(151): yii\db\BaseActiveRecord->__get('id')
+#2 E:\jd\baoxian\branches\dev\maintainer\controllers\BrandstController.php(43): maintainer\controllers\BrandstController->_condition()
+#3 [internal function]: maintainer\controllers\BrandstController->actionIndex()
+#4 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index', Array)
+#8 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-03-08 17:18:48 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_POST = [
+    'draw' => '1'
+    'columns' => [
+        0 => [
+            'data' => '0'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        1 => [
+            'data' => '1'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        2 => [
+            'data' => '2'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        3 => [
+            'data' => '3'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        4 => [
+            'data' => '4'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+    ]
+    'start' => '0'
+    'length' => '10'
+    'search' => [
+        'value' => ''
+        'regex' => 'false'
+    ]
+    '_csrf-maintainer' => 'WUNHNHB5bVJpESZlPRInED9xI18iDz05FSAyWxcsIWABIQJsBx49Iw=='
+    'brand_id' => ''
+]
+
+$_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://main/brandst/index'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://main'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_CONTENT_LENGTH' => '1195'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1195'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964728.0228
+    'REQUEST_TIME' => 1488964728
+]
+2017-03-08 17:18:51 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:18:51 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964731.4398
+    'REQUEST_TIME' => 1488964731
+]
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Seller::id' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('id')
+#1 E:\jd\baoxian\branches\dev\maintainer\controllers\BrandstController.php(151): yii\db\BaseActiveRecord->__get('id')
+#2 E:\jd\baoxian\branches\dev\maintainer\controllers\BrandstController.php(43): maintainer\controllers\BrandstController->_condition()
+#3 [internal function]: maintainer\controllers\BrandstController->actionIndex()
+#4 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index', Array)
+#8 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_POST = [
+    'draw' => '1'
+    'columns' => [
+        0 => [
+            'data' => '0'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        1 => [
+            'data' => '1'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        2 => [
+            'data' => '2'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        3 => [
+            'data' => '3'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+        4 => [
+            'data' => '4'
+            'name' => ''
+            'searchable' => 'true'
+            'orderable' => 'false'
+            'search' => [
+                'value' => ''
+                'regex' => 'false'
+            ]
+        ]
+    ]
+    'start' => '0'
+    'length' => '10'
+    'search' => [
+        'value' => ''
+        'regex' => 'false'
+    ]
+    '_csrf-maintainer' => 'OUhBb2tDdFkJGiA.Jig.G196JQQ5NSQydSs0AAwWOGthKgQ3HCQkKA=='
+    'brand_id' => ''
+]
+
+$_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://main/brandst/index'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://main'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_CONTENT_LENGTH' => '1195'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '1195'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964735.5159
+    'REQUEST_TIME' => 1488964735
+]
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964735.7427
+    'REQUEST_TIME' => 1488964735
+]
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:18:55 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964735.8711
+    'REQUEST_TIME' => 1488964735
+]
+2017-03-08 17:19:12 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:19:12 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964752.4129
+    'REQUEST_TIME' => 1488964752
+]
+2017-03-08 17:19:12 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:19:12 [127.0.0.1][5937][5hht9efcnqjp9fmo04hasekr32][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '5hht9efcnqjp9fmo04hasekr32'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '5937'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=5hht9efcnqjp9fmo04hasekr32'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964752.5711
+    'REQUEST_TIME' => 1488964752
+]
+2017-03-08 17:20:03 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/index.js.m...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:03 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:20:03 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964803.8551
+    'REQUEST_TIME' => 1488964803
+]
+2017-03-08 17:20:04 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:04 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:20:04 [127.0.0.1][-][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964804.0603
+    'REQUEST_TIME' => 1488964804
+]
+2017-03-08 17:20:09 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:09 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964809.9342
+    'REQUEST_TIME' => 1488964809
+]
+2017-03-08 17:20:10 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/index.js.m...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:10 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964810.0187
+    'REQUEST_TIME' => 1488964810
+]
+2017-03-08 17:20:13 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:13 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964813.4898
+    'REQUEST_TIME' => 1488964813
+]
+2017-03-08 17:20:13 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:20:13 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60399'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488964813.6521
+    'REQUEST_TIME' => 1488964813
+]
+2017-03-08 17:24:03 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:24:03 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965043.7984
+    'REQUEST_TIME' => 1488965043
+]
+2017-03-08 17:24:04 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:24:04 [127.0.0.1][7695][63vtsm67jc37bs1gmff3qvnaq0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => '63vtsm67jc37bs1gmff3qvnaq0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7695'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=63vtsm67jc37bs1gmff3qvnaq0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965044.0031
+    'REQUEST_TIME' => 1488965044
+]
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/index.js.m...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965108.7791
+    'REQUEST_TIME' => 1488965108
+]
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/favicon.ico' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('favicon.ico', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/favicon.ic...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getSellerInfo() on null' in E:\jd\baoxian\branches\dev\maintainer\views\layouts\header.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-08 17:25:08 [127.0.0.1][-][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://main/site/login'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965108.9414
+    'REQUEST_TIME' => 1488965108
+]
+2017-03-08 17:25:14 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:14 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965114.1206
+    'REQUEST_TIME' => 1488965114
+]
+2017-03-08 17:25:14 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/index.js.m...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:14 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965114.1812
+    'REQUEST_TIME' => 1488965114
+]
+2017-03-08 17:25:17 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:17 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965117.2114
+    'REQUEST_TIME' => 1488965117
+]
+2017-03-08 17:25:17 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:17 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965117.3543
+    'REQUEST_TIME' => 1488965117
+]
+2017-03-08 17:25:19 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:19 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965119.8377
+    'REQUEST_TIME' => 1488965119
+]
+2017-03-08 17:25:19 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: overall/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('overall/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:19 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/overall/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965119.9953
+    'REQUEST_TIME' => 1488965119
+]
+2017-03-08 17:25:22 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:22 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965122.6019
+    'REQUEST_TIME' => 1488965122
+]
+2017-03-08 17:25:22 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:25:22 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965122.7526
+    'REQUEST_TIME' => 1488965122
+]
+2017-03-08 17:26:27 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "metr_admin/global/plugins/datatables/pdfmake.min.js.map".' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('metr_admin/glob...', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:26:27 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/metr_admin/global/plugins/datatables/pdfmake.min.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965187.1839
+    'REQUEST_TIME' => 1488965187
+]
+2017-03-08 17:26:27 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: brandst/index.js.map' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index.js.map', Array)
+#1 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('brandst/index.j...', Array)
+#2 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 E:\jd\baoxian\branches\dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jd\baoxian\branches\dev\maintainer\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-03-08 17:26:27 [127.0.0.1][7697][tre5a4g1a3s7tmancm4hqu3qm0][info][application] $_COOKIE = [
+    '_csrf-maintainer' => '8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a:2:{i:0;s:16:\"_csrf-maintainer\";i:1;s:32:\"0RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq\";}'
+    'advanced-maintainer' => 'tre5a4g1a3s7tmancm4hqu3qm0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '7697'
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\lib\\tools.jar;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HADOOP-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GOPATH' => 'D:\\go'
+    'GOROOT' => 'C:\\Go\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'JAVA_HOME' => 'C:\\Program Files (x86)\\Java\\jdk1.8.0_65'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HADOOP-PC'
+    'MAVEN_HOME' => 'C:\\Program Files\\apache-maven-3.3.9'
+    'MOZ_PLUGIN_PATH' => 'D:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files\\SlikSvn\\bin;D:\\soft\\svn\\bin;D:\\soft\\node\\;D:\\phpStudy\\php56n;C:\\Go\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\Go\\bin;D:\\go\\bin;C:\\Program Files\\apache-maven-3.3.9\\bin;C:\\Ruby22\\bin;��;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;D:\\phpStudy\\php56n;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\soft\\Microsoft VS Code\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'hadoop-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'hadoop-PC'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_csrf-maintainer=8ff618bfbd610c1921c199337372107e6b7a4f936f98e339a014146867a74b46a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_csrf-maintainer%22%3Bi%3A1%3Bs%3A32%3A%220RaQMkJBf2dkRvPkLcuogUL2XbEXwgPq%22%3B%7D; advanced-maintainer=tre5a4g1a3s7tmancm4hqu3qm0'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'main'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'main'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60539'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/brandst/index.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'PATH_TRANSLATED' => 'E:/jd/baoxian/branches/dev/maintainer/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/jd/baoxian/branches/dev/maintainer/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1488965187.3879
+    'REQUEST_TIME' => 1488965187
+]

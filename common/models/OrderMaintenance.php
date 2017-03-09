@@ -352,6 +352,26 @@ class OrderMaintenance extends \yii\db\ActiveRecord
 				}
 				SellerSettle::addSettle($s_d,$s_d_log);
 
+				//订单完成
+				$order = Order::findOne($this->order_id);
+				if ($order) {
+					$before_order_state = $order->order_state;
+					$log = [
+						'before_order_state' => $before_order_state,
+						'order_state' => Order::__ORDER_COMPLETE,
+						'log_msg' => '维保成功，订单完成',
+						'order_id' => $order->order_id,
+						'log_user' => Yii::$app->user->identity->username,
+						'log_time' => date('Y-m-d H:i:s', time())
+					];
+					$order->order_state = Order::__ORDER_COMPLETE;
+					if ($order->save(false, ['order_state'])) {
+						$model_log = new OrderLog();
+						$model_log->insertLog($log);
+					}
+				}
+
+
 			} else {
 				$note = $serviceModel->getStatusText() . '#' . $note;
 				OrderMaintenanceLog::addLog($this, $note, $is_show);

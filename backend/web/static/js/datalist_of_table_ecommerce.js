@@ -20,7 +20,7 @@ var EcommerceList={
         this.grid.getDataTable().ajax.reload();
     },
     ajaxParams:{'_csrf-backend':$('meta[name="csrf-token"]').attr("content")},
-    init:function (url,rqParams,bSort,showTable,length) {
+    init:function (url,rqParams,bSort,showTable,length,func) {
         this.initPickers();
         var obj=this;
 
@@ -29,11 +29,11 @@ var EcommerceList={
             obj.ajaxParams[key]=val;
         })
 
-        this.grid=this.handleList(url,bSort,showTable,length);
+        this.grid=this.handleList(url,bSort,showTable,length,func);
         return this.grid;
     },
 
-    handleList:function (url,bSort,showTable,length) {
+    handleList:function (url,bSort,showTable,length,func) {
 
         var bSort = bSort || false;
         var rqParams =  this.ajaxParams;
@@ -84,8 +84,11 @@ var EcommerceList={
 
         grid.init({
             src: showTableEm,
-            onSuccess: function (grid) {
+            onSuccess: function (grid,data) {
                 // execute some code after table records loaded
+                if(typeof func === 'function'){
+                    func(data);
+                }
             },
             onError: function (grid) {
                 // execute some code on network or other general error

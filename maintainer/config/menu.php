@@ -292,6 +292,50 @@ return [
                 ],
             ],
         ],
+        [
+            'id' => 5,
+            'name' => '数据统计',
+            'icon' => 'fa fa-line-chart',
+            'active' => false,
+            'group' => [
+                [
+                    'id' => 0,
+                    'name' => '整体统计',
+                    'icon' => '',
+                    'active' => false,
+                    'nodes' => [
+                        [
+                            'module' => 'overall',
+                            'action' => 'index',
+                            'module_id' => 0,
+                            'action_id' => 0,
+                            'active' => false,
+                            'role' =>'insurance',
+                            'level'=>0,
+                            'url' => '/overall/index',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 1,
+                    'name' => '品牌统计',
+                    'icon' => '',
+                    'active' => false,
+                    'nodes' => [
+                        [
+                            'module' => 'brandst',
+                            'action' => 'index',
+                            'module_id' => 0,
+                            'action_id' => 0,
+                            'active' => false,
+                            'role' =>'insurance',
+                            'level'=>0,
+                            'url' => '/brandst/index',
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
 
 ];

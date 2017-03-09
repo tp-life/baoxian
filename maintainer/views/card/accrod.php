@@ -26,12 +26,6 @@
                             <span class="required"> * </span>
                         </label>
                         <div class="col-md-4">
-<!--                            <div class="input-group">-->
-<!--                                <input type="text" class="form-control" id="to_check_val">-->
-<!--                                    <span class="input-group-btn">-->
-<!--                                        <button class="btn blue" id="to_check" type="button">过滤</button>-->
-<!--                                    </span>-->
-<!--                            </div>-->
                             <div class="input-icon right">
                                 <i class="fa"></i>
                                 <select class="form-control" name="to_seller_id" id="to_seller_id">
@@ -47,14 +41,14 @@
                     </div>
 
                     <div class="form-group  margin-top-20">
-                        <label class="control-label col-md-3">待合并险种
+                        <label class="control-label col-md-3">发放险种
                             <span class="required"> * </span>
                         </label>
                         <div class="col-md-4">
                             <div class="input-icon right">
                                 <i class="fa"></i>
                                 <select class="form-control" name="d_coverage" id="d_coverage">
-                                    <option value="">请选择待合并险种</option>
+                                    <option value="">请选择发放险种</option>
                                     <?php foreach($code_list as $val): ?>
                                         <option value="<?=$val['coverage_code']?>" ><?=$val['coverage_code']?></option>
                                     <?php endforeach ?>
@@ -71,7 +65,7 @@
                         </div>
                     </div>
                     <div class="form-group  margin-top-20">
-                        <label class="control-label col-md-3">填写合并套餐编号</label>
+                        <label class="control-label col-md-3">填写发放卡券编号</label>
                         <div class="col-md-4">
                             <div class="input-icon right">
                                 <textarea class="form-control" rows="5" id="card_number_str" name="card_number_str"></textarea>
